@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">9001</defaultcontrol>
+    <controls>
+        	<control type="group" id="9999">
+        	   		<include condition="Skin.HasSetting(limaskydev)">NaoSmartPlaylistRule</include>
+        	   	<include condition="Skin.HasSetting(limaskysatu)">SatuSmartPlaylistRule</include>
+        	   	<include condition="Skin.HasSetting(limaskydyo)">DyoSmartPlaylistRule</include>
+        	   	<include condition="Skin.HasSetting(limaskymitsu)">MitsuSmartPlaylistRule</include>
+        	   	<include condition="Skin.HasSetting(limaskyfour)">FourSmartPlaylistRule</include>
+        	   		<include condition="![Skin.HasSetting(limaskydev) | Skin.HasSetting(limaskysatu) | Skin.HasSetting(limaskydyo) | Skin.HasSetting(limaskymitsu) | Skin.HasSetting(limaskyfour)]">TempEvoSmartPlaylistRule</include>
+            	</control>
+    </controls>
+</window>

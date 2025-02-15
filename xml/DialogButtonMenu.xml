@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--power menu-->
+<window type="buttonMenu">
+	<defaultcontrol always="true">8001</defaultcontrol>
+	<controls>
+        	<control type="group" id="9999">
+		<!--AnimaTempEvo-->
+		<control type="group">
+        		<include>fadeInOut</include>
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>100%</width>
+				<height>100%</height>
+				<texture>colors/black.png</texture>
+				<colordiffuse>CCFFFFFF</colordiffuse>
+				<aspectratio>stretch</aspectratio>
+			</control>
+		</control>
+		<control type="group" id="990991" description="component2">
+			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoShutdownPanelSlide</include>
+			<centerleft>50%</centerleft>
+                      	<centertop>50%</centertop>
+			<width>1280</width>
+			<height>648</height>
+			<control type="button" id="8002">
+				<right>0</right>
+	                      	<bottom>468</bottom>
+				<width>72</width>
+				<height>72</height>
+				<onleft>201</onleft>
+				<onright>605</onright>
+				<onup>490</onup>
+				<ondown>8001</ondown>
+                        	<align>center</align>
+                        	<aligny>center</aligny>
+                        	<font>symbolSize36</font>
+				<textcolor>textActive</textcolor>
+				<focusedcolor>textActive</focusedcolor>
+				<textoffsetx>0</textoffsetx>
+                        	<label>x</label>
+				<texturefocus colordiffuse="sorotan">shape/dim72/roundedsquare.png</texturefocus>
+				<texturenofocus colordiffuse="overlay">shape/dim72/roundedsquare.png</texturenofocus>
+				<onclick>back</onclick>
+			</control>
+			<control type="group">
+				<left>0</left>
+				<width>612</width>
+				<height>648</height>
+				<control type="image">
+					<description>profile image</description>
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>90</width>
+					<height>90</height>
+	                        	<bordersize>0</bordersize>
+					<texture fallback="colors/black.png" border="0" diffuse="shape/dim90/roundedsquare.png">$INFO[System.ProfileThumb]</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+				</control>
+                    		<control type="label">
+                    			<posy>0</posy>
+					<posx>108</posx>
+                			<font>Font24Regular</font>
+                     			<textcolor>FFFFFFFF</textcolor>
+					<textoffsetx>0</textoffsetx>
+					<height>36</height>
+                    			<aligny>center</aligny>
+		    			<label>$LOCALIZE[10111]</label>
+                    		</control>
+                    		<control type="label" id="1">
+                    			<posy>36</posy>
+					<posx>108</posx>
+                			<font>Font36Regular</font>
+                     			<textcolor>FFFFFFFF</textcolor>
+					<textoffsetx>0</textoffsetx>
+					<height>54</height>
+                    			<aligny>center</aligny>
+		    			<label>$INFO[System.ProfileName,$LOCALIZE[31203] ,!]</label>
+                    		</control>
+				<control type="button" id="101">
+					<visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
+					<visible>System.Loggedon</visible>
+					<right>0</right>
+                         		<posy>18</posy>
+					<font>Font20Bold</font>
+	                		<height>54</height>
+					<align>right</align>
+					<label>$LOCALIZE[31205]</label>
+					<ondown>8001</ondown>
+					<onclick>dialog.close(all,true)</onclick>
+					<onclick>System.LogOff</onclick>
+				</control>
+                    	</control>
+               				<control type="textbox">
+                         			<description>SubTitleWindow</description>
+				<left>0</left>
+			<bottom>18</bottom>
+                         			<font>Font24Medium</font>
+				<width>612</width>
+                         			<height>54</height>
+						<aligny>center</aligny>
+						<align>left</align>
+	            				<label>$LOCALIZE[31204]</label>
+                     				<textcolor>FFFFFFFF</textcolor>
+             				</control>
+        				<control type="panel" id="8001">
+				<left>632</left>
+	               	        <top>0</top>
+                        	<width>648</width>
+		                <height>648</height>
+	   					<onleft>99899</onleft>
+            					<onright>8001</onright>
+						<ondown>8001</ondown>
+						<onup>8002</onup>
+						<orientation>vertical</orientation>
+            					<scrolltime tween="cubic" easing="out">600</scrolltime>
+	    					<itemlayout width="216" height="216">
+							<control type="image">
+                        					<posx>36</posx>
+                        					<posy>18</posy>
+								<width>144</width>
+								<height>144</height>
+								<colordiffuse>sorotdark</colordiffuse>
+                    						<texture diffuse="shape/dim180/roundedsquare.png">colors/white.png</texture>
+               						</control>
+                    					<control type="label">
+                        					<posx>36</posx>
+                        					<posy>18</posy>
+								<width>144</width>
+								<height>144</height>
+                        					<font>symbolSize90</font>
+								<aligny>center</aligny>
+								<align>center</align>
+                        					<textcolor>textActive</textcolor>
+                        					<shadowcolor></shadowcolor>
+                        					<label>$INFO[ListItem.Label2]</label>
+                    					</control>
+							<control type="label">
+	    							<posx>18</posx>
+                    						<posy>162</posy>
+                        					<width>180</width>
+		             					<height>36</height>
+		             					<font>Font22Bold</font>
+		             					<textcolor>textActive</textcolor>
+								<align>center</align>
+		             					<label>$INFO[ListItem.Label]</label>
+							</control>
+                				</itemlayout>
+                				<focusedlayout width="216" height="216">
+							<control type="image">
+                        					<posx>0</posx>
+                        					<posy>0</posy>
+								<width>216</width>
+								<height>216</height>
+								<colordiffuse>sorotan</colordiffuse>
+                    						<texture>shape/dim216/roundedsquare.png</texture>
+               						</control>
+							<control type="image">
+                        					<posx>36</posx>
+                        					<posy>18</posy>
+								<width>144</width>
+								<height>144</height>
+								<colordiffuse>sorotdark</colordiffuse>
+                    						<texture diffuse="shape/dim180/roundedsquare.png">colors/white.png</texture>
+               						</control>
+                    					<control type="label">
+                        					<posx>36</posx>
+                        					<posy>18</posy>
+								<width>144</width>
+								<height>144</height>
+                        					<font>symbolSize90</font>
+								<aligny>center</aligny>
+								<align>center</align>
+                        					<textcolor>textActive</textcolor>
+                        					<shadowcolor></shadowcolor>
+                        					<label>$INFO[ListItem.Label2]</label>
+                    					</control>
+							<control type="label">
+	    							<posx>18</posx>
+                    						<posy>162</posy>
+                        					<width>180</width>
+		             					<height>36</height>
+		             					<font>Font22Bold</font>
+		             					<textcolor>textActive</textcolor>
+								<align>center</align>
+		             					<label>$INFO[ListItem.Label]</label>
+							</control>
+             					</focusedlayout>
+						<content>
+							<item id="1">
+								<label2></label2>
+								<label>$LOCALIZE[13014]</label>
+								<onclick>Dialog.Close(all)</onclick>
+								<onclick>ActivateWindow(1108)</onclick>
+							</item>
+							<item id="2">
+								<visible>System.CanPowerDown</visible>
+								<label2></label2>
+								<label>$LOCALIZE[13016]</label>
+								<onclick>Powerdown()</onclick>
+							</item>
+							<item id="3">
+								<label2></label2>
+								<label>$LOCALIZE[13012]</label>
+								<onclick>Quit()</onclick>
+							</item>
+							<item id="4">
+								<visible>System.CanSuspend</visible>
+								<label2></label2>
+								<label>$LOCALIZE[13010]</label>
+								<onclick>Suspend()</onclick>
+							</item>
+							<item id="5">
+								<visible>System.CanHibernate</visible>
+								<label2></label2>
+								<label>$LOCALIZE[13011]</label>
+								<onclick>Hibernate()</onclick>
+							</item>
+							<item id="6">
+								<visible>System.CanReboot</visible>
+								<label2></label2>
+								<label>$LOCALIZE[13013]</label>
+								<onclick>Reboot()</onclick>
+							</item>
+							<item id="7">
+								<visible>System.CanSuspend</visible>
+								<label2></label2>
+								<label>$LOCALIZE[13014]</label>
+								<onclick>Minimize()</onclick>
+							</item>
+						</content>
+					</control>
+		     </control>
+
+            	</control>
+	</controls>
+</window>

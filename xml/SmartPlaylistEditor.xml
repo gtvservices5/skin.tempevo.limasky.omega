@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+    <defaultcontrol always="true">22</defaultcontrol>
+
+    <controls>
+        	<control type="group" id="9999">
+        	   		<include condition="Skin.HasSetting(limaskydev)">NaoSmartPlaylistEditor</include>
+        	   	<include condition="Skin.HasSetting(limaskysatu)">SatuSmartPlaylistEditor</include>
+        	   	<include condition="Skin.HasSetting(limaskydyo)">DyoSmartPlaylistEditor</include>
+        	   	<include condition="Skin.HasSetting(limaskymitsu)">MitsuSmartPlaylistEditor</include>
+        	   	<include condition="Skin.HasSetting(limaskyfour)">FourSmartPlaylistEditor</include>
+        	   		<include condition="![Skin.HasSetting(limaskydev) | Skin.HasSetting(limaskysatu) | Skin.HasSetting(limaskydyo) | Skin.HasSetting(limaskymitsu) | Skin.HasSetting(limaskyfour)]">TempEvoSmartPlaylistEditor</include>
+            	</control>
+    </controls>
+</window>
