@@ -9,6 +9,10 @@
             		<include condition="window.isactive(musicplaylist)">TempEvoMusicPlaylist</include>
             		<include condition="window.isactive(videoplaylist)">TempEvoVideoPlaylist</include>
             	</control>
+		<include content="DefaultScrollbarsVertical">
+			<param name="control_onleft">9999</param>
+			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode)</param>
+		</include>
 		<include content="DefaultWindowHeader" condition="window.isactive(videoplaylist)">
 			<param name="visible_control">true</param>
 			<param name="header_label" value="$LOCALIZE[3]"/>

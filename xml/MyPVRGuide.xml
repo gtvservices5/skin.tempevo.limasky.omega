@@ -179,6 +179,47 @@
 				</focusedlayout>
 			</control>
             	</control>
+		<control type="group">
+			<visible>!String.IsEmpty(PVR.ChannelNumberInput)</visible>
+			<animation type="Visible">
+				<effect type="slide" start="-360,0" end="0,0" tween="quadratic" easing="out" time="180" delay="0"/>
+			</animation>
+			<animation type="Hidden">
+				<effect type="slide" start="0,0" end="-360,0" tween="quadratic" easing="out" time="360" delay="0"/>
+			</animation>
+			<top>180</top>
+                    	<left>0</left>
+			<width>360</width>
+			<height>289</height>
+			<include content="TempEvoModelDialogRightRounded">
+				<param name="modelkey_size" value="144" />
+				<param name="modelkey_color" value="CC000000" />
+				<param name="dimensionkey_size" value="dim144" />
+			</include>
+			<control type="label">
+				<posx>64</posx>
+		    		<width>252</width>
+				<height>108</height>
+				<font>Font36Medium</font>
+				<aligny>center</aligny>
+				<textcolor>FFFFFFFF</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<shadowcolor></shadowcolor>
+				<label>$LOCALIZE[19103]</label>
+			</control>
+			<control type="label">
+				<bottom>0</bottom>
+				<right>18</right>
+		    		<width>324</width>
+				<height>180</height>
+				<font>Font180Bold</font>
+				<aligny>center</aligny>
+				<align>right</align>
+				<textcolor>CC808080</textcolor>
+				<shadowcolor></shadowcolor>
+				<label>$INFO[PVR.ChannelNumberInput]</label>
+			</control>
+		</control>
 		<include content="DefaultWindowHeader">
 			<param name="visible_control">true</param>
 			<param name="header_label" value="$LOCALIZE[31591]"/>

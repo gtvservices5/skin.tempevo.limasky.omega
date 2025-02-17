@@ -415,25 +415,20 @@
 		<value>$INFO[Skin.String(ImageBackgroundPath)]</value>
 	</variable>
 	<variable name="SolidColorPathBackground">
-        <value condition="String.IsEqual(Skin.CurrentColourTheme,DarkOrange)">special://skin/extras/homeBackgrounds/DarkOrange.png</value>
-        <value condition="String.IsEqual(Skin.CurrentColourTheme,Diamond)">special://skin/extras/homeBackgrounds/Diamond.png</value>
-        <value condition="String.IsEqual(Skin.CurrentColourTheme,Emerald)">special://skin/extras/homeBackgrounds/Emerald.png</value>
-        <value condition="String.IsEqual(Skin.CurrentColourTheme,Moonstone)">special://skin/extras/homeBackgrounds/Moonstone.png</value>
-        <value condition="String.IsEqual(Skin.CurrentColourTheme,PastelGreen)">special://skin/extras/homeBackgrounds/PastelGreen.png</value>
-        <value condition="String.IsEqual(Skin.CurrentColourTheme,Ruby)">special://skin/extras/homeBackgrounds/Ruby.png</value>
-        <value condition="String.IsEqual(Skin.CurrentColourTheme,Violet)">special://skin/extras/homeBackgrounds/Violet.png</value>
-        <value>special://skin/extras/homeBackgrounds/Default.png</value>
+        <value condition="String.IsEqual(Skin.String(DefaultBackgroundPola),2)">special://skin/extras/Backgrounds/Stylish.png</value>
+        <value condition="String.IsEqual(Skin.String(DefaultBackgroundPola),1)">special://skin/extras/Backgrounds/DiamondW.png</value>
+        <value>special://skin/extras/Backgrounds/Diamond.png</value>
 	</variable>
 	<variable name="SolidBlackSetOn">
-        <value condition="![Skin.HasSetting(SolidBlackSetting)|Skin.HasSetting(SolidColorSetting)|Skin.HasSetting(ColoredDiamondPatternSetting)|Skin.HasSetting(UserImageSetting)|Skin.HasSetting(UserVideoSetting)]"></value>
+        <value condition="![Skin.HasSetting(SolidBlackSetting)|Skin.HasSetting(SolidColorSetting)|Skin.HasSetting(DefaultPatternBGSetting)|Skin.HasSetting(UserImageSetting)|Skin.HasSetting(UserVideoSetting)]"></value>
         <value></value>
 	</variable>
 	<variable name="SolidColorSetOn">
         <value condition="Skin.HasSetting(SolidColorSetting)"></value>
         <value></value>
 	</variable>
-	<variable name="ColoredDiamondPatternSetOn">
-        <value condition="Skin.HasSetting(ColoredDiamondPatternSetting)"></value>
+	<variable name="DefaultPatternBGSetOn">
+        <value condition="Skin.HasSetting(DefaultPatternBGSetting)"></value>
         <value></value>
 	</variable>
 	<variable name="UserImageSetOn">
@@ -542,5 +537,9 @@
 	<variable name="SeparatorTimeVar">
 		<value condition="String.IsEqual(System.Language,Indonesian)">.</value>
 		<value>:</value>
+	</variable>
+	<variable name="SkinLockscreenAutolockTime">
+		<value condition="!String.IsEmpty(Skin.String(LockscreenAutolockTime))">$INFO[Skin.String(LockscreenAutolockTime)]</value>
+		<value condition="String.IsEmpty(Skin.String(LockscreenAutolockTime))">10</value> <!-- Default value -->
 	</variable>
 </includes>

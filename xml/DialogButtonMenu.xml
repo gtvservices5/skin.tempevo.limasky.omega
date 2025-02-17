@@ -3,53 +3,53 @@
 <window type="buttonMenu">
 	<defaultcontrol always="true">8001</defaultcontrol>
 	<controls>
-        	<control type="group" id="9999">
-		<!--AnimaTempEvo-->
-		<control type="group">
-        		<include>fadeInOut</include>
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>100%</width>
-				<height>100%</height>
-				<texture>colors/black.png</texture>
-				<colordiffuse>CCFFFFFF</colordiffuse>
-				<aspectratio>stretch</aspectratio>
-			</control>
+		<control type="image">
+			<include>fadeInOut</include>
+			<left>0</left>
+			<bottom>0</bottom>
+			<width>100%</width>
+			<height>100%</height>
+			<texture colordiffuse="CCFFFFFF">colors/black.png</texture>
 		</control>
-		<control type="group" id="990991" description="component2">
-			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoShutdownPanelSlide</include>
-			<centerleft>50%</centerleft>
-                      	<centertop>50%</centertop>
-			<width>1280</width>
-			<height>648</height>
-			<control type="button" id="8002">
-				<right>0</right>
-	                      	<bottom>468</bottom>
-				<width>72</width>
-				<height>72</height>
-				<onleft>201</onleft>
-				<onright>605</onright>
-				<onup>490</onup>
-				<ondown>8001</ondown>
-                        	<align>center</align>
-                        	<aligny>center</aligny>
-                        	<font>symbolSize36</font>
-				<textcolor>textActive</textcolor>
-				<focusedcolor>textActive</focusedcolor>
-				<textoffsetx>0</textoffsetx>
-                        	<label>x</label>
-				<texturefocus colordiffuse="sorotan">shape/dim72/roundedsquare.png</texturefocus>
-				<texturenofocus colordiffuse="overlay">shape/dim72/roundedsquare.png</texturenofocus>
+		<control type="button" id="1000">
+			<left>0</left>
+			<bottom>0</bottom>
+			<width>100%</width>
+			<height>540</height>
+				<texturefocus />
+				<texturenofocus />
+				<label></label>
+				<font></font>
 				<onclick>back</onclick>
-			</control>
+		</control>
+        	<control type="group" id="9999">
+			<animation type="windowopen">
+				<effect type="slide" start="0,-540" end="0" tween="cubic" easing="out" time="180"/>
+			</animation>
+			<animation type="windowclose">
+				<effect type="slide" start="0" end="0,-540" tween="cubic" easing="out" time="180" delay="300"/>
+			</animation>
+                    	<left>0</left>
+          		<right>0</right>
+			<height>540</height>
+			<include content="TempEvoModelDialogBottomRounded">
+				<param name="modelkey_size" value="216" />
+				<param name="modelkey_color" value="sorotdark" />
+				<param name="dimensionkey_size" value="dim216" />
+			</include>
+			<include content="TempEvoModelDialogBottomRounded">
+				<param name="modelkey_size" value="216" />
+				<param name="modelkey_color" value="CC000000" />
+				<param name="dimensionkey_size" value="dim216" />
+			</include>
 			<control type="group">
-				<left>0</left>
-				<width>612</width>
-				<height>648</height>
+				<posy>72</posy>
+				<left>64</left>
+				<right>64</right>
+				<height>108</height>
 				<control type="image">
 					<description>profile image</description>
-					<posx>0</posx>
+					<right>0</right>
 					<posy>0</posy>
 					<width>90</width>
 					<height>90</height>
@@ -59,29 +59,31 @@
 				</control>
                     		<control type="label">
                     			<posy>0</posy>
-					<posx>108</posx>
-                			<font>Font24Regular</font>
+					<right>108</right>
+                			<font>Font28Regular</font>
                      			<textcolor>FFFFFFFF</textcolor>
 					<textoffsetx>0</textoffsetx>
 					<height>36</height>
+                    			<align>right</align>
                     			<aligny>center</aligny>
-		    			<label>$LOCALIZE[10111]</label>
+		    			<label>$LOCALIZE[31201]</label>
                     		</control>
                     		<control type="label" id="1">
                     			<posy>36</posy>
-					<posx>108</posx>
+					<right>108</right>
                 			<font>Font36Regular</font>
                      			<textcolor>FFFFFFFF</textcolor>
 					<textoffsetx>0</textoffsetx>
 					<height>54</height>
+                    			<align>right</align>
                     			<aligny>center</aligny>
-		    			<label>$INFO[System.ProfileName,$LOCALIZE[31203] ,!]</label>
+		    			<label>$INFO[System.ProfileName]</label>
                     		</control>
 				<control type="button" id="101">
 					<visible>System.HasLoginScreen | Integer.IsGreater(System.ProfileCount,1)</visible>
 					<visible>System.Loggedon</visible>
 					<right>0</right>
-                         		<posy>18</posy>
+                         		<posy>90</posy>
 					<font>Font20Bold</font>
 	                		<height>54</height>
 					<align>right</align>
@@ -91,28 +93,32 @@
 					<onclick>System.LogOff</onclick>
 				</control>
                     	</control>
-               				<control type="textbox">
-                         			<description>SubTitleWindow</description>
-				<left>0</left>
-			<bottom>18</bottom>
-                         			<font>Font24Medium</font>
-				<width>612</width>
-                         			<height>54</height>
-						<aligny>center</aligny>
-						<align>left</align>
-	            				<label>$LOCALIZE[31204]</label>
-                     				<textcolor>FFFFFFFF</textcolor>
-             				</control>
+			<control type="group" id="9001">
+                    		<left>64</left>
+                    		<right>64</right>
+               			<control type="label">
+                         		<description>SubTitleWindow</description>
+					<left>0</left>
+					<bottom>18</bottom>
+                         		<font>Font24Medium</font>
+                         		<height>36</height>
+					<aligny>center</aligny>
+					<align>left</align>
+	            			<label>$LOCALIZE[31204]</label>
+                     			<textcolor>FFFFFFFF</textcolor>
+             			</control>
+				<control type="group">
+                    			<posx>0</posx>
+                    			<bottom>0</bottom>
+					<height>288</height>
         				<control type="panel" id="8001">
-				<left>632</left>
-	               	        <top>0</top>
-                        	<width>648</width>
-		                <height>648</height>
-	   					<onleft>99899</onleft>
+	               	        		<bottom>90</bottom>
+		                		<height>216</height>
+	   					<onleft>8001</onleft>
             					<onright>8001</onright>
-						<ondown>8001</ondown>
-						<onup>8002</onup>
-						<orientation>vertical</orientation>
+						<onup>101</onup>
+						<ondown>back</ondown>
+						<orientation>horizontal</orientation>
             					<scrolltime tween="cubic" easing="out">600</scrolltime>
 	    					<itemlayout width="216" height="216">
 							<control type="image">
@@ -230,8 +236,14 @@
 							</item>
 						</content>
 					</control>
-		     </control>
-
-            	</control>
+				</control>
+        		</control>
+        	</control>
+		<include content="DefaultWindowHeader">
+			<param name="visible_control">true</param>
+			<param name="header_label" value="$LOCALIZE[13000]"/>
+			<param name="subheader_label" value="$LOCALIZE[10111]"/>
+			<param name="pos_left" value="64"/>
+		</include>
 	</controls>
 </window>

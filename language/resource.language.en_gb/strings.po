@@ -108,6 +108,10 @@ msgctxt "#31036"
 msgid "Enable Debug"
 msgstr ""
 
+msgctxt "#31037"
+msgid "Reset Skin"
+msgstr ""
+
 msgctxt "#31043"
 msgid "Refresh Skin"
 msgstr ""
@@ -526,7 +530,7 @@ msgid "User Image"
 msgstr ""
 
 msgctxt "#31254"
-msgid "Colored Diamond Pattern"
+msgid "Default Pattern Background"
 msgstr ""
 
 msgctxt "#31255"
@@ -629,6 +633,14 @@ msgstr ""
 
 msgctxt "#31285"
 msgid "Widget"
+msgstr ""
+
+msgctxt "#31286"
+msgid "Enable auto-lock"
+msgstr ""
+
+msgctxt "#31287"
+msgid "Screen timeout for auto-lock (in seconds)"
 msgstr ""
 
 msgctxt "#31290"

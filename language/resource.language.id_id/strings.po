@@ -108,6 +108,10 @@ msgctxt "#31036"
 msgid "Enable Debug"
 msgstr "Aktifkan Debug"
 
+msgctxt "#31037"
+msgid "Reset Skin"
+msgstr "Atur Ulang Skin"
+
 msgctxt "#31043"
 msgid "Refresh Skin"
 msgstr "Segarkan Skin"
@@ -526,8 +530,8 @@ msgid "User Image"
 msgstr "Gambar Pengguna"
 
 msgctxt "#31254"
-msgid "Colored Diamond Pattern"
-msgstr "Pola Berlian Berwarna"
+msgid "Default Pattern Background"
+msgstr "Latar Belakang Pola Bawaan"
 
 msgctxt "#31255"
 msgid "User Image Collection"
@@ -630,6 +634,14 @@ msgstr "Latarbelakang layar kunci tersendiri"
 msgctxt "#31285"
 msgid "Widget"
 msgstr "Widget"
+
+msgctxt "#31286"
+msgid "Enable auto-lock"
+msgstr "Aktifkan kunci otomatis"
+
+msgctxt "#31287"
+msgid "Screen timeout for auto-lock (in seconds)"
+msgstr "Waktu tunggu layar ke kunci otomatis (detik)"
 
 msgctxt "#31290"
 msgid "Show Back/Close button"

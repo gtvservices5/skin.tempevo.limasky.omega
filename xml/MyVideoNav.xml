@@ -2125,6 +2125,14 @@
 			<param name="subheader_label" value="$VAR[TempEvoVideoTitleHeader]"/>
 			<param name="pos_left" value="64"/>
 		</include>
+		<include content="DefaultScrollbarsVertical">
+			<param name="control_onleft">9999</param>
+			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode) + ![Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)]</param>
+		</include>
+		<include content="DefaultScrollbarsHorizontal">
+			<param name="control_onup">9999</param>
+			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode) + [Control.IsVisible(54) | Control.IsVisible(55) | Control.IsVisible(56)]</param>
+		</include>
 		<!--Universal Status Bar-->
 		<include>StatusBarandTimeDisplay</include>
 	</controls>

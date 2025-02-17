@@ -20,21 +20,17 @@
 <!------Window Header---->
 	<include name="DefaultScrollbarsVertical">
 		<param name="visible_control">true</param>
+		<param name="control_id">5009</param>
 		<definition>
 			<control type="group">
+				<control type="scrollbar" id="$PARAM[control_id]">
 				<animation effect="fade" start="100" end="0" time="180">WindowClose</animation>
 				<animation effect="fade" start="100" end="0" time="240" condition="System.HasActiveModalDialog">Conditional</animation>
 				<animation effect="fade" start="0" end="100" delay="240" time="300">WindowOpen</animation>
-				<control type="group">
 					<right>18</right>
 					<bottom>36</bottom>
 					<width>36</width>
 					<height>846</height>
-					<control type="scrollbar" id="5009">
-						<right>0</right>
-						<top>0</top>
-						<bottom>0</bottom>
-						<width>18</width>
 						<onleft>$PARAM[control_onleft]</onleft>
 						<onright condition="![Window.IsVisible(musicplaylist) | Window.IsVisible(videoplaylist)]">noop</onright>
 						<onright condition="Window.IsVisible(musicplaylist) | Window.IsVisible(videoplaylist)">55</onright>
@@ -50,7 +46,36 @@
 						<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
 						<animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5009)">conditional</animation>
 						<visible>$PARAM[visible_control]</visible>
-					</control>
+				</control>
+			</control>
+		</definition>
+	</include>
+	<include name="DefaultScrollbarsHorizontal">
+		<param name="visible_control">true</param>
+		<param name="control_id">5008</param>
+		<definition>
+			<control type="group">
+				<control type="scrollbar" id="$PARAM[control_id]">
+				<animation effect="fade" start="100" end="0" time="180">WindowClose</animation>
+				<animation effect="fade" start="100" end="0" time="240" condition="System.HasActiveModalDialog">Conditional</animation>
+				<animation effect="fade" start="0" end="100" delay="240" time="300">WindowOpen</animation>
+					<bottom>18</bottom>
+					<left>0</left>
+					<width>100%</width>
+					<height>36</height>
+						<onup>$PARAM[control_onup]</onup>
+						<orientation>horizontal</orientation>
+						<texturesliderbackground />
+						<texturesliderbar />
+						<texturesliderbarfocus />
+						<textureslidernib colordiffuse="sorotdark">shape/statusbar/bean18px.png</textureslidernib>
+						<textureslidernibfocus colordiffuse="sorotbright">shape/statusbar/bean18px.png</textureslidernibfocus>
+                				<texturefocus />
+						<showonepage>false</showonepage>
+						<animation effect="fade" start="0" end="100" time="200" delay="300">Visible</animation>
+						<animation effect="fade" start="100" end="0" time="200">Hidden</animation>
+						<animation effect="fade" start="100" end="50" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(5009)">conditional</animation>
+						<visible>$PARAM[visible_control]</visible>
 				</control>
 			</control>
 		</definition>
@@ -62,6 +87,18 @@
 		<param name="pos_left">0</param>
 		<param name="pos_top">72</param>
 		<definition>
+			<control type="button" id="1000">
+		    		<visible>Skin.HasSetting(TempEvoOpenSideMenu)+Skin.HasSetting(TurnOnTouchMode)</visible>
+				<left>576</left>
+				<bottom>0</bottom>
+				<width>100%</width>
+				<height>100%</height>
+				<texturefocus />
+				<texturenofocus />
+				<label></label>
+				<font></font>
+				<onclick>Skin.Reset(TempEvoOpenSideMenu)</onclick>
+			</control>
 			<control type="group">
 		    		<visible>$PARAM[visible_control]</visible>
 				<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
@@ -116,6 +153,59 @@
                 					<ondown>noop</ondown>
 							<onback>9999</onback>
 							<include>ContentSideMenu</include>
+            					</control>
+					</control>
+					<control type="group">
+		    				<visible>Skin.HasSetting(TempEvoOpenSideMenu)+Skin.HasSetting(TurnOnTouchMode)</visible>
+						<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
+                   				<left>46</left>
+                   				<right>18</right>
+						<bottom>-108</bottom>
+	                       			<height>90</height>
+						<control type="button" id="5980">
+							<left>0</left>
+							<bottom>-36</bottom>
+							<width>100%</width>
+							<height>144</height>
+							<texturefocus />
+							<texturenofocus />
+							<label></label>
+							<font></font>
+							<onclick>noop</onclick>
+						</control>
+            					<control type="grouplist" id="598">
+                					<description>control area</description>
+							<posy>0</posy>
+							<itemgap>18</itemgap>
+							<orientation>horizontal</orientation>
+							<control type="button" id="5981">
+								<width>90</width>
+								<height>90</height>
+                        					<align>center</align>
+                        					<aligny>center</aligny>
+                        					<font>symbolSize54</font>
+								<textcolor>textActive</textcolor>
+								<focusedcolor>textActive</focusedcolor>
+								<textoffsetx>6</textoffsetx>
+                        					<label></label>
+								<texturefocus colordiffuse="sorotan">shape/dim90/roundedsquare.png</texturefocus>
+								<texturenofocus colordiffuse="CC000000">shape/dim90/roundedsquare.png</texturenofocus>
+								<onclick>back</onclick>
+							</control>
+							<control type="button" id="5982">
+								<width>90</width>
+								<height>90</height>
+                        					<align>center</align>
+                        					<aligny>center</aligny>
+                        					<font>symbolSize54</font>
+								<textcolor>textActive</textcolor>
+								<focusedcolor>textActive</focusedcolor>
+								<textoffsetx>6</textoffsetx>
+                        					<label>↸</label>
+								<texturefocus colordiffuse="sorotan">shape/dim90/roundedsquare.png</texturefocus>
+								<texturenofocus colordiffuse="CC000000">shape/dim90/roundedsquare.png</texturenofocus>
+								<onclick>ActivateWindow(home)</onclick>
+							</control>
             					</control>
 					</control>
                     		</control>

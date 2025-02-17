@@ -121,7 +121,7 @@
 	                       	<colordiffuse>FF000000</colordiffuse>
 	                    </control>
 			<control type="image">
-				<visible>Skin.HasSetting(ColoredDiamondPatternSetting)</visible>
+				<visible>Skin.HasSetting(DefaultPatternBGSetting)</visible>
             			<include>fadeInOutVisible</include>
 	                        <posx>0</posx>
 	                        <posy>0</posy>
@@ -279,7 +279,7 @@
 	                       	<colordiffuse>FF000000</colordiffuse>
 	                    </control>
 			<control type="image">
-				<visible>Skin.HasSetting(ColoredDiamondPatternSetting)</visible>
+				<visible>Skin.HasSetting(DefaultPatternBGSetting)</visible>
             			<include>fadeInOutVisible</include>
 	                        <posx>0</posx>
 	                        <posy>0</posy>
@@ -335,6 +335,19 @@
 							<param name="modelkey_color" value="latarcolor" />
 							<param name="dimensionkey_size" value="dim72" />
 						</include>
+            					<control type="button" id="91340">
+							<visible>![Skin.HasSetting(UserImageSetting)|Skin.HasSetting(UserMultiImageSetting)|Skin.HasSetting(UserVideoSetting)|Skin.HasSetting(SolidColorSetting)|Skin.HasSetting(DefaultPatternBGSetting)]</visible>
+                					<description></description>
+							<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+							<focusedcolor>textActive</focusedcolor>
+                     					<font>Font22Bold</font>
+							<bottom>0</bottom>
+	                       				<width>100%</width>
+							<height>72</height>
+							<onup>9133</onup>
+							<ondown>9136</ondown>
+							<onright>9135</onright>
+            					</control>
             					<control type="button" id="91341">
 							<visible>Skin.HasSetting(UserImageSetting)</visible>
                 					<description>Background Path</description>
@@ -399,6 +412,24 @@
 							<ondown>9136</ondown>
 							<onright>9135</onright>
 							<onclick>Skin.SetColor(SolidColorPicked,31269)</onclick>
+            					</control>
+            					<control type="button" id="91345">
+							<visible>Skin.HasSetting(DefaultPatternBGSetting)</visible>
+                					<description>Background Path</description>
+							<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+							<focusedcolor>textActive</focusedcolor>
+                     					<font>Font22Bold</font>
+	                       				<width>100%</width>
+							<height>72</height>
+							<bottom>0</bottom>
+							<label>31261</label>
+							<label2>$INFO[Skin.String(DefaultBackgroundPola)]</label2>
+							<onup>9133</onup>
+							<ondown>9136</ondown>
+							<onright>9135</onright>
+							<onclick condition="String.isEmpty(Skin.String(DefaultBackgroundPola))">Skin.SetString(DefaultBackgroundPola,1)</onclick>
+							<onclick condition="String.isEqual(Skin.String(DefaultBackgroundPola),1)">Skin.SetString(DefaultBackgroundPola,2)</onclick>
+							<onclick condition="String.isEqual(Skin.String(DefaultBackgroundPola),2)">Skin.Reset(DefaultBackgroundPola)</onclick>
             					</control>
 					</control>
 						<control type="group" id="9135">

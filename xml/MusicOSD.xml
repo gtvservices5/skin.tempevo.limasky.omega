@@ -478,14 +478,6 @@
 								<label>$LOCALIZE[13396]</label>
 								<onclick>ActivateWindow(osdaudiosettings)</onclick>
 							</item>
-							<item id="6">
-								<property name="IconLabel"></property>
-								<label>$LOCALIZE[31133]</label>
-								<label2>$LOCALIZE[31082]</label2>
-								<onclick>Dialog.Close(musicosd)</onclick>
-								<onclick>Notification($LOCALIZE[31221], $LOCALIZE[31222], 10000)</onclick>
-								<onclick>Skin.SelectBool(31082, 31270|TempEvoMuVizhasWindow, 31271|TempEvoMuVizhasAnimatedBackground, 31272|TempEvoMuVizhasSimpleMod)</onclick>
-							</item>
 						</content>
 					</control>
 				</control>

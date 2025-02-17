@@ -42,6 +42,8 @@
 					<onup>20</onup>
 					<ondown>noop</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
+                			<onright>60</onright>
+					<pagecontrol>60</pagecontrol>
             			</control>
                		</control>
 			<control type="group">
@@ -141,6 +143,11 @@
                         <height>1</height>
 			<label></label>
              	</control>
+		<include content="DefaultScrollbarsVertical">
+			<param name="control_id">60</param>
+			<param name="control_onleft">9999</param>
+			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode)</param>
+		</include>
 		<include content="DefaultWindowHeader">
 			<param name="visible_control">true</param>
 			<param name="sidemenu_visible">false</param>

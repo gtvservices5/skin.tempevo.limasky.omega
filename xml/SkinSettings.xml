@@ -20,8 +20,9 @@
 				<onup>noop</onup>
 				<onright condition="Container(9010).HasFocus(1)">9101</onright>
 				<onright condition="Container(9010).HasFocus(2)">9110</onright>
-				<onright condition="Container(9010).HasFocus(3)">9121</onright>
-				<onright condition="Container(9010).HasFocus(4)">9131</onright>
+				<onright condition="Container(9010).HasFocus(3)">9133</onright>
+				<onright condition="Container(9010).HasFocus(4)">9140</onright>
+				<onright condition="Container(9010).HasFocus(5)">9150</onright>
 				<orientation>vertical</orientation>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 	                	<itemlayout width="348" height="54">
@@ -80,17 +81,17 @@
 					<item id="3">
 						<label>$LOCALIZE[31111]</label>
 						<label2></label2>
-						<onclick>Control.SetFocus(91210)</onclick>
+						<onclick>Control.SetFocus(9133)</onclick>
 					</item>
 					<item id="4">
 						<label>$LOCALIZE[31280]</label>
 						<label2></label2>
-						<onclick>Control.SetFocus(9131)</onclick>
+						<onclick>Control.SetFocus(9140)</onclick>
 					</item>
 					<item id="5">
 						<label>$LOCALIZE[31044]</label>
 						<label2></label2>
-						<onclick>Control.SetFocus(9141)</onclick>
+						<onclick>Control.SetFocus(9150)</onclick>
 					</item>
 				</content>
 			</control>
@@ -102,9 +103,10 @@
 	           		<bottom>0</bottom>
 	                       	<height>882</height>
 				<onleft>9010</onleft>
-				<onright>noop</onright>
                 		<onup>noop</onup>
                 		<ondown>noop</ondown>
+                				<onright>5009</onright>
+				<pagecontrol>5009</pagecontrol>
 				<control type="label" id="999901">
 					<label>$LOCALIZE[16000]</label>
 					<textoffsetx>18</textoffsetx>
@@ -161,6 +163,7 @@
 					<selected>Skin.HasSetting(NoAnimationInSkin)</selected>
 				</control>
 				<control type="button" id="9105">
+					<enable>false</enable>
 					<description>Dummy Dimness screen</description>
 					<width>100%</width>
 					<label>$LOCALIZE[31276]</label>
@@ -543,7 +546,7 @@
 										<property name="trueselected">$VAR[SolidBlackSetOn]</property>
 										<onclick>Skin.Reset(SolidBlackSetting)</onclick>
 										<onclick>Skin.Reset(SolidColorSetting)</onclick>
-										<onclick>Skin.Reset(ColoredDiamondPatternSetting)</onclick>
+										<onclick>Skin.Reset(DefaultPatternBGSetting)</onclick>
 										<onclick>Skin.Reset(UserImageSetting)</onclick>
 										<onclick>Skin.Reset(UserMultiImageSetting)</onclick>
 										<onclick>Skin.Reset(UserVideoSetting)</onclick>
@@ -558,7 +561,7 @@
 										<onclick>Skin.SetBool(SolidColorSetting)</onclick>
 										<onclick>Skin.SetString(SolidColorPicked,highlight)</onclick>
 										<onclick>Skin.Reset(SolidBlackSetting)</onclick>
-										<onclick>Skin.Reset(ColoredDiamondPatternSetting)</onclick>
+										<onclick>Skin.Reset(DefaultPatternBGSetting)</onclick>
 										<onclick>Skin.Reset(UserImageSetting)</onclick>
 										<onclick>Skin.Reset(UserMultiImageSetting)</onclick>
 										<onclick>Skin.Reset(UserVideoSetting)</onclick>
@@ -569,8 +572,8 @@
 										<thumb>$VAR[SolidColorPathBackground]</thumb>
 										<icon></icon>
 										<property name="coloricon"></property>
-										<property name="trueselected">$VAR[ColoredDiamondPatternSetOn]</property>
-										<onclick>Skin.SetBool(ColoredDiamondPatternSetting)</onclick>
+										<property name="trueselected">$VAR[DefaultPatternBGSetOn]</property>
+										<onclick>Skin.SetBool(DefaultPatternBGSetting)</onclick>
 										<onclick>Skin.Reset(SolidBlackSetting)</onclick>
 										<onclick>Skin.Reset(SolidColorSetting)</onclick>
 										<onclick>Skin.Reset(UserImageSetting)</onclick>
@@ -587,7 +590,7 @@
 										<onclick>Skin.SetBool(UserImageSetting)</onclick>
 										<onclick>Skin.Reset(SolidBlackSetting)</onclick>
 										<onclick>Skin.Reset(SolidColorSetting)</onclick>
-										<onclick>Skin.Reset(ColoredDiamondPatternSetting)</onclick>
+										<onclick>Skin.Reset(DefaultPatternBGSetting)</onclick>
 										<onclick>Skin.Reset(UserMultiImageSetting)</onclick>
 										<onclick>Skin.Reset(UserVideoSetting)</onclick>
 										<onclick>Skin.SetBool(aspectratiowallpaperscale)</onclick>
@@ -606,7 +609,7 @@
 										<onclick>Skin.SetBool(UserMultiImageSetting)</onclick>
 										<onclick>Skin.Reset(SolidBlackSetting)</onclick>
 										<onclick>Skin.Reset(SolidColorSetting)</onclick>
-										<onclick>Skin.Reset(ColoredDiamondPatternSetting)</onclick>
+										<onclick>Skin.Reset(DefaultPatternBGSetting)</onclick>
 										<onclick>Skin.Reset(UserImageSetting)</onclick>
 										<onclick>Skin.Reset(UserVideoSetting)</onclick>
 										<onclick>Skin.SetBool(aspectratiowallpaperscale)</onclick>
@@ -625,7 +628,7 @@
 										<onclick>Skin.SetBool(UserVideoSetting)</onclick>
 										<onclick>Skin.Reset(SolidBlackSetting)</onclick>
 										<onclick>Skin.Reset(SolidColorSetting)</onclick>
-										<onclick>Skin.Reset(ColoredDiamondPatternSetting)</onclick>
+										<onclick>Skin.Reset(DefaultPatternBGSetting)</onclick>
 										<onclick>Skin.Reset(UserImageSetting)</onclick>
 										<onclick>Skin.Reset(UserMultiImageSetting)</onclick>
 									</item>
@@ -790,6 +793,27 @@
 					<onclick>Skin.ToggleSetting(LockscreenDockingMode)</onclick>
 					<selected>Skin.HasSetting(LockscreenDockingMode)</selected>
 				</control>
+				<control type="radiobutton" id="9144">
+					<description>Autolock</description>
+					<width>100%</width>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<label>31286</label>
+					<onclick>Skin.ToggleSetting(LockscreenAutolock)</onclick>
+					<selected>Skin.HasSetting(LockscreenAutolock)</selected>
+				</control>
+				<control type="radiobutton" id="9145">
+					<description>Autolock timer</description>
+					<width>100%</width>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<label>31287</label>
+					<label2>$VAR[SkinLockscreenAutolockTime]</label2>
+					<onclick>Skin.SetNumeric(LockscreenAutolockTime)</onclick>
+					<enable>Skin.HasSetting(LockscreenAutolock)</enable>
+				</control>
 				<control type="label" id="999909">
 					<label>$LOCALIZE[31045]</label>
 					<textoffsetx>18</textoffsetx>
@@ -819,8 +843,61 @@
 					<font>Font24Bold</font>
 					<textcolor>textActive</textcolor>
 				</control>
+				<control type="radiobutton" id="9150">
+					<description>Grid Debug</description>
+					<width>100%</width>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<label>31034</label>
+					<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
+					<selected>Skin.HasSetting(DebugGrid)</selected>
+				</control>
+				<control type="radiobutton" id="9151">
+					<description>DebugInfo</description>
+					<width>100%</width>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<label>31035</label>
+					<onclick>Skin.ToggleSetting(DebugInfo)</onclick>
+					<selected>Skin.HasSetting(DebugInfo)</selected>
+				</control>
+				<control type="button" id="9152">
+					<description>Debug</description>
+					<width>100%</width>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<label>31036</label>
+					<onclick>Skin.ToggleDebug</onclick>
+				</control>
+				<control type="button" id="9153">
+					<description>Refresh Skin</description>
+					<width>100%</width>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<label>31043</label>
+					<onclick>ReloadSkin()</onclick>
+					<onclick>activateWindow(home)</onclick>
+				</control>
+				<control type="button" id="9154">
+					<description>Reset Skin</description>
+					<width>100%</width>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<label>31037</label>
+					<onclick>Skin.ResetSettings</onclick>
+					<onclick>activateWindow(home)</onclick>
+				</control>
 			</control>
 		</control>
+		<include content="DefaultScrollbarsVertical">
+			<param name="control_onleft">9999</param>
+			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode)</param>
+		</include>
 		<include content="DefaultWindowHeader">
 			<param name="visible_control">true</param>
 			<param name="header_label" value="$LOCALIZE[10035]"/>

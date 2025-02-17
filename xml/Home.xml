@@ -39,7 +39,7 @@
 					<onfocus>Skin.Reset(TempEvoSettingWindow)</onfocus>
 					<onfocus>Skin.Reset(TempEvoShutdownWindow)</onfocus>
 					<onfocus>Skin.Reset(TempEvoAboutWindow)</onfocus>
-					<onfocus>Skin.Reset(TempEvoVideoSideMenu)</onfocus>
+					<onfocus>Skin.Reset(TempEvoOpenSideMenu)</onfocus>
 					<focusposition>2</focusposition>
 	                		<orientation>vertical</orientation>
 					<scrolltime easing="out" tween="sine">240</scrolltime>
@@ -2124,7 +2124,7 @@
 							<onclick>Skin.Reset(TempEvoShutdownWindow)</onclick>
 							<onclick>Skin.Reset(TempEvoAboutWindow)</onclick>
 							<onclick>Skin.SetBool(TempEvoSearchWindow)</onclick>
-							<onclick>AlarmClock(TempEvoSearchWindowbutton,Control.SetFocus(91221),00:01,silent)</onclick>
+							<onclick>Control.SetFocus(91221)</onclick>
 						</item>
 						<item id="2">
 							<label>$LOCALIZE[5]</label>
@@ -2134,7 +2134,7 @@
 							<onclick>Skin.Reset(TempEvoSearchWindow)</onclick>
 							<onclick>Skin.Reset(TempEvoAboutWindow)</onclick>
 							<onclick>Skin.SetBool(TempEvoSettingWindow)</onclick>
-							<onclick>AlarmClock(TempEvoSettingWindowbutton,Control.SetFocus(91222),00:01,silent)</onclick>
+							<onclick>Control.SetFocus(91222)</onclick>
 						</item>
 						<item id="3">
 							<label>$LOCALIZE[10111]</label>
@@ -2144,7 +2144,7 @@
 							<onclick>Skin.Reset(TempEvoSettingWindow)</onclick>
 							<onclick>Skin.Reset(TempEvoAboutWindow)</onclick>
 							<onclick>Skin.SetBool(TempEvoShutdownWindow)</onclick>
-							<onclick>AlarmClock(TempEvoShutdownWindowbutton,Control.SetFocus(91223),00:01,silent)</onclick>
+							<onclick>Control.SetFocus(91223)</onclick>
 						</item>
 						<item id="4">
 							<label>$LOCALIZE[31007]</label>
@@ -2154,7 +2154,7 @@
 							<onclick>Skin.Reset(TempEvoSettingWindow)</onclick>
 							<onclick>Skin.Reset(TempEvoShutdownWindow)</onclick>
 							<onclick>Skin.SetBool(TempEvoAboutWindow)</onclick>
-							<onclick>AlarmClock(TempEvoAboutWindowbutton,Control.SetFocus(91224),00:01,silent)</onclick>
+							<onclick>Control.SetFocus(91224)</onclick>
 						</item>
 					</content>
 	            		</control>
@@ -2172,13 +2172,16 @@
 							<param name="set_focusvalue" value="Control.SetFocus(9122)"/>
 						</include>
 						<control type="panel" id="91221">
-							<visible>Skin.HasSetting(TempEvoSearchWindow)</visible>
+							<visible allowhiddenfocus="true">Skin.HasSetting(TempEvoSearchWindow)</visible>
 							<animation type="visible" loop="false" reversible="false">
 								<effect type="fade" start="0" end="100" time="180" delay="180"/>
 							</animation>
 							<animation type="hidden" loop="false" reversible="false">
 								<effect type="fade" start="100" end="0" time="180"/>
 							</animation>
+        						<animation type="conditional" condition="!Skin.HasSetting(TempEvoSearchWindow)">
+            							<effect type="slide" start="0,0" end="0,1080" time="0"/>
+        						</animation>
                    					<left>396</left>
                  					<bottom>18</bottom>
 							<width>316</width>
@@ -2276,13 +2279,16 @@
 							<param name="set_focusvalue" value="Control.SetFocus(9122)"/>
 						</include>
 						<control type="panel" id="91222">
-							<visible>Skin.HasSetting(TempEvoSettingWindow)</visible>
+							<visible allowhiddenfocus="true">Skin.HasSetting(TempEvoSettingWindow)</visible>
 							<animation type="visible" loop="false" reversible="false">
 								<effect type="fade" start="0" end="100" time="180" delay="180"/>
 							</animation>
 							<animation type="hidden" loop="false" reversible="false">
 								<effect type="fade" start="100" end="0" time="180"/>
 							</animation>
+        						<animation type="conditional" condition="!Skin.HasSetting(TempEvoSettingWindow)">
+            							<effect type="slide" start="0,0" end="0,1080" time="0"/>
+        						</animation>
                    					<left>396</left>
                  					<bottom>18</bottom>
 							<width>316</width>
@@ -2428,13 +2434,16 @@
 							<param name="set_focusvalue" value="Control.SetFocus(9122)"/>
 						</include>
 						<control type="panel" id="91223">
-							<visible>Skin.HasSetting(TempEvoShutdownWindow)</visible>
+							<visible allowhiddenfocus="true">Skin.HasSetting(TempEvoShutdownWindow)</visible>
 							<animation type="visible" loop="false" reversible="false">
 								<effect type="fade" start="0" end="100" time="180" delay="180"/>
 							</animation>
 							<animation type="hidden" loop="false" reversible="false">
 								<effect type="fade" start="100" end="0" time="180"/>
 							</animation>
+        						<animation type="conditional" condition="!Skin.HasSetting(TempEvoShutdownWindow)">
+            							<effect type="slide" start="0,0" end="0,1080" time="0"/>
+        						</animation>
                    					<left>396</left>
                  					<bottom>18</bottom>
 							<width>316</width>
@@ -2577,13 +2586,16 @@
 							<param name="set_focusvalue" value="Control.SetFocus(9122)"/>
 						</include>
 						<control type="panel" id="91224">
-							<visible>Skin.HasSetting(TempEvoAboutWindow)</visible>
+							<visible allowhiddenfocus="true">Skin.HasSetting(TempEvoAboutWindow)</visible>
 							<animation type="visible" loop="false" reversible="false">
 								<effect type="fade" start="0" end="100" time="180" delay="180"/>
 							</animation>
 							<animation type="hidden" loop="false" reversible="false">
 								<effect type="fade" start="100" end="0" time="180"/>
 							</animation>
+        						<animation type="conditional" condition="!Skin.HasSetting(TempEvoAboutWindow)">
+            							<effect type="slide" start="0,0" end="0,1080" time="0"/>
+        						</animation>
                    					<left>396</left>
                  					<bottom>18</bottom>
 							<width>316</width>
@@ -2592,8 +2604,8 @@
 							<onright>noop</onright>
 							<onup>noop</onup>
 							<ondown>noop</ondown>
-							<onback>Skin.Reset(TempEvoAboutWindow)</onback>
 							<onback>Control.SetFocus(9122)</onback>
+							<onback>Skin.Reset(TempEvoAboutWindow)</onback>
 							<orientation>vertical</orientation>
 							<scrolltime easing="inout" tween="sine">300</scrolltime>
 							<itemlayout width="288" height="63">

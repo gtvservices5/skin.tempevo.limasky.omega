@@ -2574,6 +2574,14 @@
         		</control>
 	        </control>
 	        </control>
+		<include content="DefaultScrollbarsVertical">
+			<param name="control_onleft">9999</param>
+			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode) + ![Control.IsVisible(52)]</param>
+		</include>
+		<include content="DefaultScrollbarsHorizontal">
+			<param name="control_onup">9999</param>
+			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode) + [Control.IsVisible(52)]</param>
+		</include>
 		<include content="DefaultWindowHeader">
 			<param name="visible_control">true</param>
 			<param name="header_label" value="$LOCALIZE[292]"/>

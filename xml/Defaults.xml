@@ -222,7 +222,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <shadowcolor></shadowcolor>
-        <texturefocus colordiffuse="textboxInactive">colors/black.png</texturefocus>
+        <texturefocus colordiffuse="sorotdark">colors/white.png</texturefocus>
         <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>

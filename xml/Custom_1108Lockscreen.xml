@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1108">
 	<defaultcontrol always="true">9909</defaultcontrol>
+	<onload condition="!Skin.HasSetting(LockscreenisActive)">action(back)</onload>
 	<onload condition="Skin.HasSetting(LockscreenDockingMode)">AlarmClock(satuidlemodebegin,Control.SetFocus(2010,0,absolute),00:00:05,silent)</onload>
 	<onunload condition="Skin.HasSetting(LockscreenDockingMode)">CancelAlarm(satuidlemodebegin,silent)</onunload>
 	<controls>

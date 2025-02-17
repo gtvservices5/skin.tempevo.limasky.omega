@@ -1364,9 +1364,12 @@
 	
 <!--Model---------------------------------------------------------------------------------------------------------------->
 	<include name="TempEvoModelListVerticalRounded">
+		<param name="topmodel_visible">true</param>
+		<param name="bottommodel_visible">true</param>
 		<definition>
 		<control type="group">
 			<control type="image">
+				<visible>$PARAM[topmodel_visible]</visible>
 				<left>0</left>
 				<top>0</top>
 				<width>$PARAM[modelkey_size]</width>
@@ -1389,6 +1392,7 @@
 	                    	</control>
 			</control>
 			<control type="image">
+				<visible>$PARAM[bottommodel_visible]</visible>
 				<bottom>0</bottom>
 				<left>0</left>
 				<width>$PARAM[modelkey_size]</width>
@@ -1402,9 +1406,12 @@
 		</definition>
 	</include>
 	<include name="TempEvoModelListVerticalRound">
+		<param name="topmodel_visible">true</param>
+		<param name="bottommodel_visible">true</param>
 		<definition>
 		<control type="group">
 			<control type="image">
+				<visible>$PARAM[topmodel_visible]</visible>
 				<left>0</left>
 				<top>0</top>
 				<width>$PARAM[modelkey_size]</width>
@@ -1427,6 +1434,7 @@
 	                    	</control>
 			</control>
 			<control type="image">
+				<visible>$PARAM[bottommodel_visible]</visible>
 				<bottom>0</bottom>
 				<left>0</left>
 				<width>$PARAM[modelkey_size]</width>
@@ -1440,9 +1448,12 @@
 		</definition>
 	</include>
 	<include name="TempEvoModelListHorizontalRound">
+		<param name="leftmodel_visible">true</param>
+		<param name="rightmodel_visible">true</param>
 		<definition>
 		<control type="group">
 			<control type="image">
+				<visible>$PARAM[leftmodel_visible]</visible>
 				<left>0</left>
 				<posy>0</posy>
 				<width>$PARAM[modelkey_size]</width>
@@ -1465,6 +1476,7 @@
 	                    	</control>
 			</control>
 			<control type="image">
+				<visible>$PARAM[rightmodel_visible]</visible>
 				<right>0</right>
 				<posy>0</posy>
 				<width>$PARAM[modelkey_size]</width>
@@ -1478,9 +1490,12 @@
 		</definition>
 	</include>
 	<include name="TempEvoModelListHorizontalRounded">
+		<param name="leftmodel_visible">true</param>
+		<param name="rightmodel_visible">true</param>
 		<definition>
 		<control type="group">
 			<control type="image">
+				<visible>$PARAM[leftmodel_visible]</visible>
 				<left>0</left>
 				<posy>0</posy>
 				<width>$PARAM[modelkey_size]</width>
@@ -1503,6 +1518,7 @@
 	                    	</control>
 			</control>
 			<control type="image">
+				<visible>$PARAM[rightmodel_visible]</visible>
 				<right>0</right>
 				<posy>0</posy>
 				<width>$PARAM[modelkey_size]</width>

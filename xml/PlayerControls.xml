@@ -15,7 +15,7 @@
 			<left>0</left>
 			<bottom>0</bottom>
 			<width>100%</width>
-			<height>100%</height>
+			<height>540</height>
 				<texturefocus />
 				<texturenofocus />
 				<label></label>
