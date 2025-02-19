@@ -8,12 +8,7 @@
 			<bottom>54</bottom>
 			<width>468</width>
 			<height>900</height>
-			<animation type="windowopen">
-            			<effect type="slide" start="540,0" end="0,0" tween="cubic" easing="out" time="180"/>
-			</animation>
-			<animation type="windowclose">
-            			<effect type="slide" start="0,0" end="540,0" tween="cubic" easing="in" time="180"/>
-			</animation>
+				<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideLeftDialog</include>
 			<include content="TempEvoModelDialogLeftRounded">
 				<param name="modelkey_size" value="180" />
 				<param name="modelkey_color" value="sorotbright" />
@@ -36,12 +31,6 @@
 		<control type="group">
 			<right>54</right>
                		<control type="label">
-				<animation type="windowopen">
-            				<effect type="fade" start="0" end="100" delay="200" time="200"/>
-        			</animation>
-				<animation type="windowclose">
-            				<effect type="fade" start="100" end="0" delay="0" time="100"/>
-        			</animation>
                          	<description>TitleWindow</description>
 				<posx>18</posx>
                          	<posy>0</posy>
@@ -53,12 +42,6 @@
 				<label>$LOCALIZE[10106]</label>
              		</control>
                		<control type="label">
-				<animation type="windowopen">
-            				<effect type="fade" start="0" end="100" delay="200" time="200"/>
-        			</animation>
-				<animation type="windowclose">
-            				<effect type="fade" start="100" end="0" delay="0" time="100"/>
-        			</animation>
                          	<description>TitleWindow</description>
 				<posx>18</posx>
                          	<posy>54</posy>
@@ -75,12 +58,6 @@
                     			<bottom>1</bottom>
 					<height>791</height>
 				<control type="grouplist" id="996">
-					<animation type="windowopen">
-            					<effect type="fade" start="0" end="100" delay="200" time="200"/>
-        				</animation>
-					<animation type="windowclose">
-            					<effect type="fade" start="100" end="0" delay="0" time="100"/>
-        				</animation>
                     			<left>0</left>
                     			<bottom>0</bottom>
 					<height>791</height>

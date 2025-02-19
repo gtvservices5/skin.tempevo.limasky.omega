@@ -846,9 +846,6 @@
 					<label>$VAR[TempEvoSubTitleMediaFullscreen]$VAR[TempEvoSecTitleMediaFullscreen, - ,]</label>
 				</control>
 				<control type="progress">
-					<animation type="Conditional" condition="window.isactive(1122) + !Skin.HasSetting(TempEvoLockOnlyOneLayout)">
-						<effect type="fade" start="100" end="25" time="300" delay="0"/>
-					</animation>
 		                	<description>Progress Bar</description>
 					<left>0</left>
 					<top>324</top>

@@ -77,7 +77,7 @@
 	            		</control>
 		</definition>
 	</include>
-<!--recommendation dot----------------------------------------------------------------------------------------------------->
+<!--recommendation dot-->
 	<include name="TempEvoPanelVideoRecommendation">
 		<param name="control_browsemode">auto</param>
 		<param name="control_listlimit">12</param>
@@ -254,7 +254,7 @@
             				</control>
 		</definition>
 	</include>
-<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster-->
 	<include name="TempEvoWidgetPosterLayoutHome">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -262,6 +262,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -352,7 +353,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -393,6 +394,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -482,7 +484,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -516,7 +518,7 @@
 	</include>
 
 
-<!--Episode----------------------------------------------------------------------------------------------------------------->
+<!--Episode-->
 	<include name="TempEvoWidgetEpisodeLayoutHome">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -524,6 +526,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -622,7 +625,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -663,6 +666,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -757,7 +761,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -789,7 +793,7 @@
             				</control>
 		</definition>
 	</include>
-<!--MusicVideo----------------------------------------------------------------------------------------------------------------->
+<!--MusicVideo-->
 	<include name="TempEvoWidgetMusicVideoLayoutHome">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -797,6 +801,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -893,7 +898,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -934,6 +939,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1029,7 +1035,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1061,7 +1067,7 @@
             				</control>
 		</definition>
 	</include>
-<!--Artist/Actor----------------------------------------------------------------------------------------------------------------->
+<!--Artist/Actor-->
 	<include name="TempEvoWidgetActorArtLayout">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -1071,6 +1077,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1230,7 +1237,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1264,11 +1271,12 @@
 	</include>
 
 
-<!--Album&Song----------------------------------------------------------------------------------------------------------------->
+<!--Album&Song-->
 	<include name="TempEvoWidgetMusicLayoutHome">
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
 						<height>396</height>
 						<control type="group">
 	                        			<posx>324</posx>
@@ -1358,7 +1366,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1399,6 +1407,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1540,7 +1549,7 @@
 	                        							<top>9</top>
 				              				 		<width>18</width>
 				              				 		<height>18</height>
-                									<font>SymbolSize18</font>
+                									<font>symbolSize18</font>
                     									<aligny>center</aligny>
 		    									<label></label>
                      									<textcolor>FFFFFFFF</textcolor>
@@ -1603,7 +1612,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1644,6 +1653,7 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1785,7 +1795,7 @@
 	                        							<top>9</top>
 				              				 		<width>18</width>
 				              				 		<height>18</height>
-                									<font>SymbolSize18</font>
+                									<font>symbolSize18</font>
                     									<aligny>center</aligny>
 		    									<label></label>
                      									<textcolor>FFFFFFFF</textcolor>
@@ -1848,7 +1858,7 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
-                						<font>SymbolSize72</font>
+                						<font>symbolSize72</font>
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1888,7 +1898,7 @@
 
 
 
-<!--Setting on Home Layout----------------------------------------------------------------------------------------------------------------->
+<!--Setting on Home Layout-->
 	<include name="TempEvoMiniWindowonHome">
 		<definition>
 			<control type="button" id="1000">
@@ -1980,23 +1990,4 @@
 			</control>
 		</definition>
 	</include>
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
-<!--Poster----------------------------------------------------------------------------------------------------------------->
 </includes>
