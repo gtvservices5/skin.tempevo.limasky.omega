@@ -93,7 +93,7 @@
 					</control>
 					<control type="button" id="23">
 						<description>backspace button</description>
-		                        	<font>SymbolSize36</font>
+		                        	<font>symbolSize36</font>
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>23</onup>
@@ -132,7 +132,7 @@
 					</control>
 					<control type="button" id="21">
 						<description>done button</description>
-		                        	<font>SymbolSize36</font>
+		                        	<font>symbolSize36</font>
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>23</onup>
@@ -171,7 +171,7 @@
 					</control>
 					<control type="button" id="901">
 						<description>debug button</description>
-		                        	<font>SymbolSize36</font>
+		                        	<font>symbolSize36</font>
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>21</onup>
@@ -189,7 +189,7 @@
 					<onright>95200</onright>
 					<control type="button" id="20">
 						<description>prev button</description>
-		                        	<font>SymbolSize36</font>
+		                        	<font>symbolSize36</font>
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>17</onup>
@@ -204,7 +204,7 @@
 					</control>
 					<control type="button" id="22">
 						<description>next button</description>
-		                        	<font>SymbolSize36</font>
+		                        	<font>symbolSize36</font>
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>19</onup>
@@ -212,7 +212,7 @@
 					</control>
 					<control type="button" id="990">
 						<description>cancel button</description>
-		                        	<font>SymbolSize36</font>
+		                        	<font>symbolSize36</font>
 						<label></label>
 						<onclick>back</onclick>
 						<include>DefaultNumericButton</include>

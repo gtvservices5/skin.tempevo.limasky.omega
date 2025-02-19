@@ -194,6 +194,7 @@
              					</focusedlayout>
 						<content>
 							<item id="1">
+								<visible>Skin.HasSetting(LockscreenisActive)</visible>
 								<label2></label2>
 								<label>$LOCALIZE[13014]</label>
 								<onclick>Dialog.Close(all)</onclick>

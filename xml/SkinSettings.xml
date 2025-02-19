@@ -229,7 +229,7 @@
 					<selected>!Skin.HasSetting(disableMusicVideos)</selected>
 				</control>
 				<control type="radiobutton" id="9114">
-					<description>Disable Videos & Music</description>
+					<description>Disable Videos and Music</description>
 					<width>100%</width>
 					<label>14211</label>
 					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
@@ -403,7 +403,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-		                        					<font>SymbolSize36</font>
+		                        					<font>symbolSize36</font>
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Property(trueselected)]</label>
 		           						</control>
@@ -414,7 +414,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-		                        					<font>SymbolSize72</font>
+		                        					<font>symbolSize72</font>
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Label2]</label>
 		           						</control>
@@ -509,7 +509,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-		                        					<font>SymbolSize36</font>
+		                        					<font>symbolSize36</font>
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Property(trueselected)]</label>
 		           						</control>
@@ -520,7 +520,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-		                        					<font>SymbolSize72</font>
+		                        					<font>symbolSize72</font>
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Label2]</label>
 		           						</control>

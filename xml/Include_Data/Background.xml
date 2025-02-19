@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<!--Wallpaper------------------------------------------------------------------------------------------------------------->
+<!--Wallpaper-->
 	<include name="UniversalGlobalBackground">
 		<control type="group">
 			<include>dimensionsFullscreen</include>
@@ -60,6 +60,22 @@
 				<texture>colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>80FFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<visible>window.isactive(home)+Skin.HasSetting(SolidColorSetting)</visible>
+				<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
+				<include>dimensionsFullscreen</include>
+				<texture>Pattern/1080.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>40FFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<visible>!window.isactive(home)+!Skin.HasSetting(SetAlltoUniBackground)</visible>
+				<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
+				<include>dimensionsFullscreen</include>
+				<texture>Pattern/Pattern1.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>40FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<visible>!window.isactive(home)+Skin.HasSetting(SetAlltoUniBackground)</visible>

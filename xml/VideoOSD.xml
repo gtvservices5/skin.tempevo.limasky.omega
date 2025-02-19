@@ -239,7 +239,7 @@
 						<action>seek</action>
 						<onleft>noop</onleft>
 						<onright>noop</onright>
-						<onup>back</onup>
+						<onup>8005</onup>
 						<ondown>210</ondown>
 						<onfocus>Skin.Reset(TempEvoOSDOpenPageDesc)</onfocus>
 						<onfocus>Skin.Reset(TempEvoOSDDefaultPageChange)</onfocus>
@@ -603,6 +603,78 @@
 					<onclick>ActivateWindow(videobookmarks)</onclick>
 				</control>
 			</control>
+			<control type="grouplist" id="8005">
+        			<animation type="conditional" condition="Skin.HasSetting(TempEvoOSDDefaultPageChange)">
+					<effect type="slide" start="0,0" end="0,-180" tween="cubic" easing="inout" time="180"/>
+        			</animation>
+				<visible>![Window.IsVisible(VideoBookmarks) | Skin.HasSetting(TempEvoOSDOpenPageDesc)]</visible>
+				<include>fadeInOutVisible</include>
+				<include>TempEvoSlideFadeDownTwoWayFast</include>
+				<right>36</right>
+                		<bottom>216</bottom>
+                     		<width>576</width>
+		                <height>72</height>
+				<align>right</align>
+				<onfocus>Skin.Reset(TempEvoOSDOpenPageDesc)</onfocus>
+				<onfocus>Skin.Reset(TempEvoOSDDefaultPageChange)</onfocus>
+				<onleft>noop</onleft>
+				<onright>noop</onright>
+				<orientation>horizontal</orientation>
+				<itemgap>6</itemgap>
+				<control type="button" id="610">
+					<width>72</width>
+					<height>72</height>
+					<onup>noop</onup>
+					<ondown>490</ondown>
+                        		<align>center</align>
+                        		<aligny>center</aligny>
+                        		<font>symbolSize36</font>
+					<textcolor>textActive</textcolor>
+					<focusedcolor>textActive</focusedcolor>
+					<textoffsetx>6</textoffsetx>
+                        		<label></label>
+					<texturefocus colordiffuse="overlay">shape/dim72/roundedsquare.png</texturefocus>
+					<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
+					<onfocus>Skin.Reset(TempEvoOSDOpenPageDesc)</onfocus>
+					<onfocus>Skin.Reset(TempEvoOSDDefaultPageChange)</onfocus>
+					<onclick>Action(DialogSelectVideo)</onclick>
+				</control>
+				<control type="button" id="611">
+					<width>72</width>
+					<height>72</height>
+					<onup>noop</onup>
+					<ondown>490</ondown>
+                        		<align>center</align>
+                        		<aligny>center</aligny>
+                        		<font>symbolSize36</font>
+					<textcolor>textActive</textcolor>
+					<focusedcolor>textActive</focusedcolor>
+					<textoffsetx>6</textoffsetx>
+                        		<label></label>
+					<texturefocus colordiffuse="overlay">shape/dim72/roundedsquare.png</texturefocus>
+					<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
+					<onclick>Action(DialogSelectAudio)</onclick>
+				</control>
+				<control type="button" id="612">
+					<visible>VideoPlayer.HasSubtitles</visible>
+					<width>72</width>
+					<height>72</height>
+					<onup>noop</onup>
+					<ondown>490</ondown>
+                        		<align>center</align>
+                        		<aligny>center</aligny>
+                        		<font>symbolSize36</font>
+					<textcolor>textActive</textcolor>
+					<focusedcolor>textActive</focusedcolor>
+					<textoffsetx>6</textoffsetx>
+                        		<label></label>
+					<texturefocus colordiffuse="overlay">shape/dim72/roundedsquare.png</texturefocus>
+					<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
+					<onfocus>Skin.Reset(TempEvoOSDOpenPageDesc)</onfocus>
+					<onfocus>Skin.Reset(TempEvoOSDDefaultPageChange)</onfocus>
+					<onclick>Action(DialogSelectSubtitle)</onclick>
+				</control>
+                    	</control>
 			<control type="panel" id="8003">
 				<visible>Skin.HasSetting(TempEvoOSDDefaultPageChange)</visible>
 				<include>TempEvoSlideFadeDownTwoWay</include>

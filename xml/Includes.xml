@@ -17,7 +17,12 @@
 	<include file="Include_Data/View_Universal.xml"/>
 	<include file="Include_Data/Visualisation.xml"/>
 	<include file="Include_Data/Weather.xml"/>
-<!------Window Header---->
+<!--Fullscreen-->
+	<include name="dimensionsFullscreen">
+		<width>100%</width>
+		<height>100%</height>
+	</include>
+<!--Window Header-->
 	<include name="DefaultScrollbarsVertical">
 		<param name="visible_control">true</param>
 		<param name="control_id">5009</param>
@@ -365,7 +370,7 @@
 			</control>
 		</definition>
 	</include>
-<!------keyboard button---->
+<!--keyboard button-->
 	<include name="DefaultKeyboardButton">
 		<width>72</width>
 		<height>72</height>
@@ -386,10 +391,10 @@
         	<textoffsetx>18</textoffsetx>
 		<font>Font42Medium</font>
 	</include>
-<!-----button in side menu----->
+<!--button in side menu-->
 	<include name="ContentSideMenu">
 		<control type="button" id="988">
-		    	<visible>Control.IsVisible(511)</visible>
+		    	<visible>Control.IsVisible(52) + [$EXP[TempEvoMusicAlbumLastPlayed] | $EXP[TempEvoMusicAlbumMostPlayed] | $EXP[TempEvoMusicAlbumLastAdded] | $EXP[TempEvoMusicAlbumMostLiked]]</visible>
 			<description>Category</description>
 			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
 			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
@@ -406,7 +411,7 @@
 			<onclick condition="container.content(albums) + String.Contains(container.folderpath,special://skin/extras/playlists/App/Music_userratedAlbums.xsp)">ActivateWindow(music,special://skin/extras/playlists/App/Music_userratedSongs.xsp,return)</onclick>
 		</control>
 		<control type="button" id="989">
-		    	<visible>Control.IsVisible(512)</visible>
+		    	<visible>!Control.IsVisible(52) + [$EXP[TempEvoMusicSongLastPlayed] | $EXP[TempEvoMusicSongMostPlayed] | $EXP[TempEvoMusicSongLastAdded] | $EXP[TempEvoMusicSongMostLiked]]</visible>
 			<description>Category</description>
 			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
 			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
@@ -762,7 +767,7 @@
 		</control>
 	</include>
     	<include name="UniversalListVisible">
-		<visible>[Window.isActive(videos)+[$EXP[TempEvoVideoFileList]|$EXP[TempEvoVideoFileSource]|$EXP[TempEvoVideoAddon]|$EXP[TempEvoVideoYear]|$EXP[TempEvoVideoGenre]|$EXP[TempEvoVideoCountry]|$EXP[TempEvoVideoStudio]|$EXP[TempEvoVideoTag]|$EXP[TempEvoVideoSet]|$EXP[TempEvoVideoVersion]|$EXP[TempEvoVideoSmartPlaylist]|$EXP[TempEvoVideoPosterList]|$EXP[TempEvoVideoLandscapeList]|$EXP[TempEvoVideoEpisodeList]|$EXP[TempEvoForYoutube]]] | [Window.isActive(music)+[[$EXP[TempEvoMusicYearSong]|$EXP[TempEvoMusicGenreSong]|$EXP[TempEvoMusicGenre]|$EXP[TempEvoMusicYear]|$EXP[TempEvoMusicFile]|$EXP[TempEvoMusicFileSource] | $EXP[TempEvoMusicVideoMenu]|$EXP[TempEvoVideoinMusicMenu]|$EXP[TempEvoMusicRole]|$EXP[TempEvoMusicAddon]|$EXP[TempEvoMusicSmartPlaylist]|$EXP[TempEvoMusicSmartPlaylistM3U]]+!$EXP[TempEvoMusicPlaylistEditor]]]|[Window.isActive(pictures)]|[Window.isActive(games)]|[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRTimers.xml)]|[Window.IsActive(addonbrowser)]|[Window.IsActive(programs)]</visible>
+		<visible>[Window.isActive(videos)+[$EXP[TempEvoVideoFileList]|$EXP[TempEvoVideoFileSource]|$EXP[TempEvoVideoAddon]|$EXP[TempEvoVideoYear]|$EXP[TempEvoVideoGenre]|$EXP[TempEvoVideoCountry]|$EXP[TempEvoVideoStudio]|$EXP[TempEvoVideoTag]|$EXP[TempEvoVideoSet]|$EXP[TempEvoVideoVersion]|$EXP[TempEvoVideoSmartPlaylist]|$EXP[TempEvoVideoPosterList]|$EXP[TempEvoVideoLandscapeList]|$EXP[TempEvoVideoEpisodeList]|$EXP[TempEvoForYoutube]]] | [Window.isActive(music)+[[$EXP[TempEvoMusicSongLastPlayed] | $EXP[TempEvoMusicSongMostPlayed] | $EXP[TempEvoMusicSongLastAdded] | $EXP[TempEvoMusicSongMostLiked]] | [$EXP[TempEvoMusicYearSong]|$EXP[TempEvoMusicGenreSong]|$EXP[TempEvoMusicTopRecommendation]|$EXP[TempEvoMusicGenre]|$EXP[TempEvoMusicYear]|$EXP[TempEvoMusicFile]|$EXP[TempEvoMusicFileSource] | $EXP[TempEvoMusicVideoMenu]|$EXP[TempEvoVideoinMusicMenu]|$EXP[TempEvoMusicRole]|$EXP[TempEvoMusicAddon]|$EXP[TempEvoMusicSmartPlaylist]|$EXP[TempEvoMusicSmartPlaylistM3U]]+!$EXP[TempEvoMusicPlaylistEditor]]]|[Window.isActive(pictures)]|[Window.isActive(games)]|[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRTimers.xml)]|[Window.IsActive(addonbrowser)]|[Window.IsActive(programs)]</visible>
 
     	</include>
 </includes>

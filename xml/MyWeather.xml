@@ -133,7 +133,7 @@
 	   						<orientation>horizontal</orientation>
 							<control type="label">
             							<visible>!String.IsEmpty(Window(weather).Property(Day0.HighTemp))</visible>
-								<font>SymbolSize36</font>
+								<font>symbolSize36</font>
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -157,7 +157,7 @@
                      	   				<height>60</height>
 	   						<orientation>horizontal</orientation>
 							<control type="label">
-								<font>SymbolSize36</font>
+								<font>symbolSize36</font>
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -181,7 +181,7 @@
                         				<height>60</height>
 	   						<orientation>horizontal</orientation>
 							<control type="label">
-								<font>SymbolSize36</font>
+								<font>symbolSize36</font>
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -205,7 +205,7 @@
                         				<height>60</height>
 	   						<orientation>horizontal</orientation>
 							<control type="label">
-								<font>SymbolSize36</font>
+								<font>symbolSize36</font>
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -302,7 +302,7 @@
 	   						<orientation>horizontal</orientation>
 							<control type="label">
             							<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise))</visible>
-								<font>SymbolSize36</font>
+								<font>symbolSize36</font>
                         					<width>60</width>
                         					<height>54</height>
 								<align>center</align>
@@ -328,7 +328,7 @@
 	   						<orientation>horizontal</orientation>
 							<control type="label">
             							<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset))</visible>
-								<font>SymbolSize36</font>
+								<font>symbolSize36</font>
                         					<width>80</width>
                         					<height>54</height>
 								<align>center</align>
@@ -397,7 +397,7 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
-                        						<font>SymbolSize18</font>
+                        						<font>symbolSize18</font>
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -419,7 +419,7 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
-                        						<font>SymbolSize18</font>
+                        						<font>symbolSize18</font>
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -467,7 +467,7 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
-                        						<font>SymbolSize18</font>
+                        						<font>symbolSize18</font>
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -489,7 +489,7 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
-                        						<font>SymbolSize18</font>
+                        						<font>symbolSize18</font>
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -557,7 +557,7 @@
                         					<height>36</height>
                         					<align>center</align>
                         					<aligny>center</aligny>
-                        					<font>SymbolSize30</font>
+                        					<font>symbolSize30</font>
                         					<textcolor>textActive</textcolor>
                         					<label></label>
                     					</control>
@@ -622,7 +622,7 @@
                         					<height>36</height>
                         					<align>center</align>
                         					<aligny>center</aligny>
-                        					<font>SymbolSize30</font>
+                        					<font>symbolSize30</font>
                         					<textcolor>textActive</textcolor>
                         					<label></label>
                     					</control>

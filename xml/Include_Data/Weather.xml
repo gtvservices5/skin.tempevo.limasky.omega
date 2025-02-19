@@ -559,7 +559,7 @@
             					<effect type="fade" start="100" end="0" time="100" delay="6000"/>
 					</animation>
                     			<description>N/A</description>
-					<font>SymbolSize144</font>
+					<font>symbolSize144</font>
                          		<width>360</width>
                          		<height>360</height>
 					<align>center</align>
@@ -691,7 +691,7 @@
                     			<description>star?</description>
                          		<right>240</right>
                          		<posy>108</posy>
-					<font>SymbolSize18</font>
+					<font>symbolSize18</font>
                         		<width>36</width>
                         		<height>36</height>
 					<align>center</align>
