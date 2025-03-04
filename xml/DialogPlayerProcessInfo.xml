@@ -24,7 +24,7 @@
             </control>
             <control type="label">
                 <width>auto</width>
-                <label>$INFO[PVR.ActStreamClient,[$LOCALIZE[19012]: ]</label>
+                <label>$INFO[PVR.ActStreamClient,$LOCALIZE[19012]: ]</label>
             </control>
             <control type="label">
                 <width>auto</width>

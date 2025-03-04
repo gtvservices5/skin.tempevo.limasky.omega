@@ -74,7 +74,7 @@
                         				<posy>0</posy>
                         				<width>144</width>
                         				<height>144</height>
-                        				<aspectratio>scale</aspectratio>
+										<aspectratio scalediffuse="false">scale</aspectratio>
                         				<texture fallback="DefaultUser.png" diffuse="shape/dim180/roundedsquare.png">$INFO[listitem.icon]</texture>
                         				<bordersize>9</bordersize>
                     				</control>
@@ -128,7 +128,7 @@
                         				<posy>0</posy>
                         				<width>144</width>
                         				<height>144</height>
-                        				<aspectratio>scale</aspectratio>
+										<aspectratio scalediffuse="false">scale</aspectratio>
                         				<texture fallback="DefaultUser.png" diffuse="shape/dim180/roundedsquare.png">$INFO[listitem.icon]</texture>
                         				<bordersize>9</bordersize>
                     				</control>

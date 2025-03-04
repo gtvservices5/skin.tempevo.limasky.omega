@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.tempevo.limasky" version="0.8.9" name="LimaSkyTempEvo" provider-name="Nao3Line">
+<addon id="skin.tempevo.limasky" version="0.9.0" name="LimaSky TempEvo" provider-name="Nao3Line">
     	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 		<import addon="plugin.program.autocompletion" version="2.1.2"/>
@@ -28,7 +28,7 @@
 		<forum>http://forum.kodi.tv/</forum>
 		<source>https://github.com/Nao3Line/skin.tempevo.limasky</source>
 		<assets>
-			<icon>resources/icon.jpg</icon>
+			<icon>resources/icon.png</icon>
 			<fanart>resources/fanart.jpg</fanart>
 			<screenshot>resources/screenshot-01.jpg</screenshot>
 			<screenshot>resources/screenshot-02.jpg</screenshot>

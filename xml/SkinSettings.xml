@@ -837,7 +837,7 @@
 					<aspectratio align="left">keep</aspectratio>
 				</control>
 				<control type="label" id="999912">
-					<label>$LOCALIZE[24051] $NUMBER[0.8.9]</label>
+					<label>$LOCALIZE[24051] $NUMBER[0.9.0]</label>
 					<textoffsetx>18</textoffsetx>
 					<height>36</height>
 					<font>Font24Bold</font>

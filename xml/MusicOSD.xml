@@ -765,7 +765,6 @@
 			</control>
 		</control>
 		<control type="group">
-			<include>DialogSlideB</include>
 			<left>4%</left>
 			<top>144</top>
 			<width>92%</width>

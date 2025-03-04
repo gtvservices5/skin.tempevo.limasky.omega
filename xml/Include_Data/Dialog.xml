@@ -3707,7 +3707,7 @@
                                         <font>Font20Bold</font>
                                         <textcolor>textActive</textcolor>
                                         <shadowcolor />
-                                        <label>$INFO[ListItem.Duration,$LOCALIZE[180]: ]$INFO[ListItem.VideoCodec]$INFO[ListItem.VideoResolution, | ]$INFO[ListItem.StereoscopicMode, | ]$INFO[ListItem.HdrType, | ]$INFO[ListItem.VideoAspect, | ,:1]$VAR[ListItem.AudioCodec, | ]$INFO[AudioChannelListItem.AudioChannelssVar, ]</label>
+                                        <label>$INFO[ListItem.Duration,$LOCALIZE[180]: ]$INFO[ListItem.VideoCodec]$INFO[ListItem.VideoResolution, | ]$INFO[ListItem.StereoscopicMode, | ]$INFO[ListItem.HdrType, | ]$INFO[ListItem.VideoAspect, | ,:1]$INFO[ListItem.AudioCodec, | ]$INFO[AudioChannelListItem.AudioChannelssVar, ]</label>
                                     </control>
                                 </control>
                             </itemlayout>
@@ -3765,7 +3765,7 @@
                                         <font>Font20Bold</font>
                                         <textcolor>textActive</textcolor>
                                         <shadowcolor />
-                                        <label>$INFO[ListItem.Duration,$LOCALIZE[180]: ]$INFO[ListItem.VideoCodec]$INFO[ListItem.VideoResolution, | ]$INFO[ListItem.StereoscopicMode, | ]$INFO[ListItem.HdrType, | ]$INFO[ListItem.VideoAspect, | ,:1]$VAR[ListItem.AudioCodec, | ]$INFO[AudioChannelListItem.AudioChannelssVar, ]</label>
+                                        <label>$INFO[ListItem.Duration,$LOCALIZE[180]: ]$INFO[ListItem.VideoCodec]$INFO[ListItem.VideoResolution, | ]$INFO[ListItem.StereoscopicMode, | ]$INFO[ListItem.HdrType, | ]$INFO[ListItem.VideoAspect, | ,:1]$INFO[ListItem.AudioCodec, | ]$INFO[AudioChannelListItem.AudioChannelssVar, ]</label>
                                     </control>
                                 </control>
                             </focusedlayout>

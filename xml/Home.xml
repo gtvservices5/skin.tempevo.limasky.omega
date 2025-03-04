@@ -2435,6 +2435,19 @@
                         </control>
                     </focusedlayout>
                     <content>
+                        <item id="0">
+                            <visible>Player.HasMedia</visible>
+                            <label>$LOCALIZE[31012]</label>
+                            <label2></label2>
+                            <icon />
+                            <thumb />
+                            <onclick>Skin.Reset(TempEvoSettingWindow)</onclick>
+                            <onclick>Skin.Reset(TempEvoShutdownWindow)</onclick>
+                            <onclick>Skin.Reset(TempEvoAboutWindow)</onclick>
+                            <onclick>Skin.Reset(TempEvoSearchWindow)</onclick>
+                            <onclick>Control.SetFocus(91221)</onclick>
+                            <onclick>ActivateWindow(PlayerControls)</onclick>
+                        </item>
                         <item id="1">
                             <label>$LOCALIZE[137]</label>
                             <label2></label2>

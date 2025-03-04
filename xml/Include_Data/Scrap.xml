@@ -2054,8 +2054,8 @@
                 </control>
                 <control type="image">
                     <visible>String.Contains(Weather.ConditionsIcon,28) | String.Contains(Weather.ConditionsIcon,30) | String.Contains(Weather.ConditionsIcon,32) | String.Contains(Weather.ConditionsIcon,34) | String.Contains(Weather.ConditionsIcon,36) | String.Contains(Weather.ConditionsIcon,44)</visible>
-                    <include>DialogSlideVisibleB</include>
-                    <include>DialogSlideB</include>
+                    <include>TempEvoSlideFadeFromDownToUpVisible</include>
+                    <include>TempEvoSlideFadeFromDownToUp</include>
                     <description>Moon</description>
                     <width>360</width>
                     <height>360</height>
@@ -2066,8 +2066,8 @@
                 </control>
                 <control type="image">
                     <visible>String.Contains(Weather.ConditionsIcon,27) | String.Contains(Weather.ConditionsIcon,29) | String.Contains(Weather.ConditionsIcon,31) | String.Contains(Weather.ConditionsIcon,33) | String.Contains(Weather.ConditionsIcon,45) | String.Contains(Weather.ConditionsIcon,46) | String.Contains(Weather.ConditionsIcon,47)</visible>
-                    <include>DialogSlideVisibleB</include>
-                    <include>DialogSlideB</include>
+                    <include>TempEvoSlideFadeFromDownToUpVisible</include>
+                    <include>TempEvoSlideFadeFromDownToUp</include>
                     <description>Moon</description>
                     <width>360</width>
                     <height>360</height>
@@ -2078,8 +2078,8 @@
                 </control>
                 <control type="image">
                     <visible>String.Contains(Weather.ConditionsIcon,/0.png) | String.Contains(Weather.ConditionsIcon,/1.png) | String.Contains(Weather.ConditionsIcon,/2.png) | String.Contains(Weather.ConditionsIcon,/3.png) | String.Contains(Weather.ConditionsIcon,/4.png) | String.Contains(Weather.ConditionsIcon,/5.png) | String.Contains(Weather.ConditionsIcon,/6.png) | String.Contains(Weather.ConditionsIcon,/7.png) | String.Contains(Weather.ConditionsIcon,/8.png) | String.Contains(Weather.ConditionsIcon,/9.png) | String.Contains(Weather.ConditionsIcon,10) | String.Contains(Weather.ConditionsIcon,11) | String.Contains(Weather.ConditionsIcon,12) | String.Contains(Weather.ConditionsIcon,13) | String.Contains(Weather.ConditionsIcon,14) | String.Contains(Weather.ConditionsIcon,15) | String.Contains(Weather.ConditionsIcon,16) | String.Contains(Weather.ConditionsIcon,17) | String.Contains(Weather.ConditionsIcon,18) | String.Contains(Weather.ConditionsIcon,26)</visible>
-                    <include>DialogSlideVisibleB</include>
-                    <include>DialogSlideB</include>
+                    <include>TempEvoSlideFadeFromDownToUpVisible</include>
+                    <include>TempEvoSlideFadeFromDownToUp</include>
                     <description>Moon</description>
                     <width>360</width>
                     <height>360</height>

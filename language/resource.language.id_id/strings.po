@@ -1,6 +1,6 @@
 # Kodi Media Center language file
-# Addon Name: LimaSkyTempEvo
-# Addon id: skin.tempevo
+# Addon Name: LimaSky TempEvo
+# Addon id: skin.tempevo.limasky
 # Addon Provider: nao3Line
 msgid ""
 msgstr ""

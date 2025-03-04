@@ -3,41 +3,41 @@
 	<defaultcontrol always="true">5</defaultcontrol>
 	<controls>
         	<control type="group" id="9999">
-				<animation effect="zoom" start="100" end="50" center="0,1080" tween="cubic" easing="out" time="300" delay="0" condition="Window.IsActive(selectdialog) | Window.IsActive(textviewer)">Conditional</animation>
-				<animation effect="Slide" start="0,936" end="0,0" tween="cubic" easing="in" time="300" delay="600" condition="![Window.IsActive(filebrowser) | Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)]">Conditional</animation>
-           		<left>0</left>
-			<right>192</right>
-			<bottom>0</bottom>
-			<height>936</height>
+			<animation effect="zoom" start="100" end="50" center="0,1080" tween="cubic" easing="out" time="300" delay="0" condition="Window.IsActive(selectdialog) | Window.IsActive(textviewer)">Conditional</animation>
+			<animation effect="Slide" start="0,936" end="0,0" tween="cubic" easing="in" time="300" delay="600" condition="![Window.IsActive(filebrowser) | Window.IsActive(script-embuary-video.xml) | Window.IsActive(script-embuary-person.xml)]">Conditional</animation>
+           		<left>64</left>
+			<right>64</right>
+			<bottom>36</bottom>
+			<height>900</height>
 			<control type="group">
 				<animation type="windowopen">
-            				<effect type="slide" start="0,234" end="0,0" tween="cubic" easing="out" time="400"/>
-            				<effect type="zoom" start="25" end="100" center="0,936" tween="cubic" easing="out" time="300" delay="500"/>
+            				<effect type="slide" start="0,288" end="0,0" tween="cubic" easing="out" time="400"/>
+            				<effect type="zoom" start="25" end="100" center="50%,900" tween="cubic" easing="out" time="300" delay="500"/>
 				</animation>
 				<animation type="windowclose">
-            				<effect type="slide" start="0,0" end="0,234" tween="cubic" easing="in" time="300" delay="300"/>
-            				<effect type="zoom" start="100" end="25" center="0,936" tween="cubic" easing="out" time="300"/>
+            				<effect type="slide" start="0,0" end="0,288" tween="cubic" easing="in" time="300" delay="300"/>
+            				<effect type="zoom" start="100" end="25" center="50%,900" tween="cubic" easing="out" time="300"/>
 				</animation>
-			<include content="TempEvoModelDialogTopRightRounded">
-				<param name="modelkey_size" value="216" />
-				<param name="modelkey_color" value="sorotdark" />
-				<param name="dimensionkey_size" value="dim216" />
-			</include>
-			<control type="image">
-				<height>936</height>
-				<include>dimensionsFullscreen</include>
-				<texture>Pattern/Pattern2.png</texture>
-				<aspectratio scalediffuse="false">scale</aspectratio>
-				<colordiffuse>FFFFFFFF</colordiffuse>
-			</control>
-			<include content="TempEvoModelDialogTopRightRounded">
-				<param name="modelkey_size" value="216" />
-				<param name="modelkey_color" value="80000000" />
-				<param name="dimensionkey_size" value="dim216" />
-			</include>
-			<control type="group">
-                         			<posy>108</posy>
-                    		<left>192</left>
+				<include content="TempEvoModelDialogRounded">
+					<param name="modelkey_size" value="216" />
+					<param name="modelkey_color" value="sorotdark" />
+					<param name="dimensionkey_size" value="dim216" />
+				</include>
+				<control type="image">
+					<height>900</height>
+					<include>dimensionsFullscreen</include>
+					<texture>Pattern/Pattern2.png</texture>
+					<aspectratio scalediffuse="false">scale</aspectratio>
+					<colordiffuse>FFFFFFFF</colordiffuse>
+				</control>
+				<include content="TempEvoModelDialogRounded">
+					<param name="modelkey_size" value="216" />
+					<param name="modelkey_color" value="CC000000" />
+					<param name="dimensionkey_size" value="dim216" />
+				</include>
+				<control type="group">
+                         		<posy>72</posy>
+                    			<left>64</left>
                				<control type="label">
 						<animation type="windowopen">
             						<effect type="fade" start="0" end="100" delay="0" time="1"/>
@@ -48,18 +48,19 @@
             						<effect type="fade" start="100" end="0" delay="600" time="1"/>
         					</animation>
                          			<description>TitleWindow</description>
-						<right>192</right>
-			<bottom>108</bottom>
-                         			<height>576</height>
+						<right>64</right>
+						<bottom>72</bottom>
+                         			<height>612</height>
                          			<font>Font180Bold</font>
 						<aligny>center</aligny>
-		    			<wrapmultiline>true</wrapmultiline>
+						<align>center</align>
+		    				<wrapmultiline>true</wrapmultiline>
                      				<textcolor>FFFFFFFF</textcolor>
 						<label>$LOCALIZE[14116]</label>
              				</control>
-             				</control>
+             			</control>
 				<control type="group" id="9001">
-                    			<left>64</left>
+                    			<left>36</left>
                				<control type="label" id="1">
 						<animation type="windowopen">
             						<effect type="fade" start="0" end="100" delay="300" time="300"/>
@@ -68,10 +69,10 @@
             						<effect type="fade" start="100" end="0" delay="0" time="100"/>
         					</animation>
                          			<description>TitleWindow</description>
-						<right>36</right>
-                         			<posy>18</posy>
-                         			<font>Font28Bold</font>
-                         			<height>34</height>
+						<right>288</right>
+                         			<posy>36</posy>
+                         			<font>Font42Bold</font>
+                         			<height>72</height>
 						<aligny>center</aligny>
                      				<textcolor>FFFFFFFF</textcolor>
 						<label>$LOCALIZE[14116]</label>
@@ -84,13 +85,29 @@
             						<effect type="fade" start="100" end="0" delay="0" time="100"/>
         					</animation>
                          			<description>TitleWindow</description>
-						<right>36</right>
-                         			<posy>54</posy>
+						<right>288</right>
+                         			<posy>90</posy>
                          			<font>Font36Bold</font>
-                         			<height>54</height>
+                         			<height>64</height>
 						<aligny>center</aligny>
                      				<textcolor>FFFFFFFF</textcolor>
-						<label>$LOCALIZE[1]</label>
+						<label>$VAR[TempEvoVideoInfoMainLabel]</label>
+             				</control>
+               				<control type="label">
+						<animation type="windowopen">
+            						<effect type="fade" start="0" end="100" delay="700" time="300"/>
+        					</animation>
+						<animation type="windowclose">
+            						<effect type="fade" start="100" end="0" delay="0" time="100"/>
+        					</animation>
+                         			<description>SubTitleWindow</description>
+						<right>288</right>
+                         			<posy>144</posy>
+                         			<font>Font24Medium</font>
+                         			<height>36</height>
+						<aligny>center</aligny>
+	            				<label>$LOCALIZE[1]</label>
+                     				<textcolor>FFFFFFFF</textcolor>
              				</control>
             				<control type="group">
 						<animation type="windowopen">
@@ -100,14 +117,14 @@
             						<effect type="fade" start="100" end="0" delay="0" time="100"/>
         					</animation>
                 				<description>control area</description>
-						<right>36</right>
+						<right>288</right>
 						<bottom>36</bottom>
-						<height>756</height>
+						<height>648</height>
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-	                        			<width>684</width>
-	                       				<height>684</height>
+	                        			<width>612</width>
+	                       				<height>612</height>
 	                        			<aspectratio>stretch</aspectratio>
 	                        			<texture>shape/dimHD/roundedsquarehalf.png</texture>
 							<colordiffuse>FF000000</colordiffuse>
@@ -116,8 +133,8 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-	                        			<width>684</width>
-	                       				<height>684</height>
+	                        			<width>612</width>
+	                       				<height>612</height>
 						<texture diffuse="shape/dimHD/roundedsquarehalf.png">$INFO[ListItem.Icon]</texture>
 							<bordersize>0</bordersize>
 							<fadetime>500</fadetime>
@@ -126,8 +143,8 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-	                        			<width>684</width>
-	                       				<height>684</height>
+	                        			<width>612</width>
+	                       				<height>612</height>
 							<colordiffuse>CC000000</colordiffuse>
 							<texture>shape/dimHD/roundedsquarehalf.png</texture>
 							<bordersize>0</bordersize>
@@ -136,17 +153,17 @@
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
-	                        			<width>684</width>
-	                       				<height>684</height>
+	                        			<width>612</width>
+	                       				<height>612</height>
 							<texture diffuse="shape/dimHD/roundedsquarehalf.png">$INFO[ListItem.Icon]</texture>
 							<bordersize>0</bordersize>
 							<fadetime>500</fadetime>
 							<aspectratio scalediffuse="false">keep</aspectratio>
 						</control>
             				<control type="group">
-						<posx>720</posx>
+						<posx>648</posx>
 					<control type="panel" id="5">
-						<height>754</height>
+						<height>648</height>
                	 					<itemlayout height="72">
                     						<control type="label">
                         						<posx>0</posx>

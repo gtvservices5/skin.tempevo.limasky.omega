@@ -98,6 +98,7 @@
 						<animation type="windowclose">
             						<effect type="fade" start="100" end="0" delay="0" time="100"/>
         					</animation>
+                         			<visible>!String.IsEqual(ListItem.DBTYPE,artist)</visible>
                          			<description>TitleWindow</description>
 						<right>288</right>
                          			<posy>54</posy>
@@ -108,6 +109,7 @@
 						<label>$INFO[ListItem.Title]</label>
              				</control>
                				<control type="label">
+                         			<visible>!String.IsEqual(ListItem.DBTYPE,artist)</visible>
 						<animation type="windowopen">
             						<effect type="fade" start="0" end="100" delay="700" time="300"/>
         					</animation>
@@ -121,6 +123,40 @@
                          			<height>36</height>
 						<aligny>center</aligny>
 	            				<label>$INFO[ListItem.Artist]</label>
+                     				<textcolor>FFFFFFFF</textcolor>
+             				</control>
+               				<control type="label" id="2">
+						<animation type="windowopen">
+            						<effect type="fade" start="0" end="100" delay="300" time="300"/>
+        					</animation>
+						<animation type="windowclose">
+            						<effect type="fade" start="100" end="0" delay="0" time="100"/>
+        					</animation>
+                         			<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
+                         			<description>TitleWindow</description>
+						<right>288</right>
+                         			<posy>54</posy>
+                         			<font>Font36Bold</font>
+                         			<height>54</height>
+						<aligny>center</aligny>
+                     				<textcolor>FFFFFFFF</textcolor>
+						<label>$INFO[ListItem.Artist]</label>
+             				</control>
+               				<control type="label">
+                         			<visible>String.IsEqual(ListItem.DBTYPE,artist)</visible>
+						<animation type="windowopen">
+            						<effect type="fade" start="0" end="100" delay="700" time="300"/>
+        					</animation>
+						<animation type="windowclose">
+            						<effect type="fade" start="100" end="0" delay="0" time="100"/>
+        					</animation>
+                         			<description>SubTitleWindow</description>
+						<right>288</right>
+                         			<posy>108</posy>
+                         			<font>Font24Medium</font>
+                         			<height>36</height>
+						<aligny>center</aligny>
+	            				<label>$INFO[MusicPlayer.Property(Artist_Description)]</label>
                      				<textcolor>FFFFFFFF</textcolor>
              				</control>
             				<control type="group">
@@ -322,6 +358,122 @@
 									<textoffsetx>18</textoffsetx>
                     						</control>
                 					</focusedlayout>
+               	 					<itemlayout height="72" condition="container.content(artists)">
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+	                        			<width>72</width>
+	                       				<height>72</height>
+						<texture fallback="DefaultAlbumCover.png" diffuse="shape/dim72/roundedsquare.png">$INFO[ListItem.Thumb]</texture>
+							<bordersize>9</bordersize>
+							<fadetime>500</fadetime>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+				<colordiffuse>FF808080</colordiffuse>
+						</control>
+								<control type="label">
+									<left>0</left>
+									<top>0</top>
+									<width>72</width>
+									<height>72</height>
+									<font>Font28Bold</font>
+									<aligny>center</aligny>
+									<align>center</align>
+									<label>$INFO[ListItem.TrackNumber]</label>
+								</control>
+                    						<control type="label">
+                        						<posx>72</posx>
+                       	 						<posy>4</posy>
+                        						<font>Font24Bold</font>
+                        						<textcolor>textActive</textcolor>
+                        						<label>$INFO[ListItem.label]</label>
+                        						<shadowcolor></shadowcolor>
+									<textoffsetx>18</textoffsetx>
+                    						</control>
+                    						<control type="label">
+                        						<posx>72</posx>
+                        						<posy>34</posy>
+                        						<font>Font20Bold</font>
+                        						<textcolor>textActive</textcolor>
+                        						<label fallback="13205">$INFO[ListItem.Label2]</label>
+                        						<shadowcolor></shadowcolor>
+									<textoffsetx>18</textoffsetx>
+                    						</control>
+                					</itemlayout>
+               		 				<focusedlayout height="72" condition="container.content(artists)">
+		<control type="group">
+        	   							<include>TempEvoFocusedItemFade</include>
+			<control type="image">
+				<left>0</left>
+				<posy>0</posy>
+				<width>72</width>
+				<height>72</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>shape/dim72/roundedleft.png</texture>
+				<bordersize>0</bordersize>
+				<colordiffuse>sorotan</colordiffuse>
+			</control>
+			<control type="group">
+				<right>72</right>
+				<control type="image">
+	                        	<left>72</left>
+	                        	<posy>0</posy>
+	                        	<aspectratio>stretch</aspectratio>
+	                        	<texture>colors/white.png</texture>
+	                        	<bordersize>0</bordersize>
+	                       		<colordiffuse>sorotan</colordiffuse>
+	                    	</control>
+			</control>
+			<control type="image">
+				<right>0</right>
+				<posy>0</posy>
+				<width>72</width>
+				<height>72</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>shape/dim72/roundedright.png</texture>
+				<bordersize>0</bordersize>
+				<colordiffuse>sorotan</colordiffuse>
+			</control>
+		</control>
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+	                        			<width>72</width>
+	                       				<height>72</height>
+						<texture fallback="DefaultAlbumCover.png" diffuse="shape/dim72/roundedsquare.png">$INFO[ListItem.Thumb]</texture>
+							<bordersize>9</bordersize>
+							<fadetime>500</fadetime>
+							<aspectratio scalediffuse="false">scale</aspectratio>
+				<colordiffuse>FF808080</colordiffuse>
+						</control>
+								<control type="label">
+									<left>0</left>
+									<top>0</top>
+									<width>72</width>
+									<height>72</height>
+									<font>Font28Bold</font>
+									<aligny>center</aligny>
+									<align>center</align>
+									<label>$INFO[ListItem.TrackNumber]</label>
+								</control>
+                    						<control type="label">
+                        						<posx>72</posx>
+                       	 						<posy>4</posy>
+                        						<font>Font24Bold</font>
+                        						<textcolor>textActive</textcolor>
+                        						<label>$INFO[ListItem.label]</label>
+                        						<shadowcolor></shadowcolor>
+									<textoffsetx>18</textoffsetx>
+                    						</control>
+                    						<control type="label">
+                        						<posx>72</posx>
+                        						<posy>34</posy>
+                        						<font>Font20Bold</font>
+                        						<textcolor>textActive</textcolor>
+                        						<label fallback="13205">$INFO[ListItem.Label2]</label>
+                        						<shadowcolor></shadowcolor>
+									<textoffsetx>18</textoffsetx>
+                    						</control>
+                					</focusedlayout>
 							<itemlayout height="72" condition="container.content(songs)">
 								<control type="label">
 									<left>3%</left>
@@ -336,7 +488,7 @@
 							<focusedlayout height="72" condition="container.content(songs)">
 								<control type="group">
 									<control type="image">
-                        							<include>focusSelect</include>
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
                         							<posx>0</posx>
                        	 							<posy>0</posy>
 										<aspectratio>stretch</aspectratio>

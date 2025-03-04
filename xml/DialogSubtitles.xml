@@ -224,11 +224,14 @@
 						</control>
 	                		</itemlayout>
 	                		<focusedlayout height="96">
-	                        		<control type="group">
-							<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
-							<include>ModuleSelectRound90</include>
-							<height>90</height>
-		           			</control>
+				<control type="group">
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
+					<include content="TempEvoModelListHorizontalRounded">
+						<param name="modelkey_size" value="90" />
+						<param name="modelkey_color" value="sorotan" />
+						<param name="dimensionkey_size" value="dim90" />
+					</include>
+				</control>
 	                        		<control type="label">
 		                        		<posy>0</posy>
 		                        		<posx>0</posx>

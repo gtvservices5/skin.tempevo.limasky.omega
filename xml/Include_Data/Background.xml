@@ -21,7 +21,7 @@
 				<colordiffuse>$INFO[Skin.String(SolidColorPicked)]</colordiffuse>
 			</control>
 			<control type="image">
-				<visible>Skin.HasSetting(ColoredDiamondPatternSetting)</visible>
+				<visible>Skin.HasSetting(DefaultPatternBGSetting)</visible>
 				<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
 				<texture>$VAR[SolidColorPathBackground]</texture>
@@ -54,12 +54,12 @@
                 		<fadetime>300</fadetime>
 			</control>
 			<control type="image">
-				<visible>window.isactive(home)+!Skin.HasSetting(SetAlltoUniBackground)</visible>
+				<visible>window.isactive(home)</visible>
         	   		<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
 				<texture>colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
-				<colordiffuse>80FFFFFF</colordiffuse>
+				<colordiffuse>40FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
 				<visible>window.isactive(home)+Skin.HasSetting(SolidColorSetting)</visible>
