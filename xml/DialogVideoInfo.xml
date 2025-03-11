@@ -661,7 +661,11 @@
                        	 						<posy>0</posy>
 									<width>72</width>
 									<height>72</height>
+<<<<<<< HEAD
                         						<font>symbolSize36</font>
+=======
+                        						<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 									<align>center</align>
                         						<textcolor>80FFFFFF</textcolor>
                         						<label>$INFO[ListItem.label]</label>
@@ -697,7 +701,11 @@
                        	 							<posy>0</posy>
 										<width>72</width>
 										<height>72</height>
+<<<<<<< HEAD
                         							<font>symbolSize36</font>
+=======
+                        							<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 										<align>center</align>
                         							<textcolor>80FFFFFF</textcolor>
                         							<label>$INFO[ListItem.label]</label>

@@ -98,7 +98,10 @@
 						<animation type="windowclose">
             						<effect type="fade" start="100" end="0" delay="0" time="100"/>
         					</animation>
+<<<<<<< HEAD
                          			<visible>!String.IsEqual(ListItem.DBTYPE,artist)</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                          			<description>TitleWindow</description>
 						<right>288</right>
                          			<posy>54</posy>
@@ -109,7 +112,10 @@
 						<label>$INFO[ListItem.Title]</label>
              				</control>
                				<control type="label">
+<<<<<<< HEAD
                          			<visible>!String.IsEqual(ListItem.DBTYPE,artist)</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<animation type="windowopen">
             						<effect type="fade" start="0" end="100" delay="700" time="300"/>
         					</animation>
@@ -125,6 +131,7 @@
 	            				<label>$INFO[ListItem.Artist]</label>
                      				<textcolor>FFFFFFFF</textcolor>
              				</control>
+<<<<<<< HEAD
                				<control type="label" id="2">
 						<animation type="windowopen">
             						<effect type="fade" start="0" end="100" delay="300" time="300"/>
@@ -159,6 +166,8 @@
 	            				<label>$INFO[MusicPlayer.Property(Artist_Description)]</label>
                      				<textcolor>FFFFFFFF</textcolor>
              				</control>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
             				<control type="group">
 						<animation type="windowopen">
             						<effect type="fade" start="0" end="100" delay="300" time="300"/>
@@ -358,6 +367,7 @@
 									<textoffsetx>18</textoffsetx>
                     						</control>
                 					</focusedlayout>
+<<<<<<< HEAD
                	 					<itemlayout height="72" condition="container.content(artists)">
 						<control type="image">
 							<posx>0</posx>
@@ -474,6 +484,8 @@
 									<textoffsetx>18</textoffsetx>
                     						</control>
                 					</focusedlayout>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 							<itemlayout height="72" condition="container.content(songs)">
 								<control type="label">
 									<left>3%</left>
@@ -488,7 +500,11 @@
 							<focusedlayout height="72" condition="container.content(songs)">
 								<control type="group">
 									<control type="image">
+<<<<<<< HEAD
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
+=======
+                        							<include>focusSelect</include>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         							<posx>0</posx>
                        	 							<posy>0</posy>
 										<aspectratio>stretch</aspectratio>

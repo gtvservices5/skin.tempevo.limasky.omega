@@ -13,6 +13,17 @@
 	           		<bottom>0</bottom>
 				<height>882</height>
 				<control type="button" id="20">
+<<<<<<< HEAD
+=======
+					<animation type="windowopen">
+						<effect type="fade" start="0" end="100" time="180" delay="300"/>
+            					<effect type="Slide" start="0,72" end="0,0" tween="cubic" easing="inout" time="180" delay="300"/>
+					</animation>
+					<animation type="windowclose">
+						<effect type="fade" start="100" end="0" time="180" delay="200"/>
+            					<effect type="Slide" start="0,0" end="0,72" tween="cubic" easing="inout" time="180" delay="200"/>
+        				</animation>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 					<right>0</right>
 					<top>-18</top>
 					<width>324</width>

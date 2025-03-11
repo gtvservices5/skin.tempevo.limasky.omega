@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+<<<<<<< HEAD
 <!--Wallpaper-->
+=======
+<!--Wallpaper------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="UniversalGlobalBackground">
 		<control type="group">
 			<include>dimensionsFullscreen</include>
@@ -21,7 +25,11 @@
 				<colordiffuse>$INFO[Skin.String(SolidColorPicked)]</colordiffuse>
 			</control>
 			<control type="image">
+<<<<<<< HEAD
 				<visible>Skin.HasSetting(DefaultPatternBGSetting)</visible>
+=======
+				<visible>Skin.HasSetting(ColoredDiamondPatternSetting)</visible>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 				<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
 				<texture>$VAR[SolidColorPathBackground]</texture>
@@ -54,11 +62,16 @@
                 		<fadetime>300</fadetime>
 			</control>
 			<control type="image">
+<<<<<<< HEAD
 				<visible>window.isactive(home)</visible>
+=======
+				<visible>window.isactive(home)+!Skin.HasSetting(SetAlltoUniBackground)</visible>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
         	   		<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
 				<texture>colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
+<<<<<<< HEAD
 				<colordiffuse>40FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -76,6 +89,9 @@
 				<texture>Pattern/Pattern1.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>40FFFFFF</colordiffuse>
+=======
+				<colordiffuse>80FFFFFF</colordiffuse>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			</control>
 			<control type="image">
 				<visible>!window.isactive(home)+Skin.HasSetting(SetAlltoUniBackground)</visible>

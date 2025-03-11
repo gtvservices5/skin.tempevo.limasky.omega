@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <colors>
+<<<<<<< HEAD
+=======
+<!--Credit;Pellucid------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
     <color name="black">ff111111</color>
     <color name="background">ff151515</color>
     <color name="highlight">ff56ae57</color>
@@ -11,6 +15,10 @@
     <color name="textboxInactive">99FFFFFF</color>
     <color name="keyboardInactive">aa212121</color>
     <color name="keyboardAccent">ffBDBDBD</color>
+<<<<<<< HEAD
+=======
+<!--NewUpdate------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<color name="sorotbright">ffA1F791</color>
 	<color name="sorotmedium">ffBEE5B0</color>
 	<color name="sorotdark">ff269926</color>

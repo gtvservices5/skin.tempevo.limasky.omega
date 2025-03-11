@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="musicvideos">
     	<name>ratedMV</name>
@@ -8,3 +9,15 @@
 		<value>0</value>
 	</rule>
 </smartplaylist>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="musicvideos">
+    	<name>ratedMV</name>
+    	<match>all</match>
+    	<limit>16</limit>
+    	<order direction="descending">userrating</order>
+	<rule field="userrating" operator="greaterthan">
+		<value>0</value>
+	</rule>
+</smartplaylist>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a

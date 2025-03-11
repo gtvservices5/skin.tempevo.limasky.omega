@@ -5,6 +5,7 @@
 	<views>50</views>
 	<controls>
 		<include>UniversalGlobalBackground</include>
+<<<<<<< HEAD
         <control type="button"
                  id="20000">
             <posx>-3600</posx>
@@ -33,6 +34,8 @@
             <onclick>noop</onclick>
             <visible allowhiddenfocus="true">Control.HasFocus(20001)</visible>
         </control>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
         	<control type="group" id="9999">
             		<include condition="window.isactive(musicplaylist)">TempEvoMusicPlaylist</include>
             		<include condition="window.isactive(videoplaylist)">TempEvoVideoPlaylist</include>

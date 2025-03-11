@@ -133,7 +133,11 @@
 	   						<orientation>horizontal</orientation>
 							<control type="label">
             							<visible>!String.IsEmpty(Window(weather).Property(Day0.HighTemp))</visible>
+<<<<<<< HEAD
 								<font>symbolSize36</font>
+=======
+								<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -157,7 +161,11 @@
                      	   				<height>60</height>
 	   						<orientation>horizontal</orientation>
 							<control type="label">
+<<<<<<< HEAD
 								<font>symbolSize36</font>
+=======
+								<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -181,7 +189,11 @@
                         				<height>60</height>
 	   						<orientation>horizontal</orientation>
 							<control type="label">
+<<<<<<< HEAD
 								<font>symbolSize36</font>
+=======
+								<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -205,7 +217,11 @@
                         				<height>60</height>
 	   						<orientation>horizontal</orientation>
 							<control type="label">
+<<<<<<< HEAD
 								<font>symbolSize36</font>
+=======
+								<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<width>60</width>
                         					<height>60</height>
 								<align>center</align>
@@ -302,7 +318,11 @@
 	   						<orientation>horizontal</orientation>
 							<control type="label">
             							<visible>!String.IsEmpty(Window(weather).Property(Today.Sunrise))</visible>
+<<<<<<< HEAD
 								<font>symbolSize36</font>
+=======
+								<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<width>60</width>
                         					<height>54</height>
 								<align>center</align>
@@ -328,7 +348,11 @@
 	   						<orientation>horizontal</orientation>
 							<control type="label">
             							<visible>!String.IsEmpty(Window(weather).Property(Today.Sunset))</visible>
+<<<<<<< HEAD
 								<font>symbolSize36</font>
+=======
+								<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<width>80</width>
                         					<height>54</height>
 								<align>center</align>
@@ -397,7 +421,11 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
+<<<<<<< HEAD
                         						<font>symbolSize18</font>
+=======
+                        						<font>SymbolSize18</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -419,7 +447,11 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
+<<<<<<< HEAD
                         						<font>symbolSize18</font>
+=======
+                        						<font>SymbolSize18</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -467,7 +499,11 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
+<<<<<<< HEAD
                         						<font>symbolSize18</font>
+=======
+                        						<font>SymbolSize18</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -489,7 +525,11 @@
                         						<height>28</height>
                         						<align>center</align>
                         						<aligny>center</aligny>
+<<<<<<< HEAD
                         						<font>symbolSize18</font>
+=======
+                        						<font>SymbolSize18</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         						<textcolor>textActive</textcolor>
                         						<label></label>
                     						</control>
@@ -557,7 +597,11 @@
                         					<height>36</height>
                         					<align>center</align>
                         					<aligny>center</aligny>
+<<<<<<< HEAD
                         					<font>symbolSize30</font>
+=======
+                        					<font>SymbolSize30</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<textcolor>textActive</textcolor>
                         					<label></label>
                     					</control>
@@ -622,7 +666,11 @@
                         					<height>36</height>
                         					<align>center</align>
                         					<aligny>center</aligny>
+<<<<<<< HEAD
                         					<font>symbolSize30</font>
+=======
+                        					<font>SymbolSize30</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         					<textcolor>textActive</textcolor>
                         					<label></label>
                     					</control>

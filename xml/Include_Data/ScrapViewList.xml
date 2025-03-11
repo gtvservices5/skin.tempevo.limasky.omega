@@ -77,7 +77,11 @@
 	            		</control>
 		</definition>
 	</include>
+<<<<<<< HEAD
 <!--recommendation dot-->
+=======
+<!--recommendation dot----------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoPanelVideoRecommendation">
 		<param name="control_browsemode">auto</param>
 		<param name="control_listlimit">12</param>
@@ -254,7 +258,11 @@
             				</control>
 		</definition>
 	</include>
+<<<<<<< HEAD
 <!--Poster-->
+=======
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoWidgetPosterLayoutHome">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -262,7 +270,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -353,7 +364,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -394,7 +409,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -484,7 +502,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -518,7 +540,11 @@
 	</include>
 
 
+<<<<<<< HEAD
 <!--Episode-->
+=======
+<!--Episode----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoWidgetEpisodeLayoutHome">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -526,7 +552,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -625,7 +654,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -666,7 +699,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -761,7 +797,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -793,7 +833,11 @@
             				</control>
 		</definition>
 	</include>
+<<<<<<< HEAD
 <!--MusicVideo-->
+=======
+<!--MusicVideo----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoWidgetMusicVideoLayoutHome">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -801,7 +845,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -898,7 +945,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -939,7 +990,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1035,7 +1089,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1067,7 +1125,11 @@
             				</control>
 		</definition>
 	</include>
+<<<<<<< HEAD
 <!--Artist/Actor-->
+=======
+<!--Artist/Actor----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoWidgetActorArtLayout">
 		<param name="pos_left">0</param>
 		<param name="pos_top">0</param>
@@ -1077,7 +1139,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1237,7 +1302,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1271,12 +1340,19 @@
 	</include>
 
 
+<<<<<<< HEAD
 <!--Album&Song-->
+=======
+<!--Album&Song----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoWidgetMusicLayoutHome">
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<height>396</height>
 						<control type="group">
 	                        			<posx>324</posx>
@@ -1366,7 +1442,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1407,7 +1487,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1549,7 +1632,11 @@
 	                        							<top>9</top>
 				              				 		<width>18</width>
 				              				 		<height>18</height>
+<<<<<<< HEAD
                 									<font>symbolSize18</font>
+=======
+                									<font>SymbolSize18</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     									<aligny>center</aligny>
 		    									<label></label>
                      									<textcolor>FFFFFFFF</textcolor>
@@ -1612,7 +1699,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1653,7 +1744,10 @@
 		<definition>
 					<control type="group" id="$PARAM[id_groupcontrol]" description="$PARAM[id_groupdesc]">
 		    				<visible>$PARAM[visible_control]</visible>
+<<<<<<< HEAD
 							<visible>Integer.IsGreater(Container($PARAM[id_control]).NumItems,0) | Container($PARAM[id_control]).IsUpdating</visible>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                    				<left>$PARAM[pos_left]</left>
 	                        		<top>$PARAM[pos_top]</top>
 						<height>$PARAM[height_groupcontrol]</height>
@@ -1795,7 +1889,11 @@
 	                        							<top>9</top>
 				              				 		<width>18</width>
 				              				 		<height>18</height>
+<<<<<<< HEAD
                 									<font>symbolSize18</font>
+=======
+                									<font>SymbolSize18</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     									<aligny>center</aligny>
 		    									<label></label>
                      									<textcolor>FFFFFFFF</textcolor>
@@ -1858,7 +1956,11 @@
                    	 				<control type="label">
 		                        			<right>18</right>
 		                        			<bottom>18</bottom>
+<<<<<<< HEAD
                 						<font>symbolSize72</font>
+=======
+                						<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     						<width>72</width>
                    						<height>72</height>
                     						<aligny>center</aligny>
@@ -1898,7 +2000,11 @@
 
 
 
+<<<<<<< HEAD
 <!--Setting on Home Layout-->
+=======
+<!--Setting on Home Layout----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoMiniWindowonHome">
 		<definition>
 			<control type="button" id="1000">
@@ -1990,4 +2096,26 @@
 			</control>
 		</definition>
 	</include>
+<<<<<<< HEAD
+=======
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+<!--Poster----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 </includes>

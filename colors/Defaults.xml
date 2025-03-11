@@ -11,6 +11,10 @@
     <color name="textboxInactive">00FFFFFF</color>
     <color name="keyboardInactive">aa212121</color>
     <color name="keyboardAccent">ffBDBDBD</color>
+<<<<<<< HEAD
+=======
+<!--NewUpdate------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<color name="sorotbright">ffC1C9D1</color>
 	<color name="sorotmedium">ff7A7B7A</color>
 	<color name="sorotdark">ff656862</color>

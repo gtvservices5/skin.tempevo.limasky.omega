@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+<<<<<<< HEAD
 <!--Lyric-->
+=======
+<!--Lyric----------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoScriptLyric">
 		<control type="button" id="120">
 			<description>button overlay to avoid closing in dialog area</description>
@@ -279,7 +283,11 @@
 			</control>
 		</control>
 	</include>
+<<<<<<< HEAD
 <!--Search-->
+=======
+<!--Search---------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoScriptSearch">
 		<control type="group">
 			<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOut</include>
@@ -821,7 +829,11 @@
 		</control>
 	</include>
 	
+<<<<<<< HEAD
 <!--TMDB-->
+=======
+<!--TMDB---------------------------------------------------------------------------------------------------------------->
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="TempEvoScriptEmbuaryVideo">
 		<!--AnimaTempEvo-->
 		<control type="group">

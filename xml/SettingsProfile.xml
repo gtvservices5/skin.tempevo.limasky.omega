@@ -74,7 +74,11 @@
                         				<posy>0</posy>
                         				<width>144</width>
                         				<height>144</height>
+<<<<<<< HEAD
 										<aspectratio scalediffuse="false">scale</aspectratio>
+=======
+                        				<aspectratio>scale</aspectratio>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         				<texture fallback="DefaultUser.png" diffuse="shape/dim180/roundedsquare.png">$INFO[listitem.icon]</texture>
                         				<bordersize>9</bordersize>
                     				</control>
@@ -128,7 +132,11 @@
                         				<posy>0</posy>
                         				<width>144</width>
                         				<height>144</height>
+<<<<<<< HEAD
 										<aspectratio scalediffuse="false">scale</aspectratio>
+=======
+                        				<aspectratio>scale</aspectratio>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         				<texture fallback="DefaultUser.png" diffuse="shape/dim180/roundedsquare.png">$INFO[listitem.icon]</texture>
                         				<bordersize>9</bordersize>
                     				</control>

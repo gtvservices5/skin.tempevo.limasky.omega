@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="musicvideos">
     <name>TopMV</name>
     <match>all</match>s
     <order direction="descending">random</order>
 </smartplaylist>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="musicvideos">
+    <name>TopMV</name>
+    <match>all</match>s
+    <order direction="descending">random</order>
+</smartplaylist>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a

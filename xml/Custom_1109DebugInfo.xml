@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1109">
+<<<<<<< HEAD
 	<zorder>101</zorder>
+=======
+	<zorder>100</zorder>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<visible>!Window.IsVisible(startup)</visible>
 	<controls>
         		<control type="image">
@@ -35,8 +39,13 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+<<<<<<< HEAD
 				<label>Custom_1106Startup.xml</label>
 				<visible>Window.IsVisible(Custom_1106Startup.xml)</visible>
+=======
+				<label>Custom_1101_Bounce_Up.xml</label>
+				<visible>Window.IsVisible(Custom_1101_Bounce_Up.xml)</visible>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			</control>
 			<control type="label">
 				<width>780</width>
@@ -45,8 +54,13 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+<<<<<<< HEAD
 				<label>Custom_1108Lockscreen.xml</label>
 				<visible>Window.IsVisible(Custom_1108Lockscreen.xml)</visible>
+=======
+				<label>Custom_1102_Bounce_Down.xml</label>
+				<visible>Window.IsVisible(Custom_1102_Bounce_Down.xml)</visible>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			</control>
 			<control type="label">
 				<width>780</width>
@@ -55,8 +69,103 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+<<<<<<< HEAD
 				<label>Custom_1126DummyWatermark.xml</label>
 				<visible>Window.IsVisible(Custom_1126DummyWatermark.xml)</visible>
+=======
+				<label>Custom_1103_Bounce_Right.xml</label>
+				<visible>Window.IsVisible(Custom_1103_Bounce_Right.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1104_Fade.xml</label>
+				<visible>Window.IsVisible(Custom_1104_Fade.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1105_Home_Widgets.xml</label>
+				<visible>Window.IsVisible(Custom_1105_Home_Widgets.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1106_Refresh.xml</label>
+				<visible>Window.IsVisible(Custom_1106_Refresh.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1107_Resume_Playback.xml</label>
+				<visible>Window.IsVisible(Custom_1107_Resume_Playback.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1108_Mainmenu_Setup.xml</label>
+				<visible>Window.IsVisible(Custom_1108_Mainmenu_Setup.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1109_Overlay_Debug.xml</label>
+				<visible>Window.IsVisible(Custom_1109_Overlay_Debug.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1110_Overlay_XRay_Image.xml</label>
+				<visible>Window.IsVisible(Custom_1110_Overlay_XRay_Image.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1111_Overlay_Play_Speed.xml</label>
+				<visible>Window.IsVisible(Custom_1111_Overlay_Play_Speed.xml)</visible>
+			</control>
+			<control type="label">
+				<width>780</width>
+				<height>25</height>
+				<textcolor>FF0000FF</textcolor>
+				<shadowcolor>FF000000</shadowcolor>
+				<font>font13</font>
+				<align>left</align>
+				<label>Custom_1112_My_Programs.xml</label>
+				<visible>Window.IsVisible(Custom_1112_My_Programs.xml)</visible>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			</control>
 			<control type="label">
 				<width>780</width>
@@ -85,6 +194,7 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+<<<<<<< HEAD
 				<label>MyFavourites.xml</label>
 				<visible>Window.IsVisible(MyFavourites.xml)</visible>
 			</control>
@@ -95,6 +205,8 @@
 				<shadowcolor>FF000000</shadowcolor>
 				<font>font13</font>
 				<align>left</align>
+=======
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 				<label>Home.xml</label>
 				<visible>Window.IsVisible(Home.xml)</visible>
 			</control>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="tvshows">
     	<name>Best Actor on Movie in your library</name>
@@ -5,3 +6,12 @@
 	<group>actors</group>
 	<rule field="actor" operator="true" />
 </smartplaylist>
+=======
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="tvshows">
+    	<name>Best Actor on Movie in your library</name>
+    	<match>all</match>
+	<group>actors</group>
+	<rule field="actor" operator="true" />
+</smartplaylist>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a

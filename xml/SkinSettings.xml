@@ -163,6 +163,7 @@
 					<selected>Skin.HasSetting(NoAnimationInSkin)</selected>
 				</control>
 				<control type="button" id="9105">
+<<<<<<< HEAD
 					<description>Dummy Dimness screen</description>
 					<width>100%</width>
 					<label>$LOCALIZE[31276]</label>
@@ -181,6 +182,17 @@
                     <onclick condition="String.isEqual(Skin.String(DummyDimnessSkin),80)">Skin.SetString(DummyDimnessSkin,90)</onclick>
                     <onclick condition="String.isEqual(Skin.String(DummyDimnessSkin),90)">Skin.SetString(DummyDimnessSkin,100)</onclick>
                     <onclick condition="String.isEqual(Skin.String(DummyDimnessSkin),100)">Skin.Reset(DummyDimnessSkin)</onclick>
+=======
+					<enable>false</enable>
+					<description>Dummy Dimness screen</description>
+					<width>100%</width>
+					<label>$LOCALIZE[31276]</label>
+					<label2>$VAR[SkinSettingDummyDimness]</label2>
+					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
+					<focusedcolor>textActive</focusedcolor>
+                     			<font>Font24Bold</font>
+					<onclick>Skin.SetNumeric(DummyDimnessSkin)</onclick>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 				</control>
 				<control type="label" id="999903">
 					<label>$LOCALIZE[31022]</label>
@@ -238,7 +250,11 @@
 					<selected>!Skin.HasSetting(disableMusicVideos)</selected>
 				</control>
 				<control type="radiobutton" id="9114">
+<<<<<<< HEAD
 					<description>Disable Videos and Music</description>
+=======
+					<description>Disable Videos & Music</description>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 					<width>100%</width>
 					<label>14211</label>
 					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
@@ -412,7 +428,11 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
+<<<<<<< HEAD
 		                        					<font>symbolSize36</font>
+=======
+		                        					<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Property(trueselected)]</label>
 		           						</control>
@@ -423,7 +443,11 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
+<<<<<<< HEAD
 		                        					<font>symbolSize72</font>
+=======
+		                        					<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Label2]</label>
 		           						</control>
@@ -518,7 +542,11 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
+<<<<<<< HEAD
 		                        					<font>symbolSize36</font>
+=======
+		                        					<font>SymbolSize36</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Property(trueselected)]</label>
 		           						</control>
@@ -529,7 +557,11 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
+<<<<<<< HEAD
 		                        					<font>symbolSize72</font>
+=======
+		                        					<font>SymbolSize72</font>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Label2]</label>
 		           						</control>
@@ -846,7 +878,11 @@
 					<aspectratio align="left">keep</aspectratio>
 				</control>
 				<control type="label" id="999912">
+<<<<<<< HEAD
 					<label>$LOCALIZE[24051] $NUMBER[0.9.0]</label>
+=======
+					<label>$LOCALIZE[24051] $NUMBER[0.8.9]</label>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 					<textoffsetx>18</textoffsetx>
 					<height>36</height>
 					<font>Font24Bold</font>

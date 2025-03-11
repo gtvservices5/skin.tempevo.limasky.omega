@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
+=======
+﻿<?xml version="1.0" encoding="UTF-8"?>
+>>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 <window>
 	<defaultcontrol>100</defaultcontrol>
 	<onload>SetProperty(onnext,SetFocus(100))</onload>
