@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.tempevo.limasky" version="1.0.0" name="LimaSky TempEvo" provider-name="Nao3Line">
+<addon id="skin.tempevo.limasky" version="0.9.5" name="LimaSky TempEvo" provider-name="Nao3Line">
     	<requires>
 		<import addon="xbmc.gui" version="5.18.0"/>
 		<import addon="plugin.program.autocompletion" version="2.1.2"/>
