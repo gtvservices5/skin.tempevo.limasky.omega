@@ -4,11 +4,7 @@
         <name>skinautolock</name>
         <description>Timer to lock the skin (if lockscreen enabled in the skin settings)</description>
         <start reset="true">Skin.HasSetting(LockscreenisActive) + Skin.HasSetting(LockscreenAutolock)</start>
-<<<<<<< HEAD
         <reset>[!System.IdleTime(1) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(skinautolock), 1)]|Window.IsActive(VideoFullScreen.xml)|Window.IsActive(1108)</reset>
-=======
-        <reset>[!System.IdleTime(1) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(skinautolock), 1)]|Window.IsActive(1108)</reset>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
         <stop>[String.IsEmpty(Skin.String(LockscreenAutolockTime)) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(skinautolock), 10)] | [!String.IsEmpty(Skin.String(LockscreenAutolockTime)) + Integer.IsGreaterOrEqual(Skin.TimerElapsedSecs(skinautolock),Skin.Numeric(LockscreenAutolockTime))]</stop>
         <onstop>ActivateWindow(1108)</onstop>
     </timer>

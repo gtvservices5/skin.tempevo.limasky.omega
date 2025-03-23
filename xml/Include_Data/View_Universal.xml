@@ -555,7 +555,6 @@
 			<texturenofocus />
 			<onclick>Action(back)</onclick>
 		</control>
-<<<<<<< HEAD
 		<control type="group" id="9200">
 			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWay</include>
 			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayVisible</include>
@@ -779,107 +778,6 @@
 			<onfocus>Skin.Reset(TempEvoOpenSideMenu)</onfocus>
 			<orientation>vertical</orientation>
 			<pagecontrol>5009</pagecontrol>
-=======
-                <control type="label">
-			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeUpTwoWay</include>
-			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeFromUpToDownVisible</include>
-                   	<posx>64</posx>
-                 	<posy>36</posy>
-                	<font>Font72Medium</font>
-                    	<width>1080</width>
-                   	<height>90</height>
-                    	<aligny>center</aligny>
-		    	<label>$LOCALIZE[2] - $LOCALIZE[31076]</label>
-		        <textoffsetx>0</textoffsetx>
-                     	<textcolor>FFFFFFFF</textcolor>
-                </control>
-		<control type="group" id="9200">
-			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWay</include>
-			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayVisible</include>
-			<left>64</left>
-			<right>64</right>
-			<control type="group">
-                   		<posx>0</posx>
-				<posy>144</posy>
-	                        <width>360</width>
-	                       	<height>900</height>
-				<include content="TempEvoModelDialogRounded">
-					<param name="modelkey_size" value="144" />
-					<param name="modelkey_color" value="CC000000" />
-					<param name="dimensionkey_size" value="dim144" />
-				</include>
-				<control type="group">
-					<posy>0</posy>
-					<left>0</left>
-					<width>360</width>
-					<height>360</height>
-					<control type="image">
-						<width>360</width>
-						<height>360</height>
-						<aspectratio>stretch</aspectratio>
-						<bordersize>18</bordersize>
-						<texture colordiffuse="black">shape/dim360/roundedsquare.png</texture>
-					</control>
-					<control type="image">
-						<width>360</width>
-						<height>360</height>
-						<aspectratio scalediffuse="false">scale</aspectratio>
-						<texture fallback="DefaultAlbumCover.png" diffuse="shape/dim360/roundedsquare.png">$INFO[MusicPlayer.Cover]</texture>
-						<bordersize>18</bordersize>
-					</control>
-        			</control>
-				<control type="label">
-					<posx>18</posx>
-					<top>360</top>
-					<width>324</width>
-                       	 		<height>36</height>
-                        		<font>Font22Bold</font>
-                        		<textcolor>textActive</textcolor>
-					<aligny>center</aligny>
-                        		<shadowcolor></shadowcolor>
-					<label>$INFO[MusicPlayer.Title]</label>
-				</control>
-				<control type="label">
-					<posx>18</posx>
-					<top>396</top>
-					<width>324</width>
-                       	 		<height>24</height>
-                        		<font>Font20Medium</font>
-                        		<textcolor>textActive</textcolor>
-					<aligny>center</aligny>
-                        		<shadowcolor></shadowcolor>
-					<label>$INFO[MusicPlayer.Artist]</label>
-				</control>
-				<control type="progress">
-		                	<description>Progress Bar</description>
-					<left>18</left>
-					<posy>432</posy>
-					<width>324</width>
-		                	<height>3.6</height>
-		                	<texturebg colordiffuse="overlay">colors/white.png</texturebg>
-		                	<midtexture colordiffuse="highlight">colors/white.png</midtexture>
-		                	<info>player.progress</info>
-		            	</control>
-            			<control type="grouplist" id="599">
-                			<description>control area</description>
-                   			<posx>18</posx>
-					<bottom>18</bottom>
-	                        	<width>324</width>
-	                       		<height>432</height>
-					<onleft>noop</onleft>
-					<onright>501</onright>
-                			<onup>noop</onup>
-                			<ondown>599</ondown>
-					<include>TempEvoSideMenuForPlaylist</include>
-            			</control>
-			</control>
-			<control type="panel" id="9001">
-				<posx>396</posx>
-	               		<bottom>0</bottom>
-	               		<height>936</height>
-	                	<orientation>vertical</orientation>
-				<onleft>599</onleft>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	                	<itemlayout height="108">
 	                   		<control type="group">
 						<control type="image">
@@ -1072,12 +970,6 @@
 					<label>$VAR[TempEvoSubTitleMediaFullscreen]$VAR[TempEvoSecTitleMediaFullscreen, - ,]</label>
 				</control>
 				<control type="progress">
-<<<<<<< HEAD
-=======
-					<animation type="Conditional" condition="window.isactive(1122) + !Skin.HasSetting(TempEvoLockOnlyOneLayout)">
-						<effect type="fade" start="100" end="25" time="300" delay="0"/>
-					</animation>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                	<description>Progress Bar</description>
 					<left>0</left>
 					<top>324</top>
@@ -1095,7 +987,6 @@
 	               	<bottom>0</bottom>
 	               	<height>468</height>
 			<control type="panel" id="50">
-<<<<<<< HEAD
                     <include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoListBounceAnimation</include>
 				<left>56%</left>
 				<right>0</right>
@@ -1109,16 +1000,6 @@
 			<onfocus>Skin.Reset(TempEvoOpenSideMenu)</onfocus>
 			<orientation>vertical</orientation>
 			<pagecontrol>5009</pagecontrol>
-=======
-				<left>56%</left>
-				<right>0</right>
-	               		<bottom>0</bottom>
-	               		<height>882</height>
-	                	<orientation>vertical</orientation>
-					<onleft>599</onleft>
-					<onleft>Skin.SetBool(TempEvoOpenSideMenu)</onleft>
-							<onfocus>Skin.Reset(TempEvoOpenSideMenu)</onfocus>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	               		 	<itemlayout height="198">
 	                        		<control type="group">
 	                        			<left>18</left>
@@ -1136,8 +1017,9 @@
 	                    				</control>
 	                        			<control type="textbox">
 		                        			<left>338</left>
-		                        			<posy>-10</posy>
-		                        			<height>98</height>
+		                        			<right>18</right>
+		                        			<posy>12</posy>
+		                        			<height>86</height>
 		                        			<align>left</align>
 		                        			<font>Font28Bold</font>
 		                        			<textcolor>textActive</textcolor>
@@ -1251,12 +1133,13 @@
 	                    				</control>
 	                        			<control type="textbox">
 		                        			<left>338</left>
-		                        			<posy>-10</posy>
-		                        			<height>98</height>
+		                        			<right>18</right>
+		                        			<posy>12</posy>
+		                        			<height>86</height>
 		                        			<align>left</align>
 		                        			<font>Font28Bold</font>
 		                        			<textcolor>textActive</textcolor>
-		                        			<label>$INFO[ListItem.Title]</label>
+		                        			<label>$INFO[ListItem.TitlE]</label>
 		           				</control>
 	                        			<control type="label">
 		                        			<left>320</left>
@@ -1356,11 +1239,7 @@
 
 		<control type="group">
 			<posy>180</posy>
-<<<<<<< HEAD
 			<posx>64</posx>
-=======
-			<posx>18</posx>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			<control type="group">
 				<visible>String.IsEqual(Skin.AspectRatio,4:3)</visible>
             			<include>fadeInOutVisible</include>
@@ -1491,17 +1370,10 @@
 		<control type="image">
 			<animation type="windowopen">
 				<effect type="fade" start="0" end="100" time="0" delay="0"/>
-<<<<<<< HEAD
 				<effect type="zoom" start="100" end="50" center="162,396" tween="cubic" easing="out" time="300" delay="0"/>
 			</animation>
 			<animation type="windowclose">
 				<effect type="zoom" start="50" end="100" tween="cubic" easing="out" center="162,288" time="300" delay="0"/>
-=======
-				<effect type="zoom" start="100" end="50" center="128,396" tween="cubic" easing="out" time="300" delay="0"/>
-			</animation>
-			<animation type="windowclose">
-				<effect type="zoom" start="50" end="100" tween="cubic" easing="out" center="128,288" time="300" delay="0"/>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
         		</animation>
 			<width>100%</width>
 			<height>100%</height>
@@ -1513,17 +1385,10 @@
             	<control type="videowindow">
 			<animation type="windowopen">
 						<effect type="fade" start="0" end="100" time="0" delay="0"/>
-<<<<<<< HEAD
 				<effect type="zoom" start="100" end="50" center="162,396" tween="cubic" easing="out" time="300" delay="0"/>
 			</animation>
 			<animation type="windowclose">
 				<effect type="zoom" start="50" end="100" tween="cubic" easing="out" center="162,288" time="300" delay="0"/>
-=======
-				<effect type="zoom" start="100" end="50" center="128,396" tween="cubic" easing="out" time="300" delay="0"/>
-			</animation>
-			<animation type="windowclose">
-				<effect type="zoom" start="50" end="100" tween="cubic" easing="out" center="128,288" time="300" delay="0"/>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
         		</animation>
 			<width>100%</width>
 			<height>100%</height>
@@ -1551,22 +1416,14 @@
 				<effect type="fade" start="100" end="0" time="0" delay="0"/>
         		</animation>
 			<posy>180</posy>
-<<<<<<< HEAD
 			<posx>64</posx>
-=======
-			<posx>46</posx>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			<control type="group">
 				<visible>String.IsEqual(Skin.AspectRatio,4:3)</visible>
             			<include>fadeInOutVisible</include>
 		   		<width>756</width>
 		  		<height>576</height>
-<<<<<<< HEAD
 				<include content="TempEvoMiniModelBorderAllRounded">
 							<param name="modelkey_size" value="36" />
-=======
-				<include content="TempEvoModelBorderAllRounded">
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 					<param name="modelkey_color" value="latarcolor" />
 				</include>
 	                </control>
@@ -1576,10 +1433,7 @@
 		   		<width>846</width>
 		  		<height>576</height>
 				<include content="TempEvoModelBorderAllRounded">
-<<<<<<< HEAD
 							<param name="modelkey_size" value="36" />
-=======
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 					<param name="modelkey_color" value="latarcolor" />
 				</include>
 	                </control>

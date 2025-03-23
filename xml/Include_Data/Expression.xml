@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<<<<<<< HEAD
 <!--Expression for Video Window-->
-=======
-<!-----Expression for Video Window----->
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<expression name="TempEvoVideoYoutubeFileList">container.content(files) + String.Contains(container.folderpath,plugin://plugin.video.youtube)</expression>
 	<expression name="TempEvoVideoYoutubeVideoList">container.content(videos) + String.Contains(container.folderpath,plugin://plugin.video.youtube)</expression>
 
@@ -39,11 +35,7 @@
 	<expression name="TempEvoVideoAddon">[container.content(addons) + String.Contains(container.folderpath,addons://sources/video)] | [String.Contains(container.folderpath,plugin://) + !$EXP[TempEvoForYoutube]]</expression>
 	<expression name="TempEvoForYoutube">$EXP[TempEvoVideoYoutubeFileList] | $EXP[TempEvoVideoYoutubeVideoList]</expression>
 
-<<<<<<< HEAD
 <!--Expression for Music Window-->
-=======
-<!-----Expression for Music Window----->
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<expression name="TempEvoMusicMenu">String.isEqual(container.folderpath,library://music/) | String.isEqual(container.folderpath,musicdb://)</expression>
 	<expression name="TempEvoMusicVideoMenu">String.isEqual(container.folderpath,library://music/musicvideos/)</expression>
 	<expression name="TempEvoVideoinMusicMenu">String.Contains(container.folderpath,videodb://)</expression>
@@ -77,11 +69,7 @@
 	<expression name="TempEvoMusicPlaylistEditor">Window.IsActive(musicplaylisteditor)</expression>
 	<expression name="TempEvoMusicRole">String.isEqual(container.folderpath,library://music/musicroles/)</expression>
 	<expression name="TempEvoMusicAddon">[container.content(addons) + String.Contains(container.folderpath,addons://sources/audio)] | String.Contains(container.folderpath,plugin://)</expression>
-<<<<<<< HEAD
 	<!--expression for featured playlist-->
-=======
-	<!expression for featured playlist>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<expression name="TempEvoMusicSongAlbumFP">container.content(songs) + String.Contains(Container.folderpath,albumid) + String.Contains(Container.folderpath,xsp)</expression>
 	<expression name="TempEvoMusicDiskAlbumFP">container.content(albums) + !String.IsEqual(container.folderpath,musicdb://albums/) + [String.Contains(container.folderpath,musicdb://albums/) | String.Contains(Container.folderpath,albumid)] + String.Contains(Container.folderpath,xsp)</expression>
 	<expression name="TempEvoMusicAlbumLastPlayed">container.content(albums) + String.Contains(container.folderpath,special://skin/extras/playlists/App/Music_lastplayedAlbums.xsp)</expression>

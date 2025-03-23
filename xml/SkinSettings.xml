@@ -126,7 +126,6 @@
 					<description>Stop video on return to menu</description>
 					<width>100%</width>
 					<label>$LOCALIZE[31119]</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(stopVideoOnMenu)</onclick>
@@ -136,7 +135,6 @@
 					<description>Status bar visibility</description>
 					<width>100%</width>
 					<label>$LOCALIZE[31273]</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(TurnOffStatusBar)</onclick>
@@ -146,7 +144,6 @@
 					<description>Touchscreen Mode</description>
 					<width>100%</width>
 					<label>$LOCALIZE[31274]</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(TurnOnTouchMode)</onclick>
@@ -156,19 +153,16 @@
 					<description>Disable Animation</description>
 					<width>100%</width>
 					<label>$LOCALIZE[31275]</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(NoAnimationInSkin)</onclick>
 					<selected>Skin.HasSetting(NoAnimationInSkin)</selected>
 				</control>
 				<control type="button" id="9105">
-<<<<<<< HEAD
 					<description>Dummy Dimness screen</description>
 					<width>100%</width>
 					<label>$LOCALIZE[31276]</label>
 					<label2>$INFO[Skin.String(DummyDimnessSkin)]</label2>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                     <font>Font24Bold</font>
                     <onclick condition="String.isEmpty(Skin.String(DummyDimnessSkin))">Skin.SetString(DummyDimnessSkin,10)</onclick>
@@ -182,17 +176,6 @@
                     <onclick condition="String.isEqual(Skin.String(DummyDimnessSkin),80)">Skin.SetString(DummyDimnessSkin,90)</onclick>
                     <onclick condition="String.isEqual(Skin.String(DummyDimnessSkin),90)">Skin.SetString(DummyDimnessSkin,100)</onclick>
                     <onclick condition="String.isEqual(Skin.String(DummyDimnessSkin),100)">Skin.Reset(DummyDimnessSkin)</onclick>
-=======
-					<enable>false</enable>
-					<description>Dummy Dimness screen</description>
-					<width>100%</width>
-					<label>$LOCALIZE[31276]</label>
-					<label2>$VAR[SkinSettingDummyDimness]</label2>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
-					<focusedcolor>textActive</focusedcolor>
-                     			<font>Font24Bold</font>
-					<onclick>Skin.SetNumeric(DummyDimnessSkin)</onclick>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 				</control>
 				<control type="label" id="999903">
 					<label>$LOCALIZE[31022]</label>
@@ -213,7 +196,6 @@
 					<description>Disable Favourites</description>
 					<width>100%</width>
 					<label>1036</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableFavourites)</onclick>
@@ -223,7 +205,6 @@
 					<description>Disable Movies</description>
 					<width>100%</width>
 					<label>342</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableMovies)</onclick>
@@ -233,7 +214,6 @@
 					<description>Disable TVShows</description>
 					<width>100%</width>
 					<label>31088</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableTVShows)</onclick>
@@ -243,21 +223,15 @@
 					<description>Disable MusicVideos</description>
 					<width>100%</width>
 					<label>20343</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableMusicVideos)</onclick>
 					<selected>!Skin.HasSetting(disableMusicVideos)</selected>
 				</control>
 				<control type="radiobutton" id="9114">
-<<<<<<< HEAD
 					<description>Disable Videos and Music</description>
-=======
-					<description>Disable Videos & Music</description>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 					<width>100%</width>
 					<label>14211</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableMedia)</onclick>
@@ -267,7 +241,6 @@
 					<description>Disable Pictures</description>
 					<width>100%</width>
 					<label>1</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disablePictures)</onclick>
@@ -277,7 +250,6 @@
 					<description>Disable TV</description>
 					<width>100%</width>
 					<label>19020</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableTV)</onclick>
@@ -287,7 +259,6 @@
 					<description>Disable Radio</description>
 					<width>100%</width>
 					<label>19021</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableRadio)</onclick>
@@ -297,7 +268,6 @@
 					<description>Disable Games</description>
 					<width>100%</width>
 					<label>10821</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableGames)</onclick>
@@ -307,7 +277,6 @@
 					<description>Disable Addons</description>
 					<width>100%</width>
 					<label>24001</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableAddons)</onclick>
@@ -317,7 +286,6 @@
 					<description>Disable Weather</description>
 					<width>100%</width>
 					<label>8</label>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<onclick>Skin.ToggleSetting(disableWeather)</onclick>
@@ -428,11 +396,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-<<<<<<< HEAD
 		                        					<font>symbolSize36</font>
-=======
-		                        					<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Property(trueselected)]</label>
 		           						</control>
@@ -443,11 +407,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-<<<<<<< HEAD
 		                        					<font>symbolSize72</font>
-=======
-		                        					<font>SymbolSize72</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Label2]</label>
 		           						</control>
@@ -542,11 +502,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-<<<<<<< HEAD
 		                        					<font>symbolSize36</font>
-=======
-		                        					<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Property(trueselected)]</label>
 		           						</control>
@@ -557,11 +513,7 @@
 		                        					<height>72</height>
 		                        					<align>center</align>
 		                        					<aligny>center</aligny>
-<<<<<<< HEAD
 		                        					<font>symbolSize72</font>
-=======
-		                        					<font>SymbolSize72</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 		                        					<textcolor>textActive</textcolor>
 		                        					<label>$INFO[ListItem.Label2]</label>
 		           						</control>
@@ -756,7 +708,6 @@
 				<control type="radiobutton" id="9136">
 					<description>Set Universal Background to all windows</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31122</label>
@@ -766,7 +717,6 @@
 				<control type="radiobutton" id="9137">
 					<description>Video Background</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31033</label>
@@ -777,7 +727,6 @@
 					<description>Set Universal Background to all windows</description>
 					<width>100%</width>
 					<height>60</height>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font32Regular</font>
 					<textoffsetx>18</textoffsetx>
@@ -796,7 +745,6 @@
 				<control type="radiobutton" id="9140">
 					<description>Standalone wallpaper</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31284</label>
@@ -807,7 +755,6 @@
 					<visible>Skin.HasSetting(LockscreenhasOwnbackground)</visible>
 					<description>Standalone wallpaper</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31261</label>
@@ -817,7 +764,6 @@
 				<control type="radiobutton" id="9142">
 					<description>Oled Friendly</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31281</label>
@@ -827,7 +773,6 @@
 				<control type="radiobutton" id="9143">
 					<description>Docking Mode</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31282</label>
@@ -837,7 +782,6 @@
 				<control type="radiobutton" id="9144">
 					<description>Autolock</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31286</label>
@@ -847,7 +791,6 @@
 				<control type="radiobutton" id="9145">
 					<description>Autolock timer</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31287</label>
@@ -878,11 +821,7 @@
 					<aspectratio align="left">keep</aspectratio>
 				</control>
 				<control type="label" id="999912">
-<<<<<<< HEAD
 					<label>$LOCALIZE[24051] $NUMBER[0.9.0]</label>
-=======
-					<label>$LOCALIZE[24051] $NUMBER[0.8.9]</label>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 					<textoffsetx>18</textoffsetx>
 					<height>36</height>
 					<font>Font24Bold</font>
@@ -891,7 +830,6 @@
 				<control type="radiobutton" id="9150">
 					<description>Grid Debug</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31034</label>
@@ -901,7 +839,6 @@
 				<control type="radiobutton" id="9151">
 					<description>DebugInfo</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31035</label>
@@ -911,7 +848,6 @@
 				<control type="button" id="9152">
 					<description>Debug</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31036</label>
@@ -920,7 +856,6 @@
 				<control type="button" id="9153">
 					<description>Refresh Skin</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31043</label>
@@ -930,7 +865,6 @@
 				<control type="button" id="9154">
 					<description>Reset Skin</description>
 					<width>100%</width>
-					<texturefocus colordiffuse="40eaeaea">colors/white.png</texturefocus>
 					<focusedcolor>textActive</focusedcolor>
                      			<font>Font24Bold</font>
 					<label>31037</label>

@@ -298,27 +298,48 @@
                     				<align>right</align>
 		    				<label>$INFO[Weather.Temperature]</label>
                     			</control>
-                   	 		<control type="label">
+                    			<control type="wraplist" id="4091">
+                				<autoscroll time="8000">true</autoscroll>
+						<scrolltime tween="cubic" easing="inout">180</scrolltime>
 						<posy>6</posy>
-                   				<height>28</height>
-						<textoffsetx>6</textoffsetx>
-						<aligny>center</aligny>
-                				<font>Font22Medium</font>
-                				<wrapmultiline>false</wrapmultiline>
-                     				<textcolor>FFFFFFFF</textcolor>
-       	 					<shadowcolor>40000000</shadowcolor>
-		    				<label>$INFO[Weather.Location]</label>
-                    			</control>
-                    			<control type="textbox">
-						<posy>12</posy>
-						<posx>6</posx>
-                				<font>Font18Bold</font>
-        					<shadowcolor>40000000</shadowcolor>
-                     				<textcolor>FFFFFFFF</textcolor>
-						<width>109</width>
-						<height>54</height>
-                    				<aligny>top</aligny>
-		    				<label>$INFO[Weather.Conditions]</label>
+              					<posx>6</posx>
+                    				<width>132</width>
+                     				<height>60</height>
+						<enable>false</enable>
+	    					<itemlayout width="132" height="60">
+                   	 				<control type="textbox">
+								<posy>0</posy>
+                    				<width>132</width>
+                     				<height>60</height>
+								<aligny>top</aligny>
+								<align>left</align>
+                						<font>Font22Medium</font>
+                     						<textcolor>FFFFFFFF</textcolor>
+       	 							<shadowcolor>40000000</shadowcolor>
+		    						<label>$INFO[ListItem.Label]</label>
+                    					</control>
+                				</itemlayout>
+	    					<focusedlayout width="132" height="60">
+                   	 				<control type="textbox">
+								<posy>0</posy>
+                    				<width>132</width>
+                     				<height>60</height>
+								<aligny>top</aligny>
+								<align>left</align>
+                						<font>Font22Medium</font>
+                     						<textcolor>FFFFFFFF</textcolor>
+       	 							<shadowcolor>40000000</shadowcolor>
+		    						<label>$INFO[ListItem.Label]</label>
+                    					</control>
+                				</focusedlayout>
+						<content>
+							<item id="1">
+								<label>[B]$INFO[Weather.Location][/B]</label>
+							</item>
+							<item id="2">
+								<label>$INFO[Weather.Conditions]</label>
+							</item>
+						</content>
                     			</control>
 				</control>
 		        </control>
@@ -663,7 +684,7 @@
                     		</control>
                     	</control>
           		<control type="group">
-				<animation type="Conditional" condition="![Window.IsActive(Notification) | Window.IsActive(VolumeBar) | Window.IsActive(videoosd)]">
+				<animation type="Conditional" condition="!Window.IsActive(videoosd)">
             				<effect type="fade" start="0" end="100" time="180" delay="1000"/>
 				</animation>
 					<animation type="Conditional" condition="Window.IsActive(videoosd) + Window.IsActive(fullscreenvideo)">
@@ -699,7 +720,7 @@
             					<effect type="fade" start="100" end="0" time="10" delay="170"/>
 					</animation>
                     			<description>message</description>
-                			<posy>0</posy>
+                			<posy>24</posy>
 					<left>36</left>
                 			<font>Font36Bold</font>
                      			<textcolor>40FFFFFF</textcolor>
@@ -766,9 +787,9 @@
                         			<description>miniheading</description>
 						<left>36</left>
 						<posy>0</posy>
-                     				<font>Font20Medium</font>
+                     				<font>Font22Medium</font>
                     				<width>864</width>
-                     				<height>22</height>
+                     				<height>24</height>
                      				<textcolor>40CCCCCC</textcolor>
 						<shadowcolor>40000000</shadowcolor>
 						<aligny>center</aligny>
@@ -794,10 +815,10 @@
 						</animation>
                         			<description>heading</description>
 						<left>36</left>
-						<posy>4</posy>
-                     				<font>Font24Bold</font>
+						<posy>16</posy>
+                     				<font>Font28Bold</font>
                     				<width>864</width>
-                     				<height>32</height>
+                     				<height>38</height>
                      				<textcolor>40CCCCCC</textcolor>
        				 		<shadowcolor>40000000</shadowcolor>
 						<aligny>top</aligny>
@@ -860,11 +881,11 @@
 						<animation type="Conditional" condition="[Integer.IsGreater(System.Time(SS),49) | Integer.IsLess(System.Time(SS),10)]">
             						<effect type="Fade" start="100" end="0" time="180"/>
 						</animation>
-                		<posy>0</posy>
+                		<posy>24</posy>
                         				<left>36</left>
 						<width>864</width>
 						<height>540</height>
-						<itemgap>-48</itemgap>
+						<itemgap>-6</itemgap>
                     				<align>left</align>
 						<orientation>vertical</orientation>
                     		<control type="textbox">
@@ -895,9 +916,6 @@
                     		
 			<control type="group">
 							<visible>VideoPlayer.Content(livetv)</visible>
-							<animation type="Conditional" condition="!Window.IsActive(Notification)">
-            			<effect type="fade" start="0" end="100" time="180" delay="1000"/>
-							</animation>
 					<left>0</left>
                     			<width>864</width>
                      			<height>72</height>
@@ -972,11 +990,11 @@
                     		<right>0</right>
 				<width>792</width>
 				<control type="grouplist">
-                			<posy>0</posy>
+                			<posy>18</posy>
                         		<right>0</right>
 					<width>864</width>
 					<height>540</height>
-					<itemgap>-42</itemgap>
+					<itemgap>-8</itemgap>
                     			<align>left</align>
 					<orientation>vertical</orientation>
                     		<control type="textbox">

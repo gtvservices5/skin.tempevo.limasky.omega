@@ -17,16 +17,12 @@
 	<include file="Include_Data/View_Universal.xml"/>
 	<include file="Include_Data/Visualisation.xml"/>
 	<include file="Include_Data/Weather.xml"/>
-<<<<<<< HEAD
 <!--Fullscreen-->
 	<include name="dimensionsFullscreen">
 		<width>100%</width>
 		<height>100%</height>
 	</include>
 <!--Window Header-->
-=======
-<!------Window Header---->
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="DefaultScrollbarsVertical">
 		<param name="visible_control">true</param>
 		<param name="control_id">5009</param>
@@ -374,16 +370,12 @@
 			</control>
 		</definition>
 	</include>
-<<<<<<< HEAD
 <!--keyboard button-->
-=======
-<!------keyboard button---->
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="DefaultKeyboardButton">
 		<width>72</width>
 		<height>72</height>
-		<texturefocus diffuse="shape/dim72/roundedsquare.png" colordiffuse="highlight">colors/white.png</texturefocus>
-		<texturenofocus diffuse="shape/dim72/roundedsquare.png" colordiffuse="80FFFFFF">colors/black.png</texturenofocus>
+		<texturefocus colordiffuse="highlight">shape/dim72/roundedsquare.png</texturefocus>
+		<texturenofocus colordiffuse="80000000">shape/dim72/roundedsquare.png</texturenofocus>
 		<align>center</align>
 		<aligny>center</aligny>
         	<textoffsetx>18</textoffsetx>
@@ -399,24 +391,13 @@
         	<textoffsetx>18</textoffsetx>
 		<font>Font42Medium</font>
 	</include>
-<<<<<<< HEAD
 <!--button in side menu-->
 	<include name="ContentSideMenu">
 		<control type="button" id="988">
 		    	<visible>Control.IsVisible(52) + [$EXP[TempEvoMusicAlbumLastPlayed] | $EXP[TempEvoMusicAlbumMostPlayed] | $EXP[TempEvoMusicAlbumLastAdded] | $EXP[TempEvoMusicAlbumMostLiked]]</visible>
-=======
-<!-----button in side menu----->
-	<include name="ContentSideMenu">
-		<control type="button" id="988">
-		    	<visible>Control.IsVisible(511)</visible>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			<description>Category</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Bold</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[31516]</label>
@@ -426,18 +407,10 @@
 			<onclick condition="container.content(albums) + String.Contains(container.folderpath,special://skin/extras/playlists/App/Music_userratedAlbums.xsp)">ActivateWindow(music,special://skin/extras/playlists/App/Music_userratedSongs.xsp,return)</onclick>
 		</control>
 		<control type="button" id="989">
-<<<<<<< HEAD
 		    	<visible>!Control.IsVisible(52) + [$EXP[TempEvoMusicSongLastPlayed] | $EXP[TempEvoMusicSongMostPlayed] | $EXP[TempEvoMusicSongLastAdded] | $EXP[TempEvoMusicSongMostLiked]]</visible>
-=======
-		    	<visible>Control.IsVisible(512)</visible>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			<description>Category</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Bold</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[31517]</label>
@@ -450,12 +423,8 @@
 			<visible>Player.HasMedia</visible>
 			<visible>Window.isactive(Music) | Window.isactive(Videos)</visible>
 			<description>Playlist</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[559]</label>
@@ -467,12 +436,8 @@
 			<visible>Integer.IsGreater(Container.ViewCount,1)</visible>
 		    			<visible>!Control.IsVisible(511)</visible>
 			<description>view</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[31112]</label>
@@ -484,12 +449,8 @@
 			<visible>!String.IsEmpty(Container.SortMethod)</visible>
 		    			<visible>!Control.IsVisible(511)</visible>
 			<description>Sort by</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[31008]</label>
@@ -499,12 +460,8 @@
 		<control type="button" id="4">
 			<visible>!String.IsEmpty(Container.SortMethod)</visible>
 			<description>Sort direction</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[31109]</label>
@@ -513,12 +470,8 @@
 		</control>
 		<control type="radiobutton" id="5">
 			<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -530,12 +483,8 @@
 		</control>
 		<control type="radiobutton" id="6">
 			<visible>Window.IsActive(MyPVRChannels.xml)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -547,12 +496,8 @@
 		</control>
 		<control type="radiobutton" id="7">
 			<visible>Window.IsActive(MyPVRRecordings.xml)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -565,12 +510,8 @@
 		<control type="button" id="8">
 			<visible>Window.isactive(Music) | Window.isactive(Videos)</visible>
 			<description>Search</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[137]</label>
@@ -578,12 +519,8 @@
 		</control>
 		<control type="button" id="10">
 			<visible>Window.isactive(Videos)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -593,12 +530,8 @@
 		<control type="radiobutton" id="14">
 			<visible>Window.isactive(Videos)</visible>
 			<description>Watched Toggle</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -611,12 +544,8 @@
 			<control type="button" id="19">
 				<visible>Container.CanFilter + !Container.CanFilterAdvanced</visible>
 			<description>Filter</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[587]</label>
@@ -625,12 +554,8 @@
 			<control type="button" id="199">
 				<visible>Container.CanFilterAdvanced</visible>
 			<description>Filter</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[587]</label>
@@ -640,12 +565,8 @@
 		</control>
 		<control type="button" id="22">
 			<visible>Window.isactive(Music) | Window.isactive(Videos)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -656,12 +577,8 @@
 		<control type="button" id="23">
 			<visible>Window.isactive(Music) | Window.isactive(Videos)</visible>
 			<description>Random</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -671,12 +588,8 @@
 		</control>
 		<control type="button" id="881">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(programs)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<textoffsetx>18</textoffsetx>
@@ -686,12 +599,8 @@
 		</control>
 		<control type="button" id="882">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(programs)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[1038]</label>
@@ -700,12 +609,8 @@
 		</control>
 		<control type="button" id="883">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(programs)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[35049]</label>
@@ -715,12 +620,8 @@
 		</control>
 		<control type="button" id="884">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(programs)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[1043]</label>
@@ -729,12 +630,8 @@
 		</control>
 		<control type="button" id="885">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(Videos)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[20244]</label>
@@ -744,12 +641,8 @@
 		</control>
 		<control type="button" id="886">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(programs)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[1039]</label>
@@ -758,12 +651,8 @@
 		</control>
 		<control type="button" id="887">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(programs)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[24998]</label>
@@ -772,29 +661,20 @@
 		</control>
 		<control type="button" id="888">
 			<visible>Window.isactive(addonbrowser) | Window.isactive(programs)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[33003]</label>
 			<onclick>ActivateWindow(addonbrowser,addons://all/,return)</onclick>
 			<onclick>Skin.Reset(TempEvoOpenSideMenu)</onclick>
 		</control>
-<<<<<<< HEAD
 		<control type="button" id="891">
 			<visible>Window.isactive(musicplaylist) | Window.isactive(videoplaylist)</visible>
 			<visible>Player.HasMedia</visible>
 			<description>Playlist</description>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[31012]</label>
@@ -804,48 +684,32 @@
 		</control>
 		<control type="radiobutton" id="20">
 			<visible>Window.isactive(musicplaylist) | Window.isactive(videoplaylist)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[191]</label>
 		</control>
 		<control type="button" id="26">
 			<visible>Window.isactive(musicplaylist) | Window.isactive(videoplaylist)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label></label>
 		</control>
 		<control type="button" id="21">
 			<visible>Window.isactive(musicplaylist) | Window.isactive(videoplaylist)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[190]</label>
 		</control>
 		<control type="button" id="22">
 			<visible>Window.isactive(musicplaylist) | Window.isactive(videoplaylist)</visible>
-			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
                      	<font>Font22Medium</font>
 			<aligny>center</aligny>
-			<textcolor>textActive</textcolor>
-			<focusedcolor>textActive</focusedcolor>
 	            	<width>100%</width>
 			<height>54</height>
 			<label>$LOCALIZE[192]</label>
@@ -853,11 +717,6 @@
 	</include>
     	<include name="UniversalListVisible">
 		<visible>[Window.isActive(videos)+[$EXP[TempEvoVideoFileList]|$EXP[TempEvoVideoFileSource]|$EXP[TempEvoVideoAddon]|$EXP[TempEvoVideoYear]|$EXP[TempEvoVideoGenre]|$EXP[TempEvoVideoCountry]|$EXP[TempEvoVideoStudio]|$EXP[TempEvoVideoTag]|$EXP[TempEvoVideoSet]|$EXP[TempEvoVideoVersion]|$EXP[TempEvoVideoSmartPlaylist]|$EXP[TempEvoVideoPosterList]|$EXP[TempEvoVideoLandscapeList]|$EXP[TempEvoVideoEpisodeList]|$EXP[TempEvoForYoutube]]] | [Window.isActive(music)+[[$EXP[TempEvoMusicSongLastPlayed] | $EXP[TempEvoMusicSongMostPlayed] | $EXP[TempEvoMusicSongLastAdded] | $EXP[TempEvoMusicSongMostLiked]] | [$EXP[TempEvoMusicYearSong]|$EXP[TempEvoMusicGenreSong]|$EXP[TempEvoMusicTopRecommendation]|$EXP[TempEvoMusicGenre]|$EXP[TempEvoMusicYear]|$EXP[TempEvoMusicFile]|$EXP[TempEvoMusicFileSource] | $EXP[TempEvoMusicVideoMenu]|$EXP[TempEvoVideoinMusicMenu]|$EXP[TempEvoMusicRole]|$EXP[TempEvoMusicAddon]|$EXP[TempEvoMusicSmartPlaylist]|$EXP[TempEvoMusicSmartPlaylistM3U]]+!$EXP[TempEvoMusicPlaylistEditor]]]|[Window.isActive(pictures)]|[Window.isActive(games)]|[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRTimers.xml)]|[Window.IsActive(addonbrowser)]|[Window.IsActive(programs)]</visible>
-=======
-	</include>
-    	<include name="UniversalListVisible">
-		<visible>[Window.isActive(videos)+[$EXP[TempEvoVideoFileList]|$EXP[TempEvoVideoFileSource]|$EXP[TempEvoVideoAddon]|$EXP[TempEvoVideoYear]|$EXP[TempEvoVideoGenre]|$EXP[TempEvoVideoCountry]|$EXP[TempEvoVideoStudio]|$EXP[TempEvoVideoTag]|$EXP[TempEvoVideoSet]|$EXP[TempEvoVideoVersion]|$EXP[TempEvoVideoSmartPlaylist]|$EXP[TempEvoVideoPosterList]|$EXP[TempEvoVideoLandscapeList]|$EXP[TempEvoVideoEpisodeList]|$EXP[TempEvoForYoutube]]] | [Window.isActive(music)+[[$EXP[TempEvoMusicYearSong]|$EXP[TempEvoMusicGenreSong]|$EXP[TempEvoMusicGenre]|$EXP[TempEvoMusicYear]|$EXP[TempEvoMusicFile]|$EXP[TempEvoMusicFileSource] | $EXP[TempEvoMusicVideoMenu]|$EXP[TempEvoVideoinMusicMenu]|$EXP[TempEvoMusicRole]|$EXP[TempEvoMusicAddon]|$EXP[TempEvoMusicSmartPlaylist]|$EXP[TempEvoMusicSmartPlaylistM3U]]+!$EXP[TempEvoMusicPlaylistEditor]]]|[Window.isActive(pictures)]|[Window.isActive(games)]|[Window.IsActive(MyPVRChannels.xml) | Window.IsActive(MyPVRRecordings.xml) | Window.IsActive(MyPVRSearch.xml) | Window.IsActive(MyPVRTimers.xml)]|[Window.IsActive(addonbrowser)]|[Window.IsActive(programs)]</visible>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 
     	</include>
 </includes>

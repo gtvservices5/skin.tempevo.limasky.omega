@@ -765,10 +765,6 @@
 			</control>
 		</control>
 		<control type="group">
-<<<<<<< HEAD
-=======
-			<include>DialogSlideB</include>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			<left>4%</left>
 			<top>144</top>
 			<width>92%</width>

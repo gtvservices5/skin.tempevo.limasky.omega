@@ -1,15 +1,6 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="movies">
     <name>TopMovies</name>
     <match>all</match>
     <order direction="descending">random</order>
 </smartplaylist>
-=======
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<smartplaylist type="movies">
-    <name>TopMovies</name>
-    <match>all</match>
-    <order direction="descending">random</order>
-</smartplaylist>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a

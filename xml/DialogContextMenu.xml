@@ -8,16 +8,7 @@
 			<bottom>54</bottom>
 			<width>468</width>
 			<height>900</height>
-<<<<<<< HEAD
 				<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideLeftDialog</include>
-=======
-			<animation type="windowopen">
-            			<effect type="slide" start="540,0" end="0,0" tween="cubic" easing="out" time="180"/>
-			</animation>
-			<animation type="windowclose">
-            			<effect type="slide" start="0,0" end="540,0" tween="cubic" easing="in" time="180"/>
-			</animation>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			<include content="TempEvoModelDialogLeftRounded">
 				<param name="modelkey_size" value="180" />
 				<param name="modelkey_color" value="sorotbright" />
@@ -40,15 +31,6 @@
 		<control type="group">
 			<right>54</right>
                		<control type="label">
-<<<<<<< HEAD
-=======
-				<animation type="windowopen">
-            				<effect type="fade" start="0" end="100" delay="200" time="200"/>
-        			</animation>
-				<animation type="windowclose">
-            				<effect type="fade" start="100" end="0" delay="0" time="100"/>
-        			</animation>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                          	<description>TitleWindow</description>
 				<posx>18</posx>
                          	<posy>0</posy>
@@ -60,15 +42,6 @@
 				<label>$LOCALIZE[10106]</label>
              		</control>
                		<control type="label">
-<<<<<<< HEAD
-=======
-				<animation type="windowopen">
-            				<effect type="fade" start="0" end="100" delay="200" time="200"/>
-        			</animation>
-				<animation type="windowclose">
-            				<effect type="fade" start="100" end="0" delay="0" time="100"/>
-        			</animation>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                          	<description>TitleWindow</description>
 				<posx>18</posx>
                          	<posy>54</posy>
@@ -85,28 +58,17 @@
                     			<bottom>1</bottom>
 					<height>791</height>
 				<control type="grouplist" id="996">
-<<<<<<< HEAD
-=======
-					<animation type="windowopen">
-            					<effect type="fade" start="0" end="100" delay="200" time="200"/>
-        				</animation>
-					<animation type="windowclose">
-            					<effect type="fade" start="100" end="0" delay="0" time="100"/>
-        				</animation>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                     			<left>0</left>
                     			<bottom>0</bottom>
 					<height>791</height>
 					<onleft>noop</onleft>
 					<itemgap>0</itemgap>
 	        			<control type="button" id="1000">
-			    			<texturefocus colordiffuse="40ffffff">colors/white.png</texturefocus>
-			    			<texturenofocus colordiffuse="00ffffff">colors/white.png</texturenofocus>
+							<texturefocus colordiffuse="40FFFFFF" border="8">shape/dim72/roundedsquare.png</texturefocus>
                      				<font>Font24Medium</font>
 						<aligny>center</aligny>
 						<textcolor>textActive</textcolor>
 						<focusedcolor>textActive</focusedcolor>
-	            				<width>432</width>
 						<height>54</height>
 	        			</control>
         			</control>

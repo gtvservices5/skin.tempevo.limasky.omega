@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="1108">
-<<<<<<< HEAD
 	<zorder>100</zorder>
-=======
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<defaultcontrol always="true">9909</defaultcontrol>
 	<onload condition="!Skin.HasSetting(LockscreenisActive)">action(back)</onload>
 	<onload condition="Skin.HasSetting(LockscreenDockingMode)">AlarmClock(satuidlemodebegin,Control.SetFocus(2010,0,absolute),00:00:05,silent)</onload>
@@ -45,11 +42,7 @@
                     		</control>
 			</control>
 			<control type="group" id="990998" description="Background">
-<<<<<<< HEAD
 				<include>TempEvoHomeIdleTransition</include>
-=======
-				<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoHomeIdleTransition</include>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 				<bottom>36</bottom>
 				<height>540</height>
 				<include content="TempEvoModelDialogRounded">
@@ -83,13 +76,8 @@
 				<height>100%</height>
 				<texturefocus />
 				<texturenofocus />
-<<<<<<< HEAD
 				<ondown>back</ondown>
 				<onclick>back</onclick>
-=======
-				<ondown>dialog.close(1122)</ondown>
-				<onclick>dialog.close(1122)</onclick>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			</control>
             	</control>
 	</controls>

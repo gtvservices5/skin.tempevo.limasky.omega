@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="musicvideos">
     <name>TopAlbums</name>
@@ -9,15 +8,3 @@
     </rule>
     <order direction="descending">random</order>
 </smartplaylist>
-=======
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<smartplaylist type="musicvideos">
-    <name>TopAlbums</name>
-    <match>all</match>
-    <group>albums</group>
-    <rule field="playcount" operator="greaterthan">
-        <value>0</value>
-    </rule>
-    <order direction="descending">random</order>
-</smartplaylist>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a

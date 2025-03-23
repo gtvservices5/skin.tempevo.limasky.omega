@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="movies">
     	<name>ratedMovies</name>
@@ -6,12 +5,3 @@
     	<order direction="descending">userrating</order>
 	<rule field="userrating" operator="true" />
 </smartplaylist>
-=======
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<smartplaylist type="movies">
-    	<name>ratedMovies</name>
-    	<match>all</match>
-    	<order direction="descending">userrating</order>
-	<rule field="userrating" operator="true" />
-</smartplaylist>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a

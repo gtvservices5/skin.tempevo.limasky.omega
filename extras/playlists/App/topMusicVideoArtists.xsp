@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <smartplaylist type="musicvideos">
     <name></name>
@@ -6,12 +5,3 @@
     <group>artists</group>
     <order direction="ascending">random</order>
 </smartplaylist>
-=======
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
-<smartplaylist type="musicvideos">
-    <name></name>
-    <match>all</match>
-    <group>artists</group>
-    <order direction="ascending">random</order>
-</smartplaylist>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a

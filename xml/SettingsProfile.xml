@@ -74,11 +74,7 @@
                         				<posy>0</posy>
                         				<width>144</width>
                         				<height>144</height>
-<<<<<<< HEAD
 										<aspectratio scalediffuse="false">scale</aspectratio>
-=======
-                        				<aspectratio>scale</aspectratio>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         				<texture fallback="DefaultUser.png" diffuse="shape/dim180/roundedsquare.png">$INFO[listitem.icon]</texture>
                         				<bordersize>9</bordersize>
                     				</control>
@@ -132,11 +128,7 @@
                         				<posy>0</posy>
                         				<width>144</width>
                         				<height>144</height>
-<<<<<<< HEAD
 										<aspectratio scalediffuse="false">scale</aspectratio>
-=======
-                        				<aspectratio>scale</aspectratio>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                         				<texture fallback="DefaultUser.png" diffuse="shape/dim180/roundedsquare.png">$INFO[listitem.icon]</texture>
                         				<bordersize>9</bordersize>
                     				</control>
@@ -184,7 +176,6 @@
                 <posy>216</posy>
                 <label>20096</label>
                 <height>72</height>
-                <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
                 <align>left</align>
                 <onleft>2</onleft>
                 <ondown>5</ondown>
@@ -194,12 +185,11 @@
                 <description>When Login Screen was disable</description>
                 <left>0</left>
                 <right>0</right>
-                <posy>306</posy>
+                <posy>288</posy>
 		<width>100%</width>
                 <height>72</height>
                 <label>$LOCALIZE[20125] ($LOCALIZE[20096]: $LOCALIZE[351])</label>
                 <label2>$INFO[System.ProfileAutoLogin]</label2>
-                <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
                 <onup>4</onup>
                 <onleft>2</onleft>
             </control>

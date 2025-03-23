@@ -402,6 +402,11 @@
 		<value>$INFO[VideoPlayer.VideoResolution]</value>
 	</variable>
 	<!--skin background-->
+	<variable name="FanartBackgroundVAR">
+		<value condition="[Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(Container.Art(tvshow.fanart))">$INFO[Container.Art(tvshow.fanart)]</value>
+		<value condition="!String.IsEmpty(Container.Art(artist.fanart))">$INFO[Container.Art(artist.fanart)]</value>
+		<value>$INFO[ListItem.Art(fanart)]</value>
+	</variable>
 	<variable name="UserVideosPathBackground">
 		<value condition="String.IsEmpty(Skin.String(VideoBackgroundPath))">$VAR[UserImagePathBackground]</value>
 		<value>$INFO[Skin.String(VideoBackgroundPath)]</value>
@@ -541,5 +546,14 @@
 	<variable name="SkinLockscreenAutolockTime">
 		<value condition="!String.IsEmpty(Skin.String(LockscreenAutolockTime))">$INFO[Skin.String(LockscreenAutolockTime)]</value>
 		<value condition="String.IsEmpty(Skin.String(LockscreenAutolockTime))">10</value> <!-- Default value -->
+	</variable>
+	<variable name="Control56MusicTitleVar">
+		<value condition="Control.IsVisible(56)">$INFO[Container.FolderName]</value>
+		<value>$INFO[ListItem.Title]</value>
+	</variable>
+	<variable name="Control56MusicArtistVar">
+		<value condition="Control.IsVisible(56)+String.isEmpty(container.listitemabsolute(1).albumartist)">$INFO[container.listitemabsolute(2).albumartist]</value>
+		<value condition="Control.IsVisible(56)">$INFO[container.listitemabsolute(1).albumartist]</value>
+		<value>$INFO[listitem.artist]</value>
 	</variable>
 </includes>

@@ -97,11 +97,7 @@
 						<posy>0</posy>
 						<width>90</width>
 						<height>90</height>
-<<<<<<< HEAD
                 				<font>symbolSize54</font>
-=======
-                				<font>SymbolSize54</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
                      				<textcolor>80FFFFFF</textcolor>
 						<textoffsetx>0</textoffsetx>
                     				<align>center</align>

@@ -53,8 +53,8 @@
         <aligny>center</aligny>
         <font>Font28Bold</font>
         <textcolor>textActive</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <texturefocus>colors/white.png</texturefocus>
+        <focusedcolor>textActive</focusedcolor>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textoffsetx>18</textoffsetx>
         <disabledcolor>textDisabled</disabledcolor>
@@ -69,8 +69,8 @@
         <height>72</height>
         <font>Font28Bold</font>
         <textcolor>textActive</textcolor>
-        <focusedcolor>black</focusedcolor>
-        <texturefocus>colors/white.png</texturefocus>
+        <focusedcolor>textActive</focusedcolor>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
         <texturenofocus></texturenofocus>
 	<colorwidth>90</colorwidth>
 	<colorheight>54</colorheight>
@@ -88,9 +88,9 @@
         <aligny>center</aligny>
         <textoffsetx>18</textoffsetx>
         <label></label>
-        <texturefocus>colors/white.png</texturefocus>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
         <texturenofocus></texturenofocus>
-        <alttexturefocus>colors/white.png</alttexturefocus>
+        <alttexturefocus colordiffuse="overlay" border="8">shape/dim72/roundedsquare.png</alttexturefocus>
         <alttexturenofocus></alttexturenofocus>
         <font>Font28Bold</font>
         <textcolor>textActive</textcolor>
@@ -111,11 +111,11 @@
         <font>Font28Bold</font>
         <label></label>
         <textcolor>textActive</textcolor>
-        <focusedcolor>black</focusedcolor>
+        <focusedcolor>textActive</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <radioposx>0</radioposx>
         <radioposy>0</radioposy>
-        <texturefocus>colors/white.png</texturefocus>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
         <texturenofocus></texturenofocus>
         <pulseonselect>false</pulseonselect>
         <colordiffuse>FFFFFFFF</colordiffuse>
@@ -135,11 +135,11 @@
         <font>Font32Regular</font>
         <label></label>
         <textcolor>textActive</textcolor>
-        <focusedcolor>black</focusedcolor>
+        <focusedcolor>textActive</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
-        <spinwidth>30</spinwidth>
-        <spinheight>30</spinheight>
-        <texturefocus>colors/white.png</texturefocus>
+        <spinwidth>36</spinwidth>
+        <spinheight>36</spinheight>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textureup>UIControls/arrow-up-nf.png</textureup>
         <texturedown>UIControls/arrow-down-nf.png</texturedown>
@@ -162,7 +162,7 @@
         <disabledcolor>textDisabled</disabledcolor>
         <spinwidth>36</spinwidth>
         <spinheight>36</spinheight>
-        <texturefocus>colors/white.png</texturefocus>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
         <texturenofocus></texturenofocus>
         <textureup>UIControls/arrow-up-nf.png</textureup>
         <texturedown>UIControls/arrow-down-nf.png</texturedown>
@@ -181,10 +181,10 @@
         <textoffsetx>18</textoffsetx>
         <textoffsety>0</textoffsety>
         <textcolor>textActive</textcolor>
-        <focusedcolor>black</focusedcolor>
+        <focusedcolor>textActive</focusedcolor>
         <disabledcolor>textDisabled</disabledcolor>
         <texturenofocus></texturenofocus>
-        <texturefocus>colors/white.png</texturefocus>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
         <sliderwidth>0</sliderwidth>
         <sliderheight>0</sliderheight>
         <texturesliderbar></texturesliderbar>
@@ -222,8 +222,8 @@
         <align>center</align>
         <aligny>center</aligny>
         <shadowcolor></shadowcolor>
-        <texturefocus colordiffuse="sorotdark">colors/white.png</texturefocus>
-        <texturenofocus colordiffuse="overlay">colors/black.png</texturenofocus>
+		<texturefocus colordiffuse="sorotdark" border="8">shape/dim72/roundedsquare.png</texturefocus>
+		<texturenofocus colordiffuse="overlay" border="8">shape/dim72/roundedsquare.png</texturenofocus>
         <pulseonselect>false</pulseonselect>
     </default>
 </includes>

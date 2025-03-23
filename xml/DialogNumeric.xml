@@ -27,8 +27,8 @@
 			<control type="textbox" id="1">
 				<left>64</left>
 				<right>612</right>
-				<top>0</top>
-				<height>360</height>
+				<top>18</top>
+				<height>342</height>
 				<font>Font72Bold</font>
 				<label></label>
 				<align>left</align>
@@ -93,11 +93,7 @@
 					</control>
 					<control type="button" id="23">
 						<description>backspace button</description>
-<<<<<<< HEAD
 		                        	<font>symbolSize36</font>
-=======
-		                        	<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>23</onup>
@@ -136,11 +132,7 @@
 					</control>
 					<control type="button" id="21">
 						<description>done button</description>
-<<<<<<< HEAD
 		                        	<font>symbolSize36</font>
-=======
-		                        	<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>23</onup>
@@ -179,11 +171,7 @@
 					</control>
 					<control type="button" id="901">
 						<description>debug button</description>
-<<<<<<< HEAD
 		                        	<font>symbolSize36</font>
-=======
-		                        	<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>21</onup>
@@ -201,11 +189,7 @@
 					<onright>95200</onright>
 					<control type="button" id="20">
 						<description>prev button</description>
-<<<<<<< HEAD
 		                        	<font>symbolSize36</font>
-=======
-		                        	<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>17</onup>
@@ -220,11 +204,7 @@
 					</control>
 					<control type="button" id="22">
 						<description>next button</description>
-<<<<<<< HEAD
 		                        	<font>symbolSize36</font>
-=======
-		                        	<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>19</onup>
@@ -232,11 +212,7 @@
 					</control>
 					<control type="button" id="990">
 						<description>cancel button</description>
-<<<<<<< HEAD
 		                        	<font>symbolSize36</font>
-=======
-		                        	<font>SymbolSize36</font>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 						<label></label>
 						<onclick>back</onclick>
 						<include>DefaultNumericButton</include>
@@ -256,20 +232,6 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(313)</visible>
-				<control type="image">
-					<centerleft>50%</centerleft>
-					<top>290</top>
-					<width>1440</width>
-					<height>90</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-				</control>
-				<control type="image">
-					<centerleft>50%</centerleft>
-					<top>370</top>
-					<width>1440</width>
-					<height>90</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-				</control>
 				<control type="label" id="314">
 					<centerleft>50%</centerleft>
 					<top>370</top>

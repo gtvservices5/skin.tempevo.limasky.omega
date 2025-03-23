@@ -1,10 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
-<<<<<<< HEAD
+<!--Fanart-->
+	<include name="FanartBackground">
+		<control type="group">
+			<animation condition="!Window.Previous(visualisation)" delay="800" effect="fade" end="100" start="0" time="200">WindowOpen</animation>
+			<control type="image">
+				<include>dimensionsFullscreen</include>
+				<fadetime>360</fadetime>
+				<colordiffuse>FFFFFFFF</colordiffuse>
+				<texture background="true">$VAR[FanartBackgroundVAR]</texture>
+			</control>
+			<control type="image">
+				<visible>[[Container.Content(seasons) | Container.Content(episodes)] + !String.IsEmpty(Container.Art(tvshow.fanart))]|[!String.IsEmpty(Container.Art(artist.fanart))]|[!String.IsEmpty(ListItem.Art(fanart))]</visible>
+				<animation type="hidden">
+					<effect type="fade" start="100" end="0" time="360" delay="0"/>
+        		</animation>
+				<include>dimensionsFullscreen</include>
+				<texture>colors/black.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<colordiffuse>80FFFFFF</colordiffuse>
+			</control>
+		</control>
+	</include>
 <!--Wallpaper-->
-=======
-<!--Wallpaper------------------------------------------------------------------------------------------------------------->
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 	<include name="UniversalGlobalBackground">
 		<control type="group">
 			<include>dimensionsFullscreen</include>
@@ -25,14 +43,10 @@
 				<colordiffuse>$INFO[Skin.String(SolidColorPicked)]</colordiffuse>
 			</control>
 			<control type="image">
-<<<<<<< HEAD
 				<visible>Skin.HasSetting(DefaultPatternBGSetting)</visible>
-=======
-				<visible>Skin.HasSetting(ColoredDiamondPatternSetting)</visible>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 				<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
-				<texture>$VAR[SolidColorPathBackground]</texture>
+				<texture background="true">$VAR[SolidColorPathBackground]</texture>
 				<aspectratio>scale</aspectratio>
 				<colordiffuse>ffffffff</colordiffuse>
 			</control>
@@ -52,26 +66,11 @@
 				<colordiffuse>latarcolor</colordiffuse>
 			</control>
 			<control type="image">
-				<visible>!String.IsEmpty(Listitem.Art(fanart)) + Skin.HasSetting(showfanartatbackground)</visible>
-				<visible>!window.isactive(musicplaylist)</visible>
-        	   		<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
-				<include>dimensionsFullscreen</include>
-				<aspectratio>scale</aspectratio>
-                    		<texture>$INFO[Listitem.Art(fanart)]</texture>
-				<colordiffuse>ffffffff</colordiffuse>
-                		<fadetime>300</fadetime>
-			</control>
-			<control type="image">
-<<<<<<< HEAD
 				<visible>window.isactive(home)</visible>
-=======
-				<visible>window.isactive(home)+!Skin.HasSetting(SetAlltoUniBackground)</visible>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
         	   		<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
 				<texture>colors/black.png</texture>
 				<aspectratio>stretch</aspectratio>
-<<<<<<< HEAD
 				<colordiffuse>40FFFFFF</colordiffuse>
 			</control>
 			<control type="image">
@@ -89,9 +88,6 @@
 				<texture>Pattern/Pattern1.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>40FFFFFF</colordiffuse>
-=======
-				<colordiffuse>80FFFFFF</colordiffuse>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 			</control>
 			<control type="image">
 				<visible>!window.isactive(home)+Skin.HasSetting(SetAlltoUniBackground)</visible>
@@ -155,7 +151,7 @@
 				<visible>Skin.HasSetting(ColoredDiamondPatternSetting)</visible>
 				<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
-				<texture>$VAR[SolidColorPathBackground]</texture>
+				<texture background="true">$VAR[SolidColorPathBackground]</texture>
 				<aspectratio>scale</aspectratio>
 				<colordiffuse>ffffffff</colordiffuse>
 			</control>
@@ -199,7 +195,7 @@
 				<visible>Skin.HasSetting(UserImageSetting)</visible>
 				<include>fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
-				<texture>$VAR[UserImagePathBackground]</texture>
+				<texture background="true">$VAR[UserImagePathBackground]</texture>
 				<aspectratio>keep</aspectratio>
 				<colordiffuse>ffffffff</colordiffuse>
 			</control>
@@ -224,7 +220,7 @@
 				<visible>Skin.HasSetting(UserImageSetting)</visible>
 				<include>fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
-				<texture>$VAR[UserImagePathBackground]</texture>
+				<texture background="true">$VAR[UserImagePathBackground]</texture>
 				<aspectratio>scale</aspectratio>
 				<colordiffuse>ffffffff</colordiffuse>
 			</control>
@@ -249,7 +245,7 @@
 				<visible>Skin.HasSetting(UserImageSetting)</visible>
 				<include>fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
-				<texture>$VAR[UserImagePathBackground]</texture>
+				<texture background="true">$VAR[UserImagePathBackground]</texture>
 				<aspectratio>stretch</aspectratio>
 				<colordiffuse>ffffffff</colordiffuse>
 			</control>
@@ -274,7 +270,7 @@
 				<visible>Skin.HasSetting(UserImageSetting)</visible>
 				<include>fadeInOutVisible</include>
 				<include>dimensionsFullscreen</include>
-				<texture>$VAR[UserImagePathBackground]</texture>
+				<texture background="true">$VAR[UserImagePathBackground]</texture>
 				<aspectratio>center</aspectratio>
 				<colordiffuse>ffffffff</colordiffuse>
 			</control>

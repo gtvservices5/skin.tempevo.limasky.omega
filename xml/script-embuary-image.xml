@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
-=======
-﻿<?xml version="1.0" encoding="UTF-8"?>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
 <window>
 	<animation effect="fade" start="0" end="100" time="400">WindowOpen</animation>
 	<animation effect="fade" start="100" end="0" time="300">WindowClose</animation>

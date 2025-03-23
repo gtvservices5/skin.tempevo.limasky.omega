@@ -272,7 +272,7 @@
 					<posy>0</posy>
 					<height>792</height>
                     			<align>center</align>
-                        		<itemgap>-36</itemgap>
+                        		<itemgap>0</itemgap>
                    	 		<control type="textbox">
                 				<font>Font24Medium</font>
                     				<width>auto</width>

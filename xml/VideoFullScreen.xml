@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window>
-<<<<<<< HEAD
     <defaultcontrol />
     <controls>
         <control type="group"
@@ -183,44 +182,3 @@
         </control>
     </controls>
 </window>
-=======
-	<defaultcontrol></defaultcontrol>
-	<controls>
-		<control type="group" id="0">
-			<control type="label" id="10">
-				<left>45</left>
-				<top>15</top>
-				<width>1770</width>
-				<height>100</height>
-				<label></label>
-				<font>Font18Bold</font>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label" id="11">
-				<left>45</left>
-				<top>45</top>
-				<width>1770</width>
-				<height>100</height>
-				<label></label>
-				<font>Font18Bold</font>
-				<shadowcolor>black</shadowcolor>
-			</control>
-			<control type="label" id="12">
-				<left>45</left>
-				<top>75</top>
-				<width>1770</width>
-				<height>100</height>
-				<label></label>
-				<font>Font18Bold</font>
-				<shadowcolor>black</shadowcolor>
-			</control>
-		</control>
-        	   		<include condition="Skin.HasSetting(limaskydev)">NaoDialBuffering</include>
-        	   	<include condition="Skin.HasSetting(limaskysatu)">SatuDialBuffering</include>
-        	   	<include condition="Skin.HasSetting(limaskydyo)">DyoDialBuffering</include>
-        	   	<include condition="Skin.HasSetting(limaskymitsu)">MitsuDialBuffering</include>
-        	   	<include condition="Skin.HasSetting(limaskyfour)">FourDialBuffering</include>
-        	   		<include condition="![Skin.HasSetting(limaskydev) | Skin.HasSetting(limaskysatu) | Skin.HasSetting(limaskydyo) | Skin.HasSetting(limaskymitsu) | Skin.HasSetting(limaskyfour)]">TempEvoDialBuffering</include>
-	</controls>
-</window>
->>>>>>> 4b3d67277bcf6a59287c9769b9beaf6b4c53e58a
