@@ -8,7 +8,7 @@
 			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFast</include>
                 	<left>64</left>
                 	<right>64</right>
-                	<posy>180</posy>
+                	<posy>216</posy>
                 	<height>180</height>
 	                <control type="group">
 				<include content="TempEvoModelListHorizontalRounded">
@@ -53,16 +53,16 @@
 			<right>64</right>
 			<left>64</left>
 	   		<bottom>0</bottom>
-	                <height>900</height>
+	                <height>864</height>
 			<control type="group">
 				<left>0</left>
 	   			<bottom>0</bottom>
-	                	<height>900</height>
+	                	<height>864</height>
             			<control type="panel" id="2">
                 			<posx>0</posx>
                 			<bottom>0</bottom>
                 			<width>576</width>
-                			<height>684</height>
+                			<height>648</height>
                 			<orientation>vertical</orientation>
                 			<onright>4</onright>
                 			<itemlayout width="576" height="162">
@@ -197,6 +197,7 @@
 			</control>
             	</control>
 		<include content="DefaultWindowHeader">
+			<param name="sidemenu_visible">false</param>
 			<param name="visible_control">true</param>
 			<param name="header_label" value="$LOCALIZE[5]"/>
 			<param name="subheader_label" value="$LOCALIZE[13200]"/>

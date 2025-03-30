@@ -284,6 +284,7 @@
 			</control>
             	</control>
 		<include content="DefaultWindowHeader">
+			<param name="sidemenu_visible">false</param>
 			<param name="visible_control">true</param>
 			<param name="header_label" value="$LOCALIZE[14116]"/>
 			<param name="subheader_label" value="$LOCALIZE[13000]"/>

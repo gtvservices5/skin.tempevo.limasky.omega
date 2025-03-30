@@ -11,10 +11,10 @@
 			<control type="group" id="9001">
 				<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFast</include>
 	           		<bottom>0</bottom>
-				<height>882</height>
+				<height>864</height>
 				<control type="button" id="20">
 					<right>0</right>
-					<top>-18</top>
+					<top>-36</top>
 					<width>324</width>
 					<height>54</height>
 					<ondown>5</ondown>
@@ -33,8 +33,8 @@
 					<onup>20</onup>
 					<ondown>noop</ondown>
 					<scrolltime tween="cubic" easing="out">500</scrolltime>
-                			<onright>60</onright>
-					<pagecontrol>60</pagecontrol>
+                			<onright>5009</onright>
+					<pagecontrol>5009</pagecontrol>
             			</control>
                		</control>
 			<control type="group">
@@ -49,7 +49,7 @@
 				<left>0</left>
 				<bottom>0</bottom>
 				<width>360</width>
-				<height>882</height>
+				<height>864</height>
 				<onleft>5050</onleft>
 				<onright>5</onright>
                 		<onup>5050</onup>
@@ -58,19 +58,16 @@
                	</control>
             	<control type="button" id="7">
                 	<description>Default Button</description>
-			<focusedcolor>textActive</focusedcolor>
                      	<font>Font24Bold</font>
 			<height>72</height>
             	</control>
             	<control type="radiobutton" id="8">
                 	<description>Default RadioButton</description>
-			<focusedcolor>textActive</focusedcolor>
                      	<font>Font24Bold</font>
 			<height>72</height>
             	</control>
             	<control type="spincontrolex" id="9">
                 	<description>Default spincontrolex</description>
-			<focusedcolor>textActive</focusedcolor>
                      	<font>Font24Bold</font>
 			<height>72</height>
 			<spinwidth>54</spinwidth>
@@ -94,13 +91,7 @@
 		<control type="sliderex" id="13">
                	 	<description>Default Slider</description>
         		<font>Font24Bold</font>
-			<focusedcolor>textActive</focusedcolor>
-			<sliderwidth>180</sliderwidth>
-			<sliderheight>18</sliderheight>
 			<height>72</height>
-			<texturesliderbar colordiffuse="overlay">colors/white.png</texturesliderbar>
-			<textureslidernib colordiffuse="overlay">colors/black.png</textureslidernib>
-			<textureslidernibfocus colordiffuse="highlight">colors/white.png</textureslidernibfocus>
             	</control>
 		<control type="label" id="14">
                 	<label></label>
@@ -121,11 +112,14 @@
                         <height>1</height>
 			<label></label>
              	</control>
-		<include content="DefaultScrollbarsVertical">
-			<param name="control_id">60</param>
-			<param name="control_onleft">9999</param>
-			<param name="visible_control">Skin.HasSetting(TurnOnTouchMode)</param>
-		</include>
+        <control type="group">
+			<visible>!Skin.HasSetting(HideScrollBaronSkin)</visible>
+            <include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
+			<include content="DefaultScrollbars">
+				<param name="visible_verticalbar">Control.IsVisible(3)|Control.IsVisible(5)</param>
+				<param name="control_HeightVer">864</param>
+			</include>
+		</control>
 		<include content="DefaultWindowHeader">
 			<param name="visible_control">true</param>
 			<param name="sidemenu_visible">false</param>

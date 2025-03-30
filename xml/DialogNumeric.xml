@@ -94,7 +94,7 @@
 					<control type="button" id="23">
 						<description>backspace button</description>
 		                        	<font>symbolSize36</font>
-						<label></label>
+						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>23</onup>
 						<ondown>21</ondown>

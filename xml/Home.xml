@@ -3449,6 +3449,14 @@
                 <headlinecolor>highlight</headlinecolor>
             </control>
         </control>
+		<control type="image">
+			<visible>!Skin.HasSetting(SetAlltoUniBackground)</visible>
+			<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutVisible</include>
+			<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOutReversed</include>
+			<include>dimensionsFullscreen</include>
+			<texture>colors/white.png</texture>
+			<colordiffuse>latarcolor</colordiffuse>
+		</control>
         <control type="group"
                  description="StatusBar">
             <include>StatusBarandTimeDisplay</include>
