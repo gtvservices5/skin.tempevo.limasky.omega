@@ -8,6 +8,22 @@ This project began under the name AnimaMax (GitHub repository: skin.animav6 - Th
 
 # Screenshots
 
+- 1.0.0
+![Cuplikan layar 2025-05-24 010113](https://github.com/user-attachments/assets/05ee70b2-cc1d-49ac-a600-6ef8f8f6159b)
+![Cuplikan layar 2025-05-24 013109](https://github.com/user-attachments/assets/5d9a67e9-6eae-4b06-8337-9cd89216b22f)
+![Cuplikan layar 2025-05-24 013034](https://github.com/user-attachments/assets/ceef80b8-1257-43a3-af22-323e8db36370)
+![Cuplikan layar 2025-05-24 012858](https://github.com/user-attachments/assets/2c7fbef0-2688-4d01-8507-830ccaede377)
+![Cuplikan layar 2025-05-24 010234](https://github.com/user-attachments/assets/db56e876-1abb-4b79-a3f3-d26b76cd714a)
+![Cuplikan layar 2025-05-24 010046](https://github.com/user-attachments/assets/a2a36e88-65b9-4584-8df7-78a1b2b10915)
+![Cuplikan layar 2025-05-24 010020](https://github.com/user-attachments/assets/41a76f3e-80d2-4c85-962b-9650d9623b48)
+![Cuplikan layar 2025-05-24 005907](https://github.com/user-attachments/assets/886cf693-d0f8-4541-94f4-080b37ae68db)
+![Cuplikan layar 2025-05-24 012609](https://github.com/user-attachments/assets/e2832563-c9a6-4069-9eaa-45c2d4630456)
+![Cuplikan layar 2025-05-24 010332](https://github.com/user-attachments/assets/93c52c54-24a9-425c-8fe0-50decdcf7c67)
+![Cuplikan layar 2025-05-24 010324](https://github.com/user-attachments/assets/e5625a6b-d260-4935-ba5a-1fdde2f35258)
+
+
+
+
 Screenshots of the skin from its early release versions that are still 'saved' to this day.
 
 - 0.0.5 (AnimaMax)
