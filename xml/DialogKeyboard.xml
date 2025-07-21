@@ -21,12 +21,12 @@
 			<bottom>0</bottom>
 				<width>1368</width>
 			<height>612</height>
-				<include content="TempEvoModelDialogTopRounded">
+				<include content="ModelDialogTopRounded">
 					<param name="modelkey_size" value="180" />
 					<param name="modelkey_color" value="sorotdark" />
 					<param name="dimensionkey_size" value="dim180" />
 				</include>
-				<include content="TempEvoModelDialogTopRounded">
+				<include content="ModelDialogTopRounded">
 					<param name="modelkey_size" value="180" />
 					<param name="modelkey_color" value="80000000" />
 					<param name="dimensionkey_size" value="dim180" />
@@ -169,8 +169,8 @@
 						<align>center</align>
 						<aligny>center</aligny>
         					<textoffsetx>18</textoffsetx>
-						<font>Font28Medium</font>
-						<label>20181</label>
+						<font>symbolSize36</font>
+						<label></label>
 						<onup condition="!Integer.IsGreater(Container(9010).NumItems,0)">312</onup>
 						<onup condition="Integer.IsGreater(Container(9010).NumItems,0)">9010</onup>
 						<ondown>300</ondown>
@@ -273,10 +273,10 @@
 						<align>center</align>
 						<aligny>center</aligny>
         					<textoffsetx>18</textoffsetx>
-						<font>Font28Medium</font>
+						<font>symbolSize36</font>
+						<label></label>
 						<ondown>301</ondown>
 						<onup>8</onup>
-						<label>20177</label>
 					</control>
 				</control>
 				<!-- 3rd row -->
@@ -387,13 +387,13 @@
 						<height>72</height>
 						<texturefocus colordiffuse="highlight" border="8">shape/dim72/roundedsquare.png</texturefocus>
 						<texturenofocus colordiffuse="80000000" border="8">shape/dim72/roundedsquare.png</texturenofocus>
+						<onup>300</onup>
+						<ondown>307</ondown>
 						<align>center</align>
 						<aligny>center</aligny>
         					<textoffsetx>18</textoffsetx>
-						<font>Font28Medium</font>
-						<onup>300</onup>
-						<ondown>307</ondown>
-						<label>$LOCALIZE[222]</label>
+						<font>symbolSize36</font>
+						<label></label>
 					</control>
 				</control>
 				<!-- 4th row -->
@@ -546,10 +546,10 @@
 						<align>center</align>
 						<aligny>center</aligny>
         					<textoffsetx>18</textoffsetx>
-						<font>Font28Medium</font>
+						<font>symbolSize36</font>
+						<label></label>
 						<ondown>noop</ondown>
 						<onup>163</onup>
-						<label>←</label>
 					</control>
 					<control type="button" id="32">
 						<description>SPACE button</description>
@@ -563,7 +563,7 @@
 						<font>Font28Medium</font>
 						<onup>166</onup>
 						<ondown>noop</ondown>
-						<label>20182</label>
+						<label> </label>
 					</control>
 					<control type="button" id="306">
 						<description>next button</description>
@@ -574,10 +574,10 @@
 						<align>center</align>
 						<aligny>center</aligny>
         					<textoffsetx>18</textoffsetx>
-						<font>Font28Medium</font>
+						<font>symbolSize36</font>
+						<label></label>
 						<ondown>108</ondown>
 						<onup>169</onup>
-						<label>→</label>
 					</control>
 					<control type="button" id="309">
 						<description>QWERTY button</description>
@@ -610,7 +610,7 @@
 						<width>315</width>
 						<height>36</height>
 	                        		<control type="group">
-							<include content="TempEvoModelListHorizontalRounded">
+							<include content="ModelListHorizontalRounded">
 								<param name="modelkey_size" value="36" />
 								<param name="modelkey_color" value="80000000" />
 								<param name="dimensionkey_size" value="dim72" />
@@ -633,16 +633,16 @@
 						<width>315</width>
 						<height>36</height>
 	                        		<control type="group">
-							<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
-							<include content="TempEvoModelListHorizontalRounded">
+							<include condition="!Skin.HasSetting(NoAnimationInSkin)">FocusedItemFade</include>
+							<include content="ModelListHorizontalRounded">
 								<param name="modelkey_size" value="36" />
 								<param name="modelkey_color" value="80000000" />
 								<param name="dimensionkey_size" value="dim72" />
 							</include>
 		           			</control>
 	                        		<control type="group">
-							<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
-							<include content="TempEvoModelListHorizontalRounded">
+							<include condition="!Skin.HasSetting(NoAnimationInSkin)">FocusedItemFade</include>
+							<include content="ModelListHorizontalRounded">
 								<param name="modelkey_size" value="36" />
 								<param name="modelkey_color" value="sorotan" />
 								<param name="dimensionkey_size" value="dim72" />
