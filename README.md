@@ -21,7 +21,6 @@ This project began under the name AnimaMax (GitHub repository: skin.animav6 - Th
 <img width="1920" height="1080" alt="Screenshot 2025-06-26 183744" src="https://github.com/user-attachments/assets/5de6cf3b-4ff9-435f-b366-3410596da7fc" />
 <img width="1920" height="1080" alt="Screenshot 2025-06-26 214306" src="https://github.com/user-attachments/assets/415db585-8546-443d-b19f-d862100f7379" />
 <img width="1920" height="1080" alt="Screenshot 2025-06-26 214232" src="https://github.com/user-attachments/assets/6443b247-0c07-4e9b-b3e1-40cc68ec74f8" />
-<img width="1920" height="1080" alt="Screenshot 2025-06-26 211551" src="https://github.com/user-attachments/assets/8f16c9ac-c95c-4b85-a12f-4b6c8e568a6c" />
 <img width="1920" height="1080" alt="Screenshot 2025-06-26 211449" src="https://github.com/user-attachments/assets/acc9bd02-4796-42eb-99d4-947060cf9607" />
 <img width="1920" height="1080" alt="Screenshot 2025-06-26 211410" src="https://github.com/user-attachments/assets/50d2bdc4-c199-43fa-97ae-ee9268492649" />
 <img width="1920" height="1080" alt="Screenshot 2025-06-26 210509" src="https://github.com/user-attachments/assets/be67f9c7-ffc7-4921-b8bd-34243849a596" />
