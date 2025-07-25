@@ -3478,7 +3478,7 @@
 						<textcolor>textActive</textcolor>
 						<aligny>center</aligny>
 						<shadowcolor/>
-						<label>$VAR[TitleMediaNotif]</label>
+						<label>$VAR[MediaTitleFullscreenVAR]</label>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -3489,7 +3489,7 @@
 						<textcolor>textActive</textcolor>
 						<aligny>center</aligny>
 						<shadowcolor/>
-						<label>$VAR[SubTitleMediaNotif]</label>
+						<label>$VAR[MediaSubTitleFullscreenVAR]</label>
 					</control>
 					<control type="label">
 						<left>0</left>
@@ -3500,7 +3500,7 @@
 						<textcolor>textActive</textcolor>
 						<aligny>center</aligny>
 						<shadowcolor/>
-						<label>$VAR[SecTitleMediaNotif]</label>
+						<label>$VAR[MediaSecTitleFullscreenVAR]</label>
 					</control>
 					<control type="group" id="4909">
 						<animation type="conditional" condition="Skin.HasSetting(OSDDefaultPageChange) | Window.IsVisible(VideoBookmarks)">

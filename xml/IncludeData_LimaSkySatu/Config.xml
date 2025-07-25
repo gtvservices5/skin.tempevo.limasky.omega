@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include file="IncludeData_LimaSkySatu/Animation.xml"/>
-	<include file="IncludeData_LimaSkySatu/Constant.xml"/>
 	<include file="IncludeData_LimaSkySatu/DialogInfo.xml"/>
 	<include file="IncludeData_LimaSkySatu/DialogList.xml"/>
 	<include file="IncludeData_LimaSkySatu/DialogPopUp.xml"/>
