@@ -762,7 +762,7 @@
 						<texture diffuse="shape/dim288/roundedposter.png">$INFO[Player.Art(poster)]</texture>
 					</control>
 					<control type="image">
-						<visible>String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(poster)) + String.IsEmpty(Player.Art(tvshow.poster)</visible>
+						<visible>String.IsEmpty(Player.Art(tvshow.clearlogo)) + String.IsEmpty(Player.Art(clearlogo)) + String.IsEmpty(Player.Art(poster)) + String.IsEmpty(Player.Art(tvshow.poster))</visible>
 						<bottom>0</bottom>
 						<width>288</width>
 						<height>288</height>

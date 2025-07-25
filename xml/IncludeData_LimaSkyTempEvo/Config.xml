@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
 	<include file="IncludeData_LimaSkyTempEvo/Animation.xml"/>
-	<include file="IncludeData_LimaSkyTempEvo/Constant.xml"/>
 	<include file="IncludeData_LimaSkyTempEvo/DialogInfo.xml"/>
 	<include file="IncludeData_LimaSkyTempEvo/DialogList.xml"/>
 	<include file="IncludeData_LimaSkyTempEvo/DialogPopUp.xml"/>

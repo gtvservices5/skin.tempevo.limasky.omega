@@ -4,7 +4,6 @@
 	<include file="Defaults.xml"/>
 	<include condition="![Skin.HasSetting(LimaSkySatuAktif)|Skin.HasSetting(LimaSkyTabAktif)]" file="IncludeData_LimaSkyTempEvo/Config.xml"/>
 	<include condition="Skin.HasSetting(LimaSkySatuAktif)" file="IncludeData_LimaSkySatu/Config.xml"/>
-	<include condition="Skin.HasSetting(LimaSkyTabAktif)" file="IncludeData_LimaSkyTabFriend/Config.xml"/>
 	<!--Fullscreen-->
 	<include name="dimensionsFullscreen">
 		<width>100%</width>

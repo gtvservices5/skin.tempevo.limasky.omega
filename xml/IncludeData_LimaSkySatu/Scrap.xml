@@ -280,7 +280,7 @@
                 				<font>Font32Medium</font>
                     				<width>auto</width>
                    				<height>auto</height>
-		    				<label>$VAR[SecTitleMediaLab]</label>
+		    				<label>$VAR[MediaDumWatermarkContent]</label>
                     			</control>
                    	 		<control type="textbox">
                 				<font>Font72Bold</font>
@@ -2035,7 +2035,7 @@
                         <textoffsetx>18</textoffsetx>
                         <font>Font18Medium</font>
                         <textcolor>textActive</textcolor>
-                        <label>$VAR[SecTitleMediaLab]</label>
+                        <label>$VAR[MediaDumWatermarkContent]</label>
                     </control>
                     <control type="label">
                         <posx>162</posx>
