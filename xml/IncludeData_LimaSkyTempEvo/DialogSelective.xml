@@ -1184,16 +1184,6 @@
 						<top>0</top>
 						<posx>36</posx>
 						<height>126</height>
-						<control type="label" id="10819">
-							<description>Label for Saved with: text</description>
-							<top>1</top>
-							<posx>126</posx>
-							<height>36</height>
-							<width>auto</width>
-							<font>Font24Bold</font>
-							<textcolor>textActive</textcolor>
-							<label>$LOCALIZE[35255]</label>
-						</control>
 						<control type="label" id="10823">
 							<description>Emulator name</description>
 							<top>36</top>
