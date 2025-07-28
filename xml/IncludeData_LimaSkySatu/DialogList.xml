@@ -546,6 +546,8 @@
 	</include>
 	<include name="DialogContextMenu">
 		<control type="group" id="9999">
+			<bottom>36</bottom>
+			<right>64</right>
 			<width>540</width>
 			<height>720</height>
 			<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWay</include>
