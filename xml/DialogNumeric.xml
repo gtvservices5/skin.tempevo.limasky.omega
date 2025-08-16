@@ -2,6 +2,8 @@
 <window>
 	<defaultcontrol always="true">21</defaultcontrol>
 	<depth>DepthDialog+</depth>
+    <onload condition="Skin.hasSetting(LimaSkyTabAktif)">Dialog.Close(1105)</onload>
+    <onunload condition="Skin.hasSetting(LimaSkyTabAktif)">ActivateWindow(1105)</onunload>
 	<controls>
 		<control type="group">
 					<animation type="windowopen">
@@ -24,11 +26,21 @@
 					<param name="modelkey_color" value="80000000" />
 					<param name="dimensionkey_size" value="dim180" />
 				</include>
+				<include content="ModelDialogTopRounded">
+					<param name="modelkey_size" value="180" />
+					<param name="modelkey_color" value="sorotdark" />
+					<param name="dimensionkey_size" value="dim180" />
+				</include>
+				<include content="ModelDialogTopRounded">
+					<param name="modelkey_size" value="180" />
+					<param name="modelkey_color" value="80000000" />
+					<param name="dimensionkey_size" value="dim180" />
+				</include>
 			<control type="textbox" id="1">
 				<left>64</left>
 				<right>612</right>
-				<top>0</top>
-				<height>360</height>
+				<top>18</top>
+				<height>342</height>
 				<font>Font72Bold</font>
 				<label></label>
 				<align>left</align>
@@ -40,7 +52,7 @@
 				<bottom>36</bottom>
 				<height>72</height>
 	                        <control type="group">
-					<include content="TempEvoModelListHorizontalRounded">
+					<include content="ModelListHorizontalRounded">
 						<param name="modelkey_size" value="72" />
 						<param name="modelkey_color" value="sorotdark" />
 						<param name="dimensionkey_size" value="dim72" />
@@ -94,7 +106,7 @@
 					<control type="button" id="23">
 						<description>backspace button</description>
 		                        	<font>symbolSize36</font>
-						<label></label>
+						<label></label>
 						<include>DefaultNumericButton</include>
 						<onup>23</onup>
 						<ondown>21</ondown>
@@ -232,20 +244,6 @@
 			</control>
 			<control type="group">
 				<visible>Control.IsVisible(313)</visible>
-				<control type="image">
-					<centerleft>50%</centerleft>
-					<top>290</top>
-					<width>1440</width>
-					<height>90</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-				</control>
-				<control type="image">
-					<centerleft>50%</centerleft>
-					<top>370</top>
-					<width>1440</width>
-					<height>90</height>
-					<texture border="40">buttons/dialogbutton-nofo.png</texture>
-				</control>
 				<control type="label" id="314">
 					<centerleft>50%</centerleft>
 					<top>370</top>

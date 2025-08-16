@@ -27,17 +27,20 @@
 		</control>
 		<!--Main content listing-->
         	<control type="group" id="9999">
+			<include condition="!Skin.HasSetting(NoAnimationInSkin)">ListBounceAnimation</include>
 			<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoListBounceAnimation</include>
 			<include condition="!Skin.HasSetting(NoAnimationInSkin)">fadeInOut</include>
 			<right>64</right>
 			<left>64</left>
                  	<bottom>0</bottom>
-			<height>882</height>
+			<height>864</height>
 			<control type="group">
 				<left>0</left>
                     		<width>49%</width>
                    		<control type="label" id="101">
 		    			<visible>Control.IsVisible(20)</visible>
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFast</include>
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFastVisible</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFast</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFastVisible</include>
                    			<posx>0</posx>
@@ -50,11 +53,13 @@
                      			<textcolor>FFFFFFFF</textcolor>
                     		</control>
 				<control type="panel" id="20">
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFast</include>
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFastVisible</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFast</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFastVisible</include>
                    			<posx>0</posx>
                  			<bottom>0</bottom>
-					<height>864</height>
+					<height>846</height>
 					<onleft>noop</onleft>
 					<onright>21</onright>
 					<orientation>vertical</orientation>
@@ -85,6 +90,14 @@
 		           			</control>
 	                		</itemlayout>
 	                		<focusedlayout height="72">
+	                        		<control type="group">
+							<include condition="!Skin.HasSetting(NoAnimationInSkin)">FocusedItemFade</include>
+							<include content="ModelListHorizontalRounded">
+								<param name="modelkey_size" value="72" />
+								<param name="modelkey_color" value="sorotan" />
+								<param name="dimensionkey_size" value="dim72" />
+							</include>
+		           			</control>
 	                        		<control type="group">
 							<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
 							<include content="TempEvoModelListHorizontalRounded">
@@ -124,6 +137,8 @@
                     		<width>49%</width>
                    		<control type="label" id="102">
 		    			<visible>Control.IsVisible(21)</visible>
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFast</include>
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFastVisible</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFast</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFastVisible</include>
                    			<posx>0</posx>
@@ -136,11 +151,13 @@
                      			<textcolor>FFFFFFFF</textcolor>
                     		</control>
 				<control type="panel" id="21">
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFast</include>
+					<include condition="!Skin.HasSetting(NoAnimationInSkin)">SlideFadeDownTwoWayFastVisible</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFast</include>
 					<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoSlideFadeDownTwoWayFastVisible</include>
                    			<posx>0</posx>
                  			<bottom>0</bottom>
-					<height>864</height>
+					<height>846</height>
 					<onleft>20</onleft>
 					<onright>noop</onright>
 					<orientation>vertical</orientation>
@@ -171,6 +188,14 @@
 		           			</control>
 	                		</itemlayout>
 	                		<focusedlayout height="72">
+	                        		<control type="group">
+							<include condition="!Skin.HasSetting(NoAnimationInSkin)">FocusedItemFade</include>
+							<include content="ModelListHorizontalRounded">
+								<param name="modelkey_size" value="72" />
+								<param name="modelkey_color" value="sorotan" />
+								<param name="dimensionkey_size" value="dim72" />
+							</include>
+		           			</control>
 	                        		<control type="group">
 							<include condition="!Skin.HasSetting(NoAnimationInSkin)">TempEvoFocusedItemFade</include>
 							<include content="TempEvoModelListHorizontalRounded">
@@ -207,6 +232,7 @@
 	            	</control>
             	</control>
 		<include content="DefaultWindowHeader">
+			<param name="sidemenu_visible">false</param>
 			<param name="visible_control">true</param>
 			<param name="header_label" value="$LOCALIZE[7]"/>
 			<param name="pos_left" value="64"/>
